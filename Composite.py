@@ -9,7 +9,7 @@ import math
 
 import numpy as np
 from typing import Optional
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
 import abc
 
 from enum import Enum
@@ -36,27 +36,60 @@ def transform_stress_global_to_local(stress_global: np.ndarray, theta_deg: float
 
 ### <<<---- END SECTION
 @dataclass
-class Type_parameter(Enum):
+class Type_parameter:
+    FORCE = 'F'
+    MOMENT = 'M'
+    STRESS = 'St'
+    STRAIN = 'Str'
+    RUNNING_LOAD = 'FI'
+    DEFLECTION = 'D'
+    PRESSURE = 'Pr'
+    LOAD_FACTOR = 'g'
     
-
+    def __repr__(self):
+        return str(asdict(self))
+    def __str__(self):
+        return str(asdict(self))
+        
+    
+@dataclass
+class Kind_of_load:
+    SHEAR = 'S'
+    TENSION = 'T'
+    COMPRESSION = 'C'
+    BENDING = 'Bn'
+    BEARING = 'B'
+    COMPLEX = 'Clpx'
+    
 
 @dataclass
 class RF_ACD:
     location : None | str = None
     material : None | str = None
     load_case : None | str = None
-    type_parameter : None | str = None
+    type_parameter : None | Type_parameter = None
     units_parameter : None | str = None
-    kind_of_load : None | str = None
+    kind_of_load : None | Kind_of_load = None
     ultimate_value : None | float = None
     allowable_value : None | float = None
     RF : None | float = None
     remarks : None | str = None
     
+    def __post_init__(self):
+        if not isinstance(self.type_parameter,(type(None),type(Type_parameter))):
+            raise ValueError(
+                f"Value of type_parameter must be one value of {list(Type_parameter)}"
+                )
+        if not isinstance(self.kind_of_load,(type(None),type(Kind_of_load))):
+            raise ValueError(
+                f"Value of type_parameter must be one value of {list(Type_parameter)}"
+                )
+    
+    
     def __str__(self):
-        pass
+        return asdict(self)
     def __repr__(self):
-        pass
+        return asdict(self)
     def __call__(self):
         pass
     

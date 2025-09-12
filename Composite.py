@@ -24,6 +24,24 @@ __release_date__ = '10/09/2025'
 
 
 def transform_stress_global_to_local(stress_global: np.ndarray, theta_deg: float) -> np.ndarray:
+    '''
+    Performs a rotation transformation of the components of a plane-stress vector
+    {sigma_x, sigma_y, sigma_xy} from a global cordinate system into a local.
+
+    Parameters
+    ----------
+    stress_global : np.ndarray
+    
+    theta_deg : float
+        Angle of rotation about the 3-axis
+
+    Returns
+    -------
+    stress_local : np.ndarray
+        DESCRIPTION.
+
+    '''
+    
     theta = math.radians(theta_deg)
     c = math.cos(theta)
     s = math.sin(theta)
@@ -366,8 +384,8 @@ class Laminate:
         nuxy = - S[0,1] / S[0,0]
 
         return dict(Ex = Ex, Ey = Ey, Gxy =Gxy, nuxy = nuxy)
-    
-    def dimpling_strength(self, core_cell_size : float, Kb : float = 1.0):
+
+    def dimpling_strength(self, core_cell_size: float , Kb : float = 1.0):
         
         tf = self.thickness
         cs = core_cell_size
@@ -398,7 +416,7 @@ class Laminate:
         Fs = Kb* 0.6 * min (Ex,Ey) * (tf/cs)**(1.5)
         
         return Fc, Fs
-
+    
 
 # --> CLASS SANDWICH    
 @dataclass
@@ -531,7 +549,8 @@ class Sandwich:
                            wrink_coeff1 : float = 0.247,
                            wrink_coeff2 : float = 0.078,
                            wrink_coeff3 : float = 0.33,
-                           wrink_coeff4 : float = 0.0
+                           wrink_coeff4 : float = 0.0,
+                           tc_override : bool = False
                            ):
         # Computation of the facesheet_wrinkling (Fw), CMH-17. Vol6
         # Eq. 4.6.6.5
@@ -561,10 +580,14 @@ class Sandwich:
             D22_inv = D_inv[1,1]
             Ex = 1 / ( D11_inv * tf**3)
             Ey = 1 / ( D22_inv * tf**3)
-
+            tc_x_lim = 1.82 * tf * (Ex*Ec/(Gxz**2))**(1/3)
+            tc_y_lim = 1.82 * tf * (Ey*Ec/(Gyz**2))**(1/3)
+            tc_lim = min(tc_x_lim,tc_y_lim)
+            
             for E,G in [(Ex,Gxz),(Ey,Gyz)]:
-                tc_lim = 1.82 * tf * (E*Ec/(G**2))**(1/3)
-                print(tc_lim)
+                
+                if tc_override: tc_lim = 1.82 * tf * (E*Ec/(G**2))**(1/3)
+                
                 if tc >= tc_lim : # Thick core
                     Fw = C1 * (Ec * E * G)**(1/3) + C2 * G * (tc / tf)
                 else : # Thin core
@@ -573,20 +596,169 @@ class Sandwich:
         
         return wrink_all
     
+    def wrinkling_RFs(self, 
+                      N : np.array = None, 
+                      M : np.array = None,
+                      wrink_coeffs : tuple = (0.247,0.078,0.33,0.0),
+                      safety_factor = 1.0
+                      ):
+        
+        ### Nota: 
+        # No me sale igual que en SANDRES porque igual hay que computarlo en 
+        # ejes principales taly como indica el CMH-17 Vol.16
+        
+        C1,C2,C3,C4 = wrink_coeffs
+        
+        wrink_all = self.wrinkling_strength(C1,C2,C3,C4)
+        
+        Fwr_x_top = wrink_all[0]
+        Fwr_y_top = wrink_all[1]
+        
+        Fwr_x_bot = wrink_all[2]
+        Fwr_y_bot = wrink_all[3]
+        
+        loads = self.facesheet_stresses(N,M)
+        sigma_x_top = loads['sigma_x_top']
+        sigma_y_top = loads['sigma_y_top']
+        sigma_xy_top = loads['sigma_xy_top']
+        
+        sigma_x_bot = loads['sigma_x_bot']
+        sigma_y_bot = loads['sigma_y_bot']
+        sigma_xy_bot = loads['sigma_xy_bot']
+            
+        RF_wr_x_top = Fwr_x_top / (safety_factor * abs(sigma_x_top)) if sigma_x_top < 0.0 else float('inf')
+        RF_wr_y_top = Fwr_y_top / (safety_factor * abs(sigma_y_top)) if sigma_y_top < 0.0 else float('inf')
+        
+        RF_wr_x_bot = Fwr_x_bot / (safety_factor * abs(sigma_x_bot)) if sigma_x_bot < 0.0 else float('inf')
+        RF_wr_y_bot = Fwr_y_bot / (safety_factor * abs(sigma_y_bot)) if sigma_y_bot < 0.0 else float('inf')
+        
+        res = dict(
+            RF_wr_x_top = RF_wr_x_top,
+            RF_wr_x_bot = RF_wr_x_bot,
+            RF_wr_y_top = RF_wr_y_top,
+            RF_wr_y_bot = RF_wr_y_bot
+            )
+        
+        return res
+    
+    def facesheet_stresses(self, N:np.array = None, M : np.array = None):
+        '''
+        Computes the stresses of the top and bottom facesheets of a composite
+        sandwich panel with a honeycomb core.
 
+        Parameters
+        ----------
+        N : np.array, optional
+            Mid-plane  forces per length unit {Nx, Ny and Nxy}
+        M : np.array, optional
+            Mid-plane flexural moment per length unit {Mx ,My and Mxy}
+
+        Returns
+        -------
+        res : TYPE
+            DESCRIPTION.
+
+        '''
+        
+        
+        if N is None : N = np.zeros((3,))
+        if M is None : M = np.zeros((3,))
+        
+        core_t = self.core.material.thickness
+        top_f_t = self.top_facesheet.thickness
+        bot_f_t = self.bot_facesheet.thickness
+        d = core_t + (top_f_t + bot_f_t) / 2
+        
+        
+        Nx, Ny, Nxy = N
+        Mx, My, Mxy = M
+        
+        sigma_x_Nx = Nx / (top_f_t + bot_f_t)
+        sigma_y_Ny = Ny / (top_f_t + bot_f_t)
+        sigma_xy_Nxy = Nxy / (top_f_t + bot_f_t)
+        
+        sigma_x_Mx = Mx / d 
+        sigma_y_My = My / d
+        sigma_xy_Mxy = Mxy / d
+        
+        sigma_x_top = sigma_x_Nx + ( sigma_x_Mx / top_f_t)
+        sigma_x_bot = sigma_x_Nx - ( sigma_x_Mx / bot_f_t)
+        
+        sigma_y_top = sigma_y_Ny + ( sigma_y_My / top_f_t )
+        sigma_y_bot = sigma_y_Ny - ( sigma_y_My / bot_f_t )
+        
+        sigma_xy_top = sigma_xy_Nxy + ( sigma_xy_Mxy / top_f_t )
+        sigma_xy_bot = sigma_xy_Nxy - ( sigma_xy_Mxy / bot_f_t )
+        
+        res = dict(
+            sigma_x_top = sigma_x_top,
+            sigma_y_top = sigma_y_top,
+            sigma_xy_top = sigma_xy_top,
+            sigma_x_bot = sigma_x_bot,
+            sigma_y_bot = sigma_y_bot,
+            sigma_xy_bot = sigma_xy_bot,            
+            )
+        
+        return res
+        
+    def dimpling_RFs(self, N: np.array = None, M: np.array = None, Kb : float = 1.0):
+        
+        # Computation according to CMH-17. Vol6 
+        # Eqs 4.6.5.4
+        # -------------------------------------
+        cs = self.core.material.cell_size
+        Fc_dimp_top, Fs_dimp_top = self.top_facesheet.dimpling_strength(cs,Kb=Kb)
+        Fc_dimp_bot, Fs_dimp_bot = self.bot_facesheet.dimpling_strength(cs,Kb=Kb)
+        
+        
+        loads = self.facesheet_stresses(N,M)
+        sigma_x_top = loads['sigma_x_top']
+        sigma_y_top = loads['sigma_y_top']
+        sigma_xy_top = loads['sigma_xy_top']
+        sigma_x_bot = loads['sigma_x_bot']
+        sigma_y_bot = loads['sigma_y_bot']
+        sigma_xy_bot = loads['sigma_xy_bot']
+
+        # top facesheet
+        fx_top = sigma_x_top if sigma_x_top < 0.0 else 0.0
+        fy_top = sigma_y_top if sigma_y_top < 0.0 else 0.0
+        Rc_dimp_top = abs(( fx_top + fy_top) / Fc_dimp_top)
+        Rs_dimp_top = abs(sigma_xy_top / Fs_dimp_top)
+        R_comb_den = (2 * Rs_dimp_top)
+        R_comb_num = (-1* Rc_dimp_top + math.sqrt(Rc_dimp_top**2 + 4 * Rs_dimp_top**2))
+        
+        if ( Rc_dimp_top != 0.0 and Rs_dimp_top != 0.0):
+            R_comb_top = (R_comb_num / R_comb_den) 
+            
+        elif Rc_dimp_top == 0.0:
+            R_comb_top = Rs_dimp_top
+        
+        else:
+            R_comb_top = Rc_dimp_top
+        
+        # bot facesheet
+        fx_bot = sigma_x_bot if sigma_x_bot < 0.0 else 0.0
+        fy_bot = sigma_y_bot if sigma_y_bot < 0.0 else 0.0
+        Rc_dimp_bot = abs(( fx_bot + fy_bot) / Fc_dimp_bot)
+        Rs_dimp_bot = abs(sigma_xy_bot / Fs_dimp_bot)
+        R_comb_den = (2 * Rs_dimp_bot)
+        R_comb_num = (-1* Rc_dimp_bot + math.sqrt(Rc_dimp_bot**2 + 4 * Rs_dimp_bot**2))
+        
+        if ( Rc_dimp_bot != 0.0 and Rs_dimp_bot != 0.0):
+            R_comb_bot = (R_comb_num / R_comb_den) 
+        
+        elif Rc_dimp_bot == 0.0:
+            R_comb_bot = 1/Rs_dimp_bot
+       
+        else:
+            R_comb_bot = 1/Rc_dimp_bot
+        
+        return R_comb_top, R_comb_bot
         
     
 # <-- CLASS SANDWICH         
 
-def facesheet_loads(sandwich : Sandwich, facesheet : Laminate, N: np.array):
-    tc = sandwich.core.material.thickness
-    tf = facesheet.thickness
-    A_fs, B_fs, D_fs = facesheet.stiffness_matrices()
-    eps,kappa = solve_midplane(sandwich , N)
-    A_fs_inv = np.linalg.inv(A_fs)
-    eps_fs = A_fs_inv * (N - B_fs * kappa)
-
-        
+       
 
 def solve_midplane( laminate : Laminate , N: np.ndarray, M: Optional[np.ndarray] = None, load_case : Optional[str] = None) -> np.ndarray:
     rhs = np.concatenate([N,M])

@@ -283,8 +283,8 @@ class Core:
         # Stresses
         tau_xz = Q13 / thickness
         tau_yz = Q23 / thickness
-        tau_xz_all = self.F13
-        tau_yz_all = self.F23
+        tau_xz_all = self.material.F13
+        tau_yz_all = self.material.F23
         
         # Computation of Reserve Factors
         RF_tau_xz = tau_xz_all / (safety_factor * tau_xz)
@@ -385,6 +385,14 @@ class Laminate:
 
         return dict(Ex = Ex, Ey = Ey, Gxy =Gxy, nuxy = nuxy)
 
+    @property
+    def D_star(self):
+        A, B, D = self.stiffness_matrices()
+        A_inv = np.linalg.inv(A)
+        B_t = np.linalg.matrix_transpose(B)
+        D_star = D - B * A_inv * B
+        return D_star
+
     def dimpling_strength(self, core_cell_size: float , Kb : float = 1.0):
         
         tf = self.thickness
@@ -395,10 +403,10 @@ class Laminate:
         # Computation of compression strength in dimpling (Fc), CMH-17.Vol6
         # Eq 4.6.5.1 (c):
         # -----------------------------------------------------------------
-        if is_symmetric(self.stacking): 
+        if B is np.zeros((3,3)):
             D_prime = D  
         else:
-            D_prime = D - B * np.linalg.inv(A) * B
+            D_prime = self.D_star
 
         D11 = D_prime[0,0]
         D12 = D_prime[0,1]
@@ -489,7 +497,6 @@ class Sandwich:
             t = self.core.material.thickness + 0.5*(self.top_facesheet.thickness + self.bot_facesheet.thickness)
             
         RF_tau_xz, RF_tau_yz, RF_shear = self.core.core_shear_strength(
-                                        thickness = t,
                                         Q13 = Qx,
                                         Q23 = Qy,
                                         N = N,
@@ -1004,7 +1011,6 @@ stacking_4 = [
     Ply(IMA21E_HW_70,0),
     ]
 
-
 l0 = Laminate(stacking_0)
 l1 = Laminate(stacking_1)
 l2 = Laminate(stacking_2)
@@ -1042,4 +1048,35 @@ sandwich_unsym = Sandwich(
     bot_facesheet= l6,
 )
         
+# IMA21E_HW_70_UP
+IMA21E_HW_70_UP = Laminate([
+    Ply(IMA21E_HW_70,0),
+    Ply(IMA21E_HW_70,45),
+    Ply(IMA21E_HW_70,90),
+    Ply(IMA21E_HW_70,0),
+    Ply(IMA21E_HW_70,45)
+])
+IMA21E_HW_70_LO = Laminate([
+    Ply(IMA21E_HW_70,90),
+    Ply(IMA21E_HW_70,90),
+    Ply(IMA21E_HW_70,45),
+    Ply(IMA21E_HW_70,45),
+    Ply(IMA21E_HW_70,0)
+])
 
+SANDRES_Panel_ASym_Thin_Dimpling = Sandwich(
+    top_facesheet = IMA21E_HW_70_UP,
+    core = Core_N636_0,
+    bot_facesheet= IMA21E_HW_70_LO
+)
+M = np.array([1000.0,0.0,0.0])
+N = np.array([0.0,0.0,0.0])
+SANDRES_Panel_ASym_Thin_Dimpling.dimpling_RFs(
+    N = N,
+    M = M,
+    Kb = 0.74
+)
+SANDRES_Panel_ASym_Thin_Dimpling.top_facesheet.dimpling_strength(
+    core_cell_size = SANDRES_Panel_ASym_Thin_Dimpling.core.material.cell_size,
+    Kb = 0.74
+)

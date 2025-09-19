@@ -317,7 +317,7 @@ def is_symmetric(stacking):
     
           
 @dataclass
-class Laminate:
+class Laminate:                                                                #### -> LAMINATE CLASS
     stacking : list[Ply]
     name : str | None = None
     '''
@@ -389,8 +389,7 @@ class Laminate:
     def D_star(self):
         A, B, D = self.stiffness_matrices()
         A_inv = np.linalg.inv(A)
-        B_t = np.linalg.matrix_transpose(B)
-        D_star = D - B * A_inv * B
+        D_star = D - B @ A_inv @ B                                             # @ Means product of matrices
         return D_star
 
     def dimpling_strength(self, core_cell_size: float , Kb : float = 1.0):
@@ -403,10 +402,13 @@ class Laminate:
         # Computation of compression strength in dimpling (Fc), CMH-17.Vol6
         # Eq 4.6.5.1 (c):
         # -----------------------------------------------------------------
-        if B is np.zeros((3,3)):
-            D_prime = D  
+        if is_symmetric(self.stacking):
+            D_prime = D
+            print (True)
         else:
             D_prime = self.D_star
+            
+        D_prime = D
 
         D11 = D_prime[0,0]
         D12 = D_prime[0,1]
@@ -421,7 +423,7 @@ class Laminate:
         eqv_moduli = self.laminate_apparent_moduli()
         Ex = eqv_moduli['Ex']
         Ey = eqv_moduli['Ey']
-        Fs = Kb* 0.6 * min (Ex,Ey) * (tf/cs)**(1.5)
+        Fs = Kb * 0.6 * min (Ex,Ey) * (tf/cs)**(1.5)
         
         return Fc, Fs
     
@@ -518,6 +520,7 @@ class Sandwich:
         d = core_t + (top_f_t + bot_f_t)/2.0
         
         A, B , D , K_sx, K_sy = self.stiffness_matrices()
+
         D = np.linalg.inv(D)
         Dx = 1/D[0,0]
         Dy = 1/D[1,1]
@@ -559,8 +562,11 @@ class Sandwich:
                            wrink_coeff4 : float = 0.0,
                            tc_override : bool = False
                            ):
+        
+        # No me cuadra con lo que me sale de SANDRES
+        
         # Computation of the facesheet_wrinkling (Fw), CMH-17. Vol6
-        # Eq. 4.6.6.5
+        # Eq. 4.6.6.3 (a), (b) and (c)
         # ----------------------------------------------------------------
                 
         C1 = wrink_coeff1
@@ -577,16 +583,32 @@ class Sandwich:
         wrink_all = [] 
        
         for fs in facesheets:
-            # eqv_moduli = fs.laminate_apparent_moduli()
-            # Ex = eqv_moduli['Ex']
-            # Ey = eqv_moduli['Ey']
+
             tf = fs.thickness
             A , B , D = fs.stiffness_matrices()
+            
+            if is_symmetric(fs.stacking):
+                D = D
+            else:
+                D = fs.D_star
+            
+            # Usando D_inv
             D_inv = np.linalg.inv(D)
             D11_inv = D_inv[0,0]
             D22_inv = D_inv[1,1]
-            Ex = 1 / ( D11_inv * tf**3)
-            Ey = 1 / ( D22_inv * tf**3)
+            Ex = 12 / ( D11_inv * tf**3)
+            Ey = 12 / ( D22_inv * tf**3)
+            # Usando D
+            # D11 = D[0,0]
+            # D22 = D[1,1]
+            # #
+            # Ex = (12 / (tf**3) ) * D11
+            # Ey = (12 / (tf**3) ) * D22
+            #
+            # eqv_moduli = fs.laminate_apparent_moduli()
+            # Ex = eqv_moduli['Ex'] 
+            # Ey = eqv_moduli['Ey'] 
+            print('Ex', Ex)
             tc_x_lim = 1.82 * tf * (Ex*Ec/(Gxz**2))**(1/3)
             tc_y_lim = 1.82 * tf * (Ey*Ec/(Gyz**2))**(1/3)
             tc_lim = min(tc_x_lim,tc_y_lim)
@@ -594,9 +616,10 @@ class Sandwich:
             for E,G in [(Ex,Gxz),(Ey,Gyz)]:
                 
                 if tc_override: tc_lim = 1.82 * tf * (E*Ec/(G**2))**(1/3)
-                
+                print(tc_lim)
                 if tc >= tc_lim : # Thick core
                     Fw = C1 * (Ec * E * G)**(1/3) + C2 * G * (tc / tf)
+                    print('Thick')
                 else : # Thin core
                     Fw = C3 * (Ec * E * (tf / tc))**(1/2) + C4 * G * (tc / tf)
                 wrink_all += [Fw]

@@ -1,0 +1,97 @@
+$$$ ------------------------------------------------------------
+$$$ LONGERON
+$$$ ------------------------------------------------------------
+$
+$HMMOVE  2000003
+$        2000001THRU     2049517
+$HMNAME COMP             2000003"Y53327115-001_Longeron" 
+$HWCOLOR COMP            2000003       7                                          
+$
+$HMNAME PROP             2000002"Longeron-Mat_Alum-th_2.70" 4
+$HWCOLOR PROP            2000002       9     
+$
+$HMNAME PROP             2000003"Longeron-Mat_Alum-th_4.90" 4
+$HWCOLOR PROP            2000003      41  
+$
+$HMNAME PROP             2000001"Longeron-Mat_Alum-th_2.00" 4
+$HWCOLOR PROP            2000001      62  
+$
+$$$ ------------------------------------------------------------
+$$$ FRAME
+$$$ ------------------------------------------------------------
+$
+$
+$HMMOVE  1000003
+$        1000001THRU     1081948
+$HMNAME COMP             1000003"Y53327103-001_Frame" 
+$HWCOLOR COMP            1000003       8   
+$
+$HMNAME PROP             1000003"Frame_Mat_Alum-th_4.10" 4
+$HWCOLOR PROP            1000003      21                                                            
+$
+$HMNAME PROP             1000001"Frame_Mat_Alum-th_1.60" 4
+$HWCOLOR PROP            1000001      29
+$
+$HMNAME PROP             1000002"Frame_Mat_Alum-th_2.00" 4
+$HWCOLOR PROP            1000002      37 
+$
+$HMNAME PROP             1000004"Frame_Mat_Alum-th_4.8" 4
+$HWCOLOR PROP            1000004      58  
+$
+$$$ ------------------------------------------------------------
+$$$ FORWARD CLEAT
+$$$ ------------------------------------------------------------
+$
+$HMMOVE  3000003
+$        3000001THRU     3002713
+$HMNAME COMP             3000003"Y53327124-001_Rwd_Cleat" 
+$HWCOLOR COMP            3000003       4
+$
+$HMNAME PROP             3000001"Rwd_Cleat-Mat_Alum-th_2.00" 4
+$HWCOLOR PROP            3000001      18    
+$
+$$$ ------------------------------------------------------------
+$$$ REAR CLEAT
+$$$ ------------------------------------------------------------
+$
+$HMMOVE  4000003
+$        4000001THRU     4002871
+$HMNAME COMP             4000003"Y53328123-001_Fwd_Cleat" 
+$HWCOLOR COMP            4000003       5      
+$
+$HMNAME PROP             4000001"Fwd_Cleat-Mat_Alum-th_2.00" 4
+$HWCOLOR PROP            4000001      18     
+$
+$$$ ------------------------------------------------------------
+$$$ SETS
+$$$ ------------------------------------------------------------
+$
+$HMSET        1        2 "ELSET_Y53327103-001_Frame" 18
+$HMSETTYPE       1 "formula" 18
+$
+$HMSET        2        2 "ELSET_Y53327115-001_Longeron" 18
+$HMSETTYPE       2 "formula" 18
+$
+$HMSET        3        2 "ELSET_Y53327124-001_Rwd_Cleat" 18
+$HMSETTYPE       3 "formula" 18
+$
+$HMSET        4        2 "ELSET_Y53328123-001_Fwd_Cleat" 18
+$HMSETTYPE       4 "formula" 18
+$
+$HMSET        5        2 "ELSET_Fasteners" 18
+$HMSETTYPE       5 "formula" 18
+$
+$HMSET        6        2 "ELSET_Fasteners_Fitting-Frame-Longeron IF" 18
+$HMSETTYPE       6 "formula" 18
+$
+$HMSET        7        1 "NSET_BC_Longeron_Fwd" 18
+$HMSETTYPE       7 "formula" 18
+$
+$HMSET        8        1 "NSET_BC_Longeron_Rwd" 18
+$HMSETTYPE       8 "formula" 18
+$
+$HMSET        9        1 "NSET_BC_Frame_Inb" 18
+$HMSETTYPE       9 "formula" 18
+$
+$HMSET        10        1 "NSET_BC_Frame_Oub" 18
+$HMSETTYPE      10 "formula" 18

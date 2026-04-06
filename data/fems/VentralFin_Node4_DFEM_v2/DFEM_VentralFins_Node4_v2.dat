@@ -1,0 +1,142 @@
+$$
+$$ Date      : 23/03/2026
+$$ Authors   : E.Maroto / A.Ortiz
+$$ FEM type  : DFEM_2D
+$$ Component : Rear Fuselage
+$$ Area      : Ventral Fins - Node4 
+$$ Geometry  : 3DX MockUp at 23/03/2026
+$$
+$$
+$$-----------------------------------------------------------------------------$
+$$                      Executive Control Cards                                $
+$$-----------------------------------------------------------------------------$
+$ Allow integers in real number fields (for loads integration, if needed)
+$NASTRAN SYSTEM(444)=9
+$
+$ Linear Static Analysis
+SOL 101
+$
+$ Modal Analysis
+$SOL 103
+CEND
+$
+$$------------------------------------------------------------------------------$
+$$                      Case Control Cards                                      $
+$$------------------------------------------------------------------------------$
+$
+TITLE = DFEM_2D_REAR-FUS_VentralFins_Node4
+$
+$ RBAR and RBE will calculated in thermal analysis
+$RIGID = LAGRAN
+$
+$ Data Selection
+$ Print singularity table
+AUTOSPC(PRINT) = NO
+$
+$ Output Selection
+$ Don't print bulk data
+$ECHO = NONE
+$ Print sorted bulk data in alphanumeric order
+$ECHO = SORT
+$
+$$$ SETS
+$ ----------------------------------------------
+$
+INCLUDE '04_SETS/Sets_v2.bdf'
+$
+$$$ OUTPUT REQUEST
+$ ----------------------------------------------
+$ Output Requests
+  DISPLACEMENT(PLOT) = ALL
+  MPCFORCES(PRINT,PLOT) = ALL
+  ELFORCES(PRINT,PLOT) = 5
+  STRESS(PLOT) = ALL
+$
+$------------------------------------------------------------------------------$
+$$                      SUBCASES                                               $
+$$-----------------------------------------------------------------------------$
+$ Subcases (not for SOL103)
+$
+$ Don't print subcases
+$ECHOOFF
+$
+INCLUDE '02_SUBCASES/Subcases_v1.bdf'
+$
+$$------------------------------------------------------------------------------$
+$$                      Bulk Data Cards                                         $
+$$------------------------------------------------------------------------------$
+BEGIN BULK
+$
+$-------------------------------------------------------------------------------
+$ Parameter
+$-------------------------------------------------------------------------------
+$ Check that density is in value*E-6 for mass in kg
+PARAM,WTMASS,0.001
+$ OP2 Output File
+PARAM,POST,-1
+$ Mechanisms will be detected as an fatal error
+PARAM,BAILOUT,0
+$ Causes generation of lumped mass matrices
+PARAM,COUPMASS,-1
+$ In Case of Postprocessing with S2K and DIANA database generation
+$PARAM,NOCOMPS,-1
+$ Print max loads and displacments
+PARAM,PRTMAXIM,NO
+$ Grid Point Weight Generator
+PARAM,GRDPNT,0
+$ Results in material axis
+PARAM,OMID,YES
+$
+$$ Real eigenvalue parameter (only SOL103 & SOL105)
+$EIGRL   2            -1.      50
+$
+$ Composite Output Parameter
+$PARAM, CDITER, 50
+$PARAM, CDPCH, YES
+$PARAM, CDPRT, NO
+$
+$-------------------------------------------------------------------------------
+$ FE-Model
+$-------------------------------------------------------------------------------
+$
+$ Topology
+INCLUDE '01_FEM/Y53327103-001_Frame_v2.bdf'
+INCLUDE '01_FEM/Y53327115-001_Longeron.bdf'
+INCLUDE '01_FEM/Y53327124-001_Rwd_Cleat.bdf'
+INCLUDE '01_FEM/Y53328123-001_Fwd_Cleat.bdf'
+$INCLUDE '01_FEM/dummy.bdf'
+$
+$ Materials
+INCLUDE '01_FEM/Materials.bdf'
+$
+$ Fasteners
+INCLUDE '01_FEM/Fasteners_v2.bdf'
+$
+$ Groups
+INCLUDE '01_FEM/Hypermesh_groups_v2.bdf'
+$
+$
+$$
+$$-----------------------------------------------------------------------------$
+$$        Boundary Conditions                                                  $
+$$-----------------------------------------------------------------------------$
+$
+$
+$ SPC (not for SOL103)
+INCLUDE '03_LOADS/Constraints_v2.bdf'
+$
+$ SPCADD (not for SOL103)
+$SPCADD     99901    1103    2103    3103    4023    5120    6120    7120
+$            8020    9023
+$
+$
+$$-----------------------------------------------------------------------------$
+$$        LOADS                                                                $
+$$-----------------------------------------------------------------------------$
+$ Loads (not for SOL103)
+$
+INCLUDE '03_LOADS/Forces_Moments.bdf'
+INCLUDE '03_LOADS/Loads.bdf'
+$
+$
+ENDDATA

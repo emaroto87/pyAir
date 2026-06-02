@@ -1,0 +1,124 @@
+Autor\es : E.Maroto \ A.J.Ortiz
+
+DFEM Version : 1.0
+------------------
+- Fecha: 24/03/2026
+- Primera versión
+
+DFEM Version : 2.0
+------------------
+- Fecha : 24/03/2026
+- Cambios:
+	- Error en el espesor de la cuaderna en su unión con el Longeron (th_old = 1.6 --> 2.0)
+	- Error en la unión de la cuaderna con el Longeron. Faltan 1 remaches
+	- Ampliada la condición de contorno en el free flange de la cuaderna. Se restringe grados
+	de libertad 1 y 3 en ejes locales
+	- Se piden MPCFORCES.
+	- Lista de ficheros modificados
+		old                                             new
+		---                                             ---
+		DFEM_VentralFins_Node4_v1                       DFEM_VentralFins_Node4_v2
+		01_FEM/Fasteners_v1                             01_FEM/Fasteners_v2
+		01_FEM/Y53327103-001_Frame                      01_FEM/Y53327103-001_Frame_v2
+		01_FEM/Hypermesh_groups                         01_FEM/Hypermesh_groups_v2
+		03_LOADS/Constraints_v1                         03_LOADS/Constraints_v2
+		04_SETS/Sets                                    04_SETS/Sets_v2
+
+DFEM Version : 3.0
+------------------
+- Fecha 07/05/2026
+- Motivo de la modificación : 
+    * Diseño quiere reducir el espesor en la parte de la base entre las orejetas de la Ventral Ftg.
+	Aprovechando que teniamos el modelo de la zona, se ha decidido incorporar la Ventral Ftg y 
+	comprobar que la hipótesis es correcta y comprobar que otros modos de fallo, como el unfolding,
+	no de guerra.
+
+- Cambios
+	- Mayor: Se incorpora el herraje de la ventral Fin. Y se actualiza los espesores de la zona
+	acorde al COM MALE-COM-2510118-F (v08).
+	- Debido a la modificación de los espesores y a la incorporación del Ventral Ftg, se han 
+	rehecho los remaches.
+	- Se ha modificado la entrada de carga.
+		
+	- Lista de ficheros modificados
+		old                                             new
+		---                                             ---
+		DFEM_VentralFins_Node4_v2                       DFEM_VentralFins_Node4_v3
+		01_FEM/Fasteners_v2                             01_FEM/Fasteners_v3
+		01_FEM/Y53327103-001_Frame_v2                   01_FEM/Y53327103-001_Frame_v3
+		01_FEM/Hypermesh_groups_v2                      01_FEM/Hypermesh_groups_v3
+        03_LOADS/Forces_Moments                         03_LOADS/Forces_Moments_v3
+		04_SETS/Sets_v2                                 04_SETS/Sets_v3
+		
+	- Lista de nuevos ficheros
+	    01_FEM/Loading_RBE3
+		01_FEM/Y53328123-001_Ventral_Ftg
+                                         
+DFEM Version : 4.0
+------------------
+- Fecha 08/05/2026
+- Motivo de la modificación : 
+    * Se comprueba que las deformada de las orejetas de la Ventral Ftg, son del orden de 10.0 mm
+	lo cual es inadmisible. Por otro lado, el nivel de esfuerzos a UL son elevados aun usando el
+	criterio de Fbu (bending con Cozzone).
+	* La primera explicación a ese nivel de deformación es que no se ha colocado ningun tipo de
+	elemento de unión entre las dos orejetas de la Ventral Ftg, por lo que se comportan como dos
+	vigas en voladizo en las que cada una coje la mitad del momento aplicado. Para evitarlo se 
+	han planteado dos ideas.
+	    1. Reproducir la parte de la Ventral Fin con elementos HEXA
+		2. Conectar ambas orjetas con elementos CBUSHES
+	Se opta por la segunda.
+
+- Cambios
+    - Se introducen los remaches que unen el Ventral Ftg con la Ventral Fin.
+		
+	- Lista de ficheros modificados
+		old                                             new
+		---                                             ---
+		DFEM_VentralFins_Node4_v3                       DFEM_VentralFins_Node4_v4
+		01_FEM/Fasteners_v3                             01_FEM/Fasteners_v4
+		04_SETS/Sets_v3                                 04_SETS/Sets_v4
+
+DFEM Version : 4.0
+------------------
+- Fecha 08/05/2026
+- Motivo de la modificación : 
+    * En la V03 se comprueba que las deformada de las orejetas de la Ventral Ftg, son del orden de 10.0 mm
+	lo cual es inadmisible. Por otro lado, el nivel de esfuerzos a UL son elevados aun usando el
+	criterio de Fbu (bending con Cozzone).
+	* La primera explicación a ese nivel de deformación es que no se ha colocado ningun tipo de
+	elemento de unión entre las dos orejetas de la Ventral Ftg, por lo que se comportan como dos
+	vigas en voladizo en las que cada una coje la mitad del momento aplicado. Para evitarlo se 
+	han planteado dos ideas.
+	    1. Reproducir la parte de la Ventral Fin con elementos HEXA
+		2. Conectar ambas orjetas con elementos CBUSHES
+	Se opta por la segunda.
+
+- Cambios
+    - Se introducen los remaches que unen el Ventral Ftg con la Ventral Fin.
+		
+	- Lista de ficheros modificados
+		old                                             new
+		---                                             ---
+		DFEM_VentralFins_Node4_v3                       DFEM_VentralFins_Node4_v4
+		01_FEM/Fasteners_v3                             01_FEM/Fasteners_v4
+		04_SETS/Sets_v3                                 04_SETS/Sets_v4	
+
+DFEM Version : 5.0
+------------------
+- Fecha 08/05/2026
+- Motivo de la modificación : 
+    * En la V04 se comprueba que las deformada de las orejetas de la Ventral Ftg, son del orden de 5.1 mm
+	lo cual es inadmisible. Por otro lado, el nivel de esfuerzos a UL son elevados aun usando el
+	criterio de Fbu (bending con Cozzone). Por otro lado, se comprueba el nivel de esfuerzos a 
+	LL y son demasiados cercanos al Fty.
+	* Para reducirlo, se opta por incrementar los espesores en el fitting de la siguiente manera:
+		- Zone A : 2.5 --> 3.0
+		- Zone B : 3.0 --> 3.5
+		- Zone B' : se queda en 2.5 
+		
+	- Lista de ficheros modificados
+		old                                             new
+		---                                             ---
+		DFEM_VentralFins_Node4_v4                       DFEM_VentralFins_Node4_v5
+		01_FEM/Y53328123-001_Ventral_Ftg                01_FEM/Y53328123-001_Ventral_Ftg_v2

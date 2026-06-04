@@ -1,0 +1,163 @@
+$ Subcases created at 02/12/2025
+$ =============================================================================
+$
+$ The CLC for the buckling analysis of Lower Shear Wall Bay Fr08-Fr09 have been
+$ obtained from the Excel file :
+$
+$ Panpa_Loads_GFEM_UL_Basline_LW_SW_Avg_fluxes_Envelope.xslx
+$ 
+$ According to this excel, the following LCs with negative Nxx values are:
+$
+$    - 2200293
+$    - 2200387
+$    - 2200389
+$    - 2200390
+$    - 2200403
+$    - 2200404
+$    - 2200406
+$    - 2200805
+$    - 2201397
+$
+$ 
+$ These LCs are those that have a critical combination of Nxx (compression) and
+$ Nxy fluxes on the bay
+$ 
+$ Updated : 26/11/2025
+$ This file must be used only with an isolated DFEM model
+$
+$ =============================================================================
+$
+$ <----- STATIC SUBCASES 
+$
+SUBCASE     2200293
+  TITLE =   DFL dg_vc_20_istar-0-r_v
+  LABEL = SUBCASE 2200293 - ORIGINAL CASE ID: 293
+  LOAD  =    2200293
+  SPC   =    123456
+$
+SUBCASE     2200387
+  TITLE =   DGL ISTAR-0-R-M7.095t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200387 - ORIGINAL CASE ID: 385
+  LOAD  =    2200387
+  SPC   =    123456  
+$
+SUBCASE     2200389
+  TITLE =   DGL ISTAR-0-R-M7.095t-Vz3.05-L3Pcrw+00_Vmin3p
+  LABEL = SUBCASE 2200389 - ORIGINAL CASE ID: 387
+  LOAD  =    2200389
+  SPC   =    123456
+$
+SUBCASE     2200390
+  TITLE =   DGL FA04-0-P-M9.390t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200390 - ORIGINAL CASE ID: 388
+  LOAD  =    2200390
+  SPC   =    123456
+$
+SUBCASE     2200403
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200403 - ORIGINAL CASE ID: 401
+  LOAD  =    2200403
+  SPC   =    123456
+$
+SUBCASE     2200404
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200404 - ORIGINAL CASE ID: 402
+  LOAD  =    2200404
+  SPC   =    123456
+$
+SUBCASE     2200406
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200406 - ORIGINAL CASE ID: 404
+  LOAD  =    2200406
+  SPC   =    123456
+$
+SUBCASE     2200805
+  TITLE =   DGL POD-0-B-M12.930t-AMC25p491_LD_road_1_139kts_mu0p3
+  LABEL = SUBCASE 2200805 - ORIGINAL CASE ID: 806
+  LOAD  =    2200805
+  SPC   =    123456
+$
+SUBCASE     2201397
+  TITLE =   DGL OL3-DLW-M9.379t-Vz3.05-L2Pcrw+00_1p25VL2
+  LABEL = SUBCASE 2201397 - ORIGINAL CASE ID: 1530
+  LOAD  =    2201397
+  SPC   =    123456
+$
+$ <----- BUCKLING SUBCASES 
+$
+$
+SUBCASE     3200293
+  TITLE =   DFL dg_vc_20_istar-0-r_v
+  LABEL = SUBCASE 2200293 - ORIGINAL CASE ID: 293
+  STATSUB  =    2200293
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200387
+  TITLE =   DGL ISTAR-0-R-M7.095t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200387 - ORIGINAL CASE ID: 385
+  STATSUB  =    2200387
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3  
+$
+SUBCASE     3200389
+  TITLE =   DGL ISTAR-0-R-M7.095t-Vz3.05-L3Pcrw+00_Vmin3p
+  LABEL = SUBCASE 2200389 - ORIGINAL CASE ID: 387
+  STATSUB  =    2200389
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200390
+  TITLE =   DGL FA04-0-P-M9.390t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200390 - ORIGINAL CASE ID: 388
+  STATSUB  =    2200390
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200403
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200403 - ORIGINAL CASE ID: 401
+  STATSUB  =    2200403
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200404
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200404 - ORIGINAL CASE ID: 402
+  STATSUB  =    2200404
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200406
+  TITLE =   DGL POD-0-R-M7.520t-Vz3.05-L2Pcrw+00_VminVL1
+  LABEL = SUBCASE 2200406 - ORIGINAL CASE ID: 404
+  STATSUB  =    2200406
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3200805
+  TITLE =   DGL POD-0-B-M12.930t-AMC25p491_LD_road_1_139kts_mu0p3
+  LABEL = SUBCASE 2200805 - ORIGINAL CASE ID: 806
+  STATSUB  =    2200805
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+SUBCASE     3201397
+  TITLE =   DGL OL3-DLW-M9.379t-Vz3.05-L2Pcrw+00_1p25VL2
+  LABEL = SUBCASE 2201397 - ORIGINAL CASE ID: 1530
+  STATSUB  =    2201397
+  METHOD = 2
+  VECTOR(PLOT) = ALL
+  SPC   =    3
+$
+$
+$ EOF
+$

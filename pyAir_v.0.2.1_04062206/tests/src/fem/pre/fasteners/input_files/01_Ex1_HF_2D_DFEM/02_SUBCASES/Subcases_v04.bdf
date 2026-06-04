@@ -1,0 +1,560 @@
+SUBCASE     1
+    TITLE = OF_8001_LHS_1900003
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 1
+SUBCASE     2
+    TITLE = OF_8002_LHS_1900003
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 2
+SUBCASE     3
+    TITLE = OF_8003_LHS_1900003
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 3
+SUBCASE     4
+    TITLE = OF_8004_LHS_1900003
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 4
+SUBCASE     5
+    TITLE = OF_8033_LHS_1900003
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 5
+SUBCASE     6
+    TITLE = OF_8034_LHS_1900003
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 6
+SUBCASE     7
+    TITLE = OF_8035_LHS_1900003
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 7
+SUBCASE     8
+    TITLE = OF_8036_LHS_1900003
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 8
+SUBCASE     9
+    TITLE = OF_8201_LHS_1900003
+    LABEL = OF_3G-OEW Inertia Load in +NX Direction for Transport
+    SPC = 99901
+    LOAD = 9
+SUBCASE     10
+    TITLE = OF_8202_LHS_1900003
+    LABEL = OF_3G-OEW Inertia Load in -NX Direction for Transport
+    SPC = 99901
+    LOAD = 10
+SUBCASE     11
+    TITLE = OF_8203_LHS_1900003
+    LABEL = OF_3G-OEW Inertia Load in +NY Direction for Transport
+    SPC = 99901
+    LOAD = 11
+SUBCASE     12
+    TITLE = OF_8204_LHS_1900003
+    LABEL = OF_3G-OEW Inertia Load in -NY Direction for Transport
+    SPC = 99901
+    LOAD = 12
+SUBCASE     13
+    TITLE = OF_8205_LHS_1900003
+    LABEL = OF_7.52G-OEW Inertia Load in +NZ Direction for Transport
+    SPC = 99901
+    LOAD = 13
+SUBCASE     14
+    TITLE = OF_8206_LHS_1900003
+    LABEL = OF_4.5G-OEW  Inertia Load in -NZ Direction for Transport
+    SPC = 99901
+    LOAD = 14
+SUBCASE     15
+    TITLE = OF_8301_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 15
+SUBCASE     16
+    TITLE = OF_8302_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 16
+SUBCASE     17
+    TITLE = OF_8303_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 17
+SUBCASE     18
+    TITLE = OF_8304_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 18
+SUBCASE     19
+    TITLE = OF_8305_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 19
+SUBCASE     20
+    TITLE = OF_8306_LHS_1900003
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 20
+SUBCASE     21
+    TITLE = OF_8001_RHS_1900004
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 21
+SUBCASE     22
+    TITLE = OF_8002_RHS_1900004
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 22
+SUBCASE     23
+    TITLE = OF_8003_RHS_1900004
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 23
+SUBCASE     24
+    TITLE = OF_8004_RHS_1900004
+    LABEL = OF_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 24
+SUBCASE     25
+    TITLE = OF_8033_RHS_1900004
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 25
+SUBCASE     26
+    TITLE = OF_8034_RHS_1900004
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 26
+SUBCASE     27
+    TITLE = OF_8035_RHS_1900004
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 27
+SUBCASE     28
+    TITLE = OF_8036_RHS_1900004
+    LABEL = OF_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 28
+SUBCASE     29
+    TITLE = OF_8201_RHS_1900004
+    LABEL = OF_3G-OEW Inertia Load in +NX Direction for Transport
+    SPC = 99901
+    LOAD = 29
+SUBCASE     30
+    TITLE = OF_8202_RHS_1900004
+    LABEL = OF_3G-OEW Inertia Load in -NX Direction for Transport
+    SPC = 99901
+    LOAD = 30
+SUBCASE     31
+    TITLE = OF_8203_RHS_1900004
+    LABEL = OF_3G-OEW Inertia Load in +NY Direction for Transport
+    SPC = 99901
+    LOAD = 31
+SUBCASE     32
+    TITLE = OF_8204_RHS_1900004
+    LABEL = OF_3G-OEW Inertia Load in -NY Direction for Transport
+    SPC = 99901
+    LOAD = 32
+SUBCASE     33
+    TITLE = OF_8205_RHS_1900004
+    LABEL = OF_7.52G-OEW Inertia Load in +NZ Direction for Transport
+    SPC = 99901
+    LOAD = 33
+SUBCASE     34
+    TITLE = OF_8206_RHS_1900004
+    LABEL = OF_4.5G-OEW  Inertia Load in -NZ Direction for Transport
+    SPC = 99901
+    LOAD = 34
+SUBCASE     35
+    TITLE = OF_8301_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 35
+SUBCASE     36
+    TITLE = OF_8302_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 36
+SUBCASE     37
+    TITLE = OF_8303_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 37
+SUBCASE     38
+    TITLE = OF_8304_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 38
+SUBCASE     39
+    TITLE = OF_8305_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 39
+SUBCASE     40
+    TITLE = OF_8306_RHS_1900004
+    LABEL = OF_Dynamic Lifting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 40
+SUBCASE     41
+    TITLE = OF_8101_LHS_1900003
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 41
+SUBCASE     42
+    TITLE = OF_8102_LHS_1900003
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 42
+SUBCASE     43
+    TITLE = OF_8103_LHS_1900003
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 43
+SUBCASE     44
+    TITLE = OF_8104_LHS_1900003
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 44
+SUBCASE     45
+    TITLE = OF_8105_LHS_1900003
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 45
+SUBCASE     46
+    TITLE = OF_8106_LHS_1900003
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 46
+SUBCASE     47
+    TITLE = OF_8107_LHS_1900003
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 47
+SUBCASE     48
+    TITLE = OF_8108_LHS_1900003
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 48
+SUBCASE     49
+    TITLE = OF_8109_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 49
+SUBCASE     50
+    TITLE = OF_8110_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 50
+SUBCASE     51
+    TITLE = OF_8111_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 51
+SUBCASE     52
+    TITLE = OF_8112_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 52
+SUBCASE     53
+    TITLE = OF_8113_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 53
+SUBCASE     54
+    TITLE = OF_8114_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 54
+SUBCASE     55
+    TITLE = OF_8115_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 55
+SUBCASE     56
+    TITLE = OF_8116_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 56
+SUBCASE     57
+    TITLE = OF_8349_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 57
+SUBCASE     58
+    TITLE = OF_8350_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 58
+SUBCASE     59
+    TITLE = OF_8351_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 59
+SUBCASE     60
+    TITLE = OF_8352_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 60
+SUBCASE     61
+    TITLE = OF_8353_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 61
+SUBCASE     62
+    TITLE = OF_8354_LHS_1900003
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 62
+SUBCASE     63
+    TITLE = OF_8355_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 63
+SUBCASE     64
+    TITLE = OF_8356_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 64
+SUBCASE     65
+    TITLE = OF_8357_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 65
+SUBCASE     66
+    TITLE = OF_8358_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 66
+SUBCASE     67
+    TITLE = OF_8359_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 67
+SUBCASE     68
+    TITLE = OF_8360_LHS_1900003
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 68
+SUBCASE     69
+    TITLE = OF_8101_RHS_1900004
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 69
+SUBCASE     70
+    TITLE = OF_8102_RHS_1900004
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 70
+SUBCASE     71
+    TITLE = OF_8103_RHS_1900004
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 71
+SUBCASE     72
+    TITLE = OF_8104_RHS_1900004
+    LABEL = OF_FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 72
+SUBCASE     73
+    TITLE = OF_8105_RHS_1900004
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 73
+SUBCASE     74
+    TITLE = OF_8106_RHS_1900004
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 74
+SUBCASE     75
+    TITLE = OF_8107_RHS_1900004
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 75
+SUBCASE     76
+    TITLE = OF_8108_RHS_1900004
+    LABEL = OF_preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 76
+SUBCASE     77
+    TITLE = OF_8109_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 77
+SUBCASE     78
+    TITLE = OF_8110_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 78
+SUBCASE     79
+    TITLE = OF_8111_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 79
+SUBCASE     80
+    TITLE = OF_8112_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 80
+SUBCASE     81
+    TITLE = OF_8113_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 81
+SUBCASE     82
+    TITLE = OF_8114_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 82
+SUBCASE     83
+    TITLE = OF_8115_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 83
+SUBCASE     84
+    TITLE = OF_8116_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 84
+SUBCASE     85
+    TITLE = OF_8349_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 85
+SUBCASE     86
+    TITLE = OF_8350_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 86
+SUBCASE     87
+    TITLE = OF_8351_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 87
+SUBCASE     88
+    TITLE = OF_8352_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 88
+SUBCASE     89
+    TITLE = OF_8353_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 89
+SUBCASE     90
+    TITLE = OF_8354_RHS_1900004
+    LABEL = OF_Local FAL 1G-OEW-FAL (6.67t) Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 90
+SUBCASE     91
+    TITLE = OF_8355_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NX*2.0
+    SPC = 99901
+    LOAD = 91
+SUBCASE     92
+    TITLE = OF_8356_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NX*-2.0
+    SPC = 99901
+    LOAD = 92
+SUBCASE     93
+    TITLE = OF_8357_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NY*2.0
+    SPC = 99901
+    LOAD = 93
+SUBCASE     94
+    TITLE = OF_8358_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NY*-2.0
+    SPC = 99901
+    LOAD = 94
+SUBCASE     95
+    TITLE = OF_8359_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*2.0
+    SPC = 99901
+    LOAD = 95
+SUBCASE     96
+    TITLE = OF_8360_RHS_1900004
+    LABEL = OF_Local preFAL 1G-OEW-preFAL (6.98t) Inertia Load in NZ*-2.0
+    SPC = 99901
+    LOAD = 96
+SUBCASE     97
+    TITLE = AC_8001_LHS_1900003
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 97
+SUBCASE     98
+    TITLE = AC_8002_LHS_1900003
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 98
+SUBCASE     99
+    TITLE = AC_8003_LHS_1900003
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 99
+SUBCASE     100
+    TITLE = AC_8004_LHS_1900003
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 100
+SUBCASE     101
+    TITLE = AC_8033_LHS_1900003
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 101
+SUBCASE     102
+    TITLE = AC_8034_LHS_1900003
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 102
+SUBCASE     103
+    TITLE = AC_8035_LHS_1900003
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 103
+SUBCASE     104
+    TITLE = AC_8036_LHS_1900003
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 104
+SUBCASE     105
+    TITLE = AC_8001_RHS_1900004
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NX*0.33
+    SPC = 99901
+    LOAD = 105
+SUBCASE     106
+    TITLE = AC_8002_RHS_1900004
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NX*0.33
+    SPC = 99901
+    LOAD = 106
+SUBCASE     107
+    TITLE = AC_8003_RHS_1900004
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33+NY*0.33
+    SPC = 99901
+    LOAD = 107
+SUBCASE     108
+    TITLE = AC_8004_RHS_1900004
+    LABEL = AC_Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*1.33-NY*0.33
+    SPC = 99901
+    LOAD = 108
+SUBCASE     109
+    TITLE = AC_8033_RHS_1900004
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NX*0.33
+    SPC = 99901
+    LOAD = 109
+SUBCASE     110
+    TITLE = AC_8034_RHS_1900004
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NX*0.33
+    SPC = 99901
+    LOAD = 110
+SUBCASE     111
+    TITLE = AC_8035_RHS_1900004
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0+NY*0.33
+    SPC = 99901
+    LOAD = 111
+SUBCASE     112
+    TITLE = AC_8036_RHS_1900004
+    LABEL = AC_Local Jacking + Hoisting 1G-OEW (6.99t) ISTAR-0-R Inertia Load in NZ*2.0-NY*0.33
+    SPC = 99901
+    LOAD = 112

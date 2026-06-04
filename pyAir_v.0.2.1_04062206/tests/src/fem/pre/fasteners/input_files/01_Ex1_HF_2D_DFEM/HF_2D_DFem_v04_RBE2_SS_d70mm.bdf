@@ -1,0 +1,120 @@
+$$
+$$ Date      : 24/02/2026
+$$ Authors   : E.Maroto / A.Ortiz
+$$ FEM type  : DFEM_2D
+$$ Component : Rear Fuselage
+$$ Area      : Hoisiting Fittings
+$$
+$$
+$$-----------------------------------------------------------------------------$
+$$                      Executive Control Cards                                $
+$$-----------------------------------------------------------------------------$
+$ Allow integers in real number fields (for loads integration, if needed)
+$NASTRAN SYSTEM(444)=9
+$
+$ Linear Static Analysis
+SOL 101
+$
+$ Modal Analysis
+$SOL 103
+CEND
+$
+$$------------------------------------------------------------------------------$
+$$                      Case Control Cards                                      $
+$$------------------------------------------------------------------------------$
+$
+TITLE = HF_2D_DFEM_v04_RBE2_SS_d70mm
+$
+$ RBAR and RBE will calculated in thermal analysis
+$RIGID = LAGRAN
+$
+$ Data Selection
+$ Print singularity table
+AUTOSPC(PRINT) = NO
+$
+$ Output Selection
+$ Don't print bulk data
+$ECHO = NONE
+$ Print sorted bulk data in alphanumeric order
+$ECHO = SORT
+$
+INCLUDE '04_SETS/Sets_v04.bdf'
+$
+$ Output Requests
+  DISPLACEMENT(PLOT) = ALL
+  MPCFORCES(PRINT,PLOT) = 12
+  ELFORCES(PLOT) = ALL
+  STRESS(PLOT) = ALL
+$
+$------------------------------------------------------------------------------$
+$$                      SUBCASES                                               $
+$$-----------------------------------------------------------------------------$
+$ Subcases (not for SOL103)
+$
+$ Don't print subcases
+$ECHOOFF
+$
+INCLUDE '02_SUBCASES/Subcases_v04.bdf'
+$
+$$------------------------------------------------------------------------------$
+$$                      Bulk Data Cards                                         $
+$$------------------------------------------------------------------------------$
+BEGIN BULK
+$
+$-------------------------------------------------------------------------------
+$ Parameter
+$-------------------------------------------------------------------------------
+$ Check that density is in value*E-6 for mass in kg
+PARAM,WTMASS,0.001
+$ OP2 Output File
+PARAM,POST,-1
+$ Mechanisms will be detected as an fatal error
+PARAM,BAILOUT,0
+$ Causes generation of lumped mass matrices
+PARAM,COUPMASS,-1
+$ In Case of Postprocessing with S2K and DIANA database generation
+$PARAM,NOCOMPS,-1
+$ Print max loads and displacments
+PARAM,PRTMAXIM,NO
+$ Grid Point Weight Generator
+PARAM,GRDPNT,0
+$ Results in material axis
+PARAM,OMID,YES
+$
+$$ Real eigenvalue parameter (only SOL103 & SOL105)
+$EIGRL   2            -1.      50
+$
+$ Composite Output Parameter
+$PARAM, CDITER, 50
+$PARAM, CDPCH, YES
+$PARAM, CDPRT, NO
+$
+$-------------------------------------------------------------------------------
+$ FE-Model
+$-------------------------------------------------------------------------------
+$
+INCLUDE '01_FEM/fem_v04_RBE2_d70mm.bdf'
+$
+$$
+$$-----------------------------------------------------------------------------$
+$$        Boundary Conditions                                                  $
+$$-----------------------------------------------------------------------------$
+$
+$
+$ SPC (not for SOL103)
+INCLUDE '03_LOADS/Constraints_v03.bdf'
+$
+$ SPCADD (not for SOL103)
+SPCADD     99901    1103    2103    3103    4023    5120    6120    7120
+            8020    9023
+$
+$
+$$-----------------------------------------------------------------------------$
+$$        LOADS                                                                $
+$$-----------------------------------------------------------------------------$
+$ Loads (not for SOL103)
+$
+INCLUDE '03_LOADS/Loads_v04_RBE2_SS_d70mm.bdf'
+$
+$
+ENDDATA

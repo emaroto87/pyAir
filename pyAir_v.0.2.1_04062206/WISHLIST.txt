@@ -1,0 +1,14 @@
+Cosas que puedo añadir:
+
+# Análisis
+- Modulo de calculo de la resistencia de un laminado de compuesto tipo URCO
+- Modulo de Crippling Metalico
+- Modulo de Cripplint Compuesto
+- Modulo de Calculo de pandeo de SuperLarguerillo Compuesto
+- Modulo de Calculo de radios de acuerdo CORIN
+- Modulo de Calculo de uniones discontinuas tipo ARES
+# Fem PRE
+- Modificador de modelo desde excel sin alterar BDF
+
+# Fem Post
+- Interfaz de Ventana en vez de consola

@@ -1,0 +1,50 @@
+
+ Program REMACHADO. Example 1.                                          PAGE  1
+ Crack with central stiffener intact.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ***********************************
+ *                                 *
+ *   <<< I N P U T   D A T A >>>   *
+ *                                 *
+ ***********************************
+
+ EXECUTION DATA:
+ ===============
+ Date: 13-Feb-2026
+ Remachado 3.2. (c) Airbus Defence and Space. Jan-2021
+
+ SKIN DATA:
+ ==========
+ Young's modulus..............:        72400.00
+ Poisson's ratio..............:            0.33
+ Thickness....................:            2.00
+ Fracture toughness Kc........:         5000.00
+ Transversal supports spacing..:          500.00
+
+ APPLIED STRESSES:
+ =================
+ Average axial stress.........:          200.00
+ Lateral-axial stress ratio...:            0.50
+
+ STIFFENERS DATA:                  STIFFENER  1    STIFFENER  2    STIFFENER  3
+ ================                  ------------    ------------    ------------
+ X-coordinate.................:            0.00          100.00          200.00
+ Uniform fastener system:
+    Number of fasteners.......:              15              15              15
+    Fastener pitch............:           20.00           20.00           20.00
+    Fastener Young's modulus..:        71000.00        71000.00        71000.00
+    Fastener stiffness........:            0.00            0.00            0.00
+    Fastener diameter.........:            4.80            4.80            4.80
+    Thickness at attach point.:            3.00            3.00            3.00
+ Gross area...................:          237.00          237.00          237.00
+ Net area.....................:          222.60          222.60          222.60
+ Gross moment of inertia......:        44610.00        44610.00        44610.00
+ Net moment of inertia........:        40674.00        40674.00        40674.00
+ Distance from CG to outer cap:           17.50           17.50           17.50
+ Distance from CG to inner cap:           17.50           17.50           17.50
+ Young's modulus..............:        71700.00        71700.00        71700.00
+ Ftu of stiffener.............:          469.00          469.00          469.00
+ Fty of stiffener.............:          400.00          400.00          400.00
+ Initial state of stiffener...:          Intact          Intact          Intact

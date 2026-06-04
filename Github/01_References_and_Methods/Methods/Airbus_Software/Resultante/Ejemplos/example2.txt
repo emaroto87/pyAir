@@ -1,0 +1,2100 @@
+********************************************
+*                                          *
+*   <<< Calculation of the resultant >>>   *
+*                                          *
+********************************************
+
+Filename of GRIDs:             example_grid.dat
+Filename of FORCESs & MOMENTs: example_force.dat
+Filename of LOADs:             example_load.dat
+
+
+Title:
+======
+
+Example 2 for the program RESULTANTE.
+Cut section: From the infinite up to X=12540.
+Input data units: [L]=mm [F]=N [M]=N.mm
+Output results units: [F]=kN [M]=kN.m
+
+
+Origin for calculation of forces and moments resultant:
+=======================================================
+
+Xo = 12540.0
+Yo =     0.0
+Zo =  3000.0
+
+
+Cut section:
+============
+
+From the infinite up to Xmin = 12540.0
+
+
+File of GRIDs:
+==============
+
+Total number of GRIDs: Read .......... 54
+                       Useful ........ 24
+                       Erroneous .....  0
+
+
+File of FORCEs and MOMENTs:
+===========================
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400704          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400703          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400717          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400702          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400705          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400707          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400708          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400706          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400709          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400712          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400710          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400711          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400716          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400713          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400715          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400714          1000.0   0.000   0.000  -4.784
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415001          1000.0 -56.978   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415001          1000.0   0.000  -3.273   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415001          1000.0   0.000   0.000-147.656
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415000          1000.0 -56.978   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415000          1000.0   0.000  -1.793   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  415000          1000.0   0.000   0.000-141.362
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  425035          1000.0  11.954   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  425035          1000.0   0.000   0.000   0.221
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  425130          1000.0   0.000  -5.014   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  425120          1000.0   0.000  -6.128   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400401          1000.0   0.000   0.000  -5.473
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400402          1000.0   0.000   0.000  -5.473
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400403          1000.0   0.000   0.000  -5.473
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4009  400404          1000.0   0.000   0.000  -5.473
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400717          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400704          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400703          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400702          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400705          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400707          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400708          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400706          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400710          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400712          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400711          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400709          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400714          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400713          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400715          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400716          1000.0   0.000   0.000  -3.583
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415000          1000.0 -59.441   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415000          1000.0   0.000  32.546   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415000          1000.0   0.000   0.000 -29.139
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415001          1000.0 -59.441   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415001          1000.0   0.000  18.946   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  415001          1000.0   0.000   0.000 -66.544
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  425035          1000.0  11.444   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  425035          1000.0   0.000   0.000   0.211
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  425130          1000.0   0.000 -13.341   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  425120          1000.0   0.000 -16.305   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400402          1000.0   0.000   0.000  -1.939
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400401          1000.0   0.000   0.000  -1.939
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400403          1000.0   0.000   0.000  -1.939
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4013  400404          1000.0   0.000   0.000  -1.939
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400717          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400704          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400703          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400702          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400705          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400707          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400708          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400706          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400710          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400712          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400711          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400709          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400714          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400713          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400715          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400716          1000.0   0.000   0.000  -4.467
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415000          1000.0 -57.228   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415000          1000.0   0.000  10.412   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415000          1000.0   0.000   0.000-134.749
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415001          1000.0 -57.228   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415001          1000.0   0.000   8.712   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  415001          1000.0   0.000   0.000-138.155
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  425035          1000.0  10.441   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  425035          1000.0   0.000   0.000   0.193
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  425130          1000.0   0.000  -2.132   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  425120          1000.0   0.000  -2.605   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400402          1000.0   0.000   0.000  -4.808
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400401          1000.0   0.000   0.000  -4.808
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400403          1000.0   0.000   0.000  -4.808
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4014  400404          1000.0   0.000   0.000  -4.808
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400704          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400702          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400717          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400703          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400705          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400707          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400706          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400708          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400712          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400710          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400711          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400709          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400713          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400716          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400715          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400714          1000.0   0.000   0.000  -1.635
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415000          1000.0-139.958   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415000          1000.0   0.000  -0.126   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415000          1000.0   0.000   0.000-102.224
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415001          1000.0-139.958   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415001          1000.0   0.000  -0.126   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  415001          1000.0   0.000   0.000-102.231
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  425035          1000.0   0.006   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  425130          1000.0   0.000  -0.172   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  425120          1000.0   0.000  -0.210   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400401          1000.0   0.000   0.000  -3.494
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400404          1000.0   0.000   0.000  -3.494
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400402          1000.0   0.000   0.000  -3.494
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4030  400403          1000.0   0.000   0.000  -3.494
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400704          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400702          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400717          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400703          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400705          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400707          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400706          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400708          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400712          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400710          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400711          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400709          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400713          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400716          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400715          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400714          1000.0   0.000   0.000  -0.834
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415000          1000.0  46.089   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415000          1000.0   0.000   0.104   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415000          1000.0   0.000   0.000 -42.239
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415001          1000.0  46.089   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415001          1000.0   0.000   0.104   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  415001          1000.0   0.000   0.000 -43.244
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  425035          1000.0 55.13400.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  425035          1000.0   0.000   0.000 2.38800
+
+In the following card, a moment is applied on a nonexistent GRID point:
+MOMENT      4031  425035          1.0E+6   0.000-1.57535   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  425130          1000.0   0.000   0.140   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  425120          1000.0   0.000   0.171   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400401          1000.0   0.000   0.000  -1.218
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400404          1000.0   0.000   0.000  -1.218
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400402          1000.0   0.000   0.000  -1.218
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4031  400403          1000.0   0.000   0.000  -1.218
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400704          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400702          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400717          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400703          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400706          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400708          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400705          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400707          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400709          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400710          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400711          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400712          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400715          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400714          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400713          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400716          1000.0   0.000   0.000  -1.233
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415000          1000.0 -90.220   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415000          1000.0   0.000  -0.182   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415000          1000.0   0.000   0.000 -84.438
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415001          1000.0 -90.220   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415001          1000.0   0.000  -0.182   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  415001          1000.0   0.000   0.000 -84.443
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  425035          1000.0   0.004   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  425130          1000.0   0.000  -0.133   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  425120          1000.0   0.000  -0.163   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400401          1000.0   0.000   0.000  -2.510
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400404          1000.0   0.000   0.000  -2.510
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400402          1000.0   0.000   0.000  -2.510
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4032  400403          1000.0   0.000   0.000  -2.510
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400717          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400704          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400703          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400702          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400705          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400707          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400708          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400706          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400710          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400712          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400711          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400709          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400714          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400713          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400715          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400716          1000.0   0.000   0.000  -3.708
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415000          1000.0 -59.435   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415000          1000.0   0.000  22.514   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415000          1000.0   0.000   0.000 -17.145
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415001          1000.0 -59.435   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415001          1000.0   0.000  10.914   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  415001          1000.0   0.000   0.000 -75.549
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  425035          1000.0  11.446   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  425035          1000.0   0.000   0.000   0.211
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  425130          1000.0   0.000 -13.307   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  425120          1000.0   0.000 -16.265   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400402          1000.0   0.000   0.000  -2.065
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400401          1000.0   0.000   0.000  -2.065
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400403          1000.0   0.000   0.000  -2.065
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4044  400404          1000.0   0.000   0.000  -2.065
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400702          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400704          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400717          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400703          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400708          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400705          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400706          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400707          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400711          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400712          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400709          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400710          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400713          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400716          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400715          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400714          1000.0   0.000   0.000  -5.361
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415001          1000.0   0.000  -6.703   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415001          1000.0   0.000   0.000 -93.978
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415000          1000.0   0.000   8.547   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415000          1000.0   0.000   0.000-121.081
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415001          1000.0 -59.330   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  415000          1000.0 -59.330   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  425035          1000.0  13.129   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  425035          1000.0   0.000   0.000   0.649
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  425130          1000.0   0.000  10.683   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  425120          1000.0   0.000  13.057   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400404          1000.0   0.000   0.000  -5.749
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400403          1000.0   0.000   0.000  -5.749
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400402          1000.0   0.000   0.000  -5.749
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4002  400401          1000.0   0.000   0.000  -5.749
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400702          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400704          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400717          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400703          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400708          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400705          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400706          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400707          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400711          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400712          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400709          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400710          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400713          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400716          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400715          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400714          1000.0   0.000   0.000  -2.064
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415001          1000.0   0.000   0.035   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415001          1000.0   0.000   0.000  47.365
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415000          1000.0   0.000  -3.065   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415000          1000.0   0.000   0.000  61.668
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415001          1000.0 -46.624   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  415000          1000.0 -46.624   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  425035          1000.0   4.686   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  425035          1000.0   0.000   0.000   0.232
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  425130          1000.0   0.000   0.405   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  425120          1000.0   0.000   0.495   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400404          1000.0   0.000   0.000   0.713
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400403          1000.0   0.000   0.000   0.713
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400402          1000.0   0.000   0.000   0.713
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4003  400401          1000.0   0.000   0.000   0.713
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400702          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400703          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400704          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400717          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400707          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400708          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400706          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400705          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400712          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400710          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400709          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400711          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400713          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400715          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400716          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400714          1000.0   0.000   0.000  -5.675
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415001          1000.0   0.000   3.413   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415001          1000.0   0.000   0.000-102.306
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415000          1000.0   0.000   4.903   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415000          1000.0   0.000   0.000 -96.550
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415001          1000.0 -40.893   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  415000          1000.0 -40.893   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  425035          1000.0   0.000   0.000   0.398
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  425035          1000.0   8.041   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  425130          1000.0   0.000   0.005   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  425120          1000.0   0.000   0.006   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400403          1000.0   0.000   0.000  -3.374
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400404          1000.0   0.000   0.000  -3.374
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400402          1000.0   0.000   0.000  -3.374
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4007  400401          1000.0   0.000   0.000  -3.374
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400717          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400704          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400703          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400702          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400706          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400705          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400707          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400708          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400710          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400712          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400711          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400709          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400715          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400713          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400714          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400716          1000.0   0.000   0.000  -2.297
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415000          1000.0   0.000   9.200   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415000          1000.0   0.000   0.000  18.500
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415001          1000.0   0.000  -0.400   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415001          1000.0   0.000   0.000  29.600
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415000          1000.0 -67.900   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  415001          1000.0 -67.900   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  425035          1000.0   0.000   0.000   0.672
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  425035          1000.0  13.590   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  425130          1000.0   0.000   0.450   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  425120          1000.0   0.000   0.550   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400402          1000.0   0.000   0.000   2.534
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400401          1000.0   0.000   0.000   2.534
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400403          1000.0   0.000   0.000   2.534
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4015  400404          1000.0   0.000   0.000   2.534
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400717          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400704          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400703          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400702          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400706          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400705          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400707          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400708          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400710          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400712          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400711          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400709          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400715          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400713          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400714          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400716          1000.0   0.000   0.000  -2.594
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415000          1000.0   0.000   6.894   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415000          1000.0   0.000   0.000  63.101
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415001          1000.0   0.000   5.394   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415001          1000.0   0.000   0.000  43.104
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415000          1000.0 -19.602   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  415001          1000.0 -19.602   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  425035          1000.0   0.000   0.000   0.164
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  425035          1000.0   3.313   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  425130          1000.0   0.000  -2.386   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  425120          1000.0   0.000  -2.916   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400402          1000.0   0.000   0.000   3.819
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400401          1000.0   0.000   0.000   3.819
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400403          1000.0   0.000   0.000   3.819
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4019  400404          1000.0   0.000   0.000   3.819
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400717          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400704          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400703          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400702          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400706          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400705          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400707          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400708          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400710          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400712          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400711          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400709          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400715          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400713          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400714          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400716          1000.0   0.000   0.000  -6.337
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415000          1000.0   0.000  31.308   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415000          1000.0   0.000   0.000 -91.383
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415001          1000.0   0.000  -7.092   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415001          1000.0   0.000   0.000-113.491
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415000          1000.0-111.723   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  415001          1000.0-111.723   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  425035          1000.0   0.000   0.000   0.781
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  425035          1000.0  15.796   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  425130          1000.0   0.000  10.357   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  425120          1000.0   0.000  12.658   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400402          1000.0   0.000   0.000  -6.257
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400401          1000.0   0.000   0.000  -6.257
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400403          1000.0   0.000   0.000  -6.257
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4020  400404          1000.0   0.000   0.000  -6.257
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400717          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400704          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400703          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400702          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400706          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400705          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400707          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400708          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400710          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400712          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400711          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400709          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400715          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400713          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400714          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400716          1000.0   0.000   0.000  -2.905
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415000          1000.0   0.000  24.612   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415000          1000.0   0.000   0.000  39.102
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415001          1000.0   0.000  22.753   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415001          1000.0   0.000   0.000  28.691
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415000          1000.0 -73.289   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  415001          1000.0 -73.289   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  425035          1000.0   0.000   0.000   0.773
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  425035          1000.0  15.636   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  425130          1000.0   0.000 -14.052   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  425120          1000.0   0.000 -17.175   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400402          1000.0   0.000   0.000   2.352
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400401          1000.0   0.000   0.000   2.352
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400403          1000.0   0.000   0.000   2.352
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4022  400404          1000.0   0.000   0.000   2.352
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400702          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400703          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400717          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400704          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400707          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400705          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400706          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400708          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400709          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400711          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400710          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400712          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400714          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400716          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400715          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400713          1000.0   0.000   0.000  -0.131
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415000          1000.0   0.000  23.970   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415000          1000.0   0.000   0.000  -4.736
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415001          1000.0   0.000  20.170   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415001          1000.0   0.000   0.000 -28.266
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415000          1000.0  -7.178   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  415001          1000.0  -7.178   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  425035          1000.0   0.000   0.000   0.001
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  425035          1000.0   0.017   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  425130          1000.0   0.000  -5.287   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  425120          1000.0   0.000  -6.462   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400401          1000.0   0.000   0.000  -0.051
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400404          1000.0   0.000   0.000  -0.051
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400402          1000.0   0.000   0.000  -0.051
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4024  400403          1000.0   0.000   0.000  -0.051
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400702          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400703          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400717          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400704          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400705          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400708          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400707          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400706          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400709          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400712          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400710          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400711          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400714          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400713          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400716          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400715          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415000          1000.0   0.000  15.057   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415000          1000.0   0.000   0.000 -85.400
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415001          1000.0   0.000  15.057   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415001          1000.0   0.000   0.000 -86.600
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415000          1000.0-133.000   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  415001          1000.0-133.000   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  425035          1000.0  17.946   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  425035          1000.0   0.000   0.000   0.887
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  425130          1000.0   0.000  -3.622   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  425120          1000.0   0.000  -4.427   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400403          1000.0   0.000   0.000  -2.227
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400401          1000.0   0.000   0.000  -2.227
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400402          1000.0   0.000   0.000  -2.227
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4025  400404          1000.0   0.000   0.000  -2.227
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400702          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400703          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400717          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400704          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400705          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400708          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400707          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400706          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400709          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400712          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400710          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400711          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400714          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400713          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400716          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400715          1000.0   0.000   0.000  -0.764
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415000          1000.0   0.000   3.200   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415000          1000.0   0.000   0.000 -18.200
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415001          1000.0   0.000   3.200   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415001          1000.0   0.000   0.000 -18.200
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415000          1000.0   2.050   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  415001          1000.0   2.050   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  425035          1000.0   0.000   0.000   0.122
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  425035          1000.0   2.457   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  425130          1000.0   0.000  -2.895   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  425120          1000.0   0.000  -3.538   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400401          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400404          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400403          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4028  400402          1000.0   0.000   0.000  -0.568
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400702          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400703          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400717          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400704          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400705          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400708          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400707          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400706          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400709          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400712          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400710          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400711          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400714          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400713          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400716          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400715          1000.0   0.000   0.000  -0.068
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415000          1000.0   0.000  -3.450   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415000          1000.0   0.000   0.000 -21.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415001          1000.0   0.000  -3.450   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415001          1000.0   0.000   0.000 -21.900
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415000          1000.0 -36.360   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  415001          1000.0 -36.360   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  425130          1000.0   0.000   6.689   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  425120          1000.0   0.000   8.175   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400403          1000.0   0.000   0.000   0.005
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400401          1000.0   0.000   0.000   0.005
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400402          1000.0   0.000   0.000   0.005
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4029  400404          1000.0   0.000   0.000   0.005
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400704          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400702          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400717          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400703          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400705          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400707          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400708          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400706          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400712          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400711          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400710          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400709          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400714          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400713          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400715          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400716          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415000          1000.0   0.000 -15.800   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415000          1000.0   0.000   0.000 -10.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415001          1000.0   0.000 -15.800   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415001          1000.0   0.000   0.000 -10.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415000          1000.0-110.000   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  415001          1000.0-110.000   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  425035          1000.0 487.783   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  425035          1000.0   0.000 101.850   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  425035          1000.0   0.000   0.000 -26.960
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  425130          1000.0   0.000   1.368   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  425120          1000.0   0.000   1.672   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400403          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400401          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400402          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4033  400404          1000.0   0.000   0.000  -0.543
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400702          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400703          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400704          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400717          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400707          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400708          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400706          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400705          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400712          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400710          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400709          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400711          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400713          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400715          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400716          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400714          1000.0   0.000   0.000  -0.299
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415001          1000.0   0.000  -7.140   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415001          1000.0   0.000   0.000 -81.130
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415000          1000.0   0.000  -5.650   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415000          1000.0   0.000   0.000 -75.180
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415001          1000.0 -58.202   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  415000          1000.0 -58.202   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  425035          1000.0   0.000   0.000   0.970
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  425035          1000.0  19.629   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  425130          1000.0   0.000  -9.180   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  425120          1000.0   0.000 -11.220   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400403          1000.0   0.000   0.000  -1.481
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400404          1000.0   0.000   0.000  -1.481
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400402          1000.0   0.000   0.000  -1.481
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4041  400401          1000.0   0.000   0.000  -1.481
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400702          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400703          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400704          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400717          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400707          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400708          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400706          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400705          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400712          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400710          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400709          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400711          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400713          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400715          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400716          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400714          1000.0   0.000   0.000  -2.956
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415001          1000.0   0.000   1.398   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415001          1000.0   0.000   0.000-134.494
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415000          1000.0   0.000   1.528   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415000          1000.0   0.000   0.000-128.304
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415001          1000.0 -57.448   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  415000          1000.0 -57.448   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  425035          1000.0   0.000   0.000   1.017
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  425035          1000.0  20.565   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  425130          1000.0   0.000  -2.913   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  425120          1000.0   0.000  -3.560   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400403          1000.0   0.000   0.000  -3.003
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400404          1000.0   0.000   0.000  -3.003
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400402          1000.0   0.000   0.000  -3.003
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4042  400401          1000.0   0.000   0.000  -3.003
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400702          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400703          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400704          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400717          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400707          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400708          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400706          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400705          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400712          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400710          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400709          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400711          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400713          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400715          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400716          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400714          1000.0   0.000   0.000  -1.445
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415001          1000.0   0.000 -23.739   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415001          1000.0   0.000   0.000  26.434
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415000          1000.0   0.000 -20.769   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415000          1000.0   0.000   0.000   5.055
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415001          1000.0 -50.231   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  415000          1000.0 -50.231   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  425035          1000.0   0.000   0.000   0.277
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  425035          1000.0   5.602   0.000   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  425130          1000.0   0.000  -2.784   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  425120          1000.0   0.000  -3.403   0.000
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400403          1000.0   0.000   0.000   1.136
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400404          1000.0   0.000   0.000   1.136
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400402          1000.0   0.000   0.000   1.136
+
+In the following card, a force is applied on a nonexistent GRID point:
+FORCE       4043  400401          1000.0   0.000   0.000   1.136
+
+Total number of FORCEs:  Read .......... 1009
+                         Useful ........  352
+                         Erroneous .....  657
+
+Total number of MOMENTs: Read ..........    1
+                         Useful ........    0
+                         Erroneous .....    1
+
+
+File of LOADs:
+==============
+
+Total number of LOADs read ............. 22
+
+
+Single load cases:
+==================
+
+Cards FORCE and MOMENT
+
+  Case        Fx          Fy          Fz          Mx          My          Mz
+--------  ----------  ----------  ----------  ----------  ----------  ----------
+    4002        0.00        0.00      -87.46       0.000      53.407       0.000
+    4003        0.00        0.00       11.31       0.000      -7.223       0.000
+    4007        0.00        0.00      -26.47       0.000      -0.857       0.000
+    4009        0.00        0.00      -84.77       0.000      52.790       0.000
+    4013        0.00        0.00      -30.82       0.000      19.723       0.000
+    4014        0.00        0.00      -85.18       0.000      60.247       0.000
+    4015        0.00        0.00       48.41       0.000     -36.304       0.000
+    4019        0.00        0.00       68.33       0.000     -48.727       0.000
+    4020        0.00        0.00     -112.02       0.000      79.921       0.000
+    4022        0.00        0.00       49.26       0.000     -39.305       0.000
+    4024        0.00        0.00       -0.91       0.000       0.650       0.000
+    4025        0.00        0.00      -50.51       0.000      42.220       0.000
+    4028        0.00        0.00       -6.81       0.000       2.900       0.000
+    4029        0.00        0.00       -1.78       0.000       2.362       0.000
+    4030        0.00        0.00      -58.13       0.000      38.899       0.000
+    4031        0.00        0.00      -25.23       0.000      19.988       0.000
+    4032        0.00        0.00      -41.33       0.000      27.388       0.000
+    4033        0.00        0.00       -8.97       0.000       5.957       0.000
+    4041        0.00        0.00      -35.87       0.000      31.034       0.000
+    4042        0.00        0.00      -61.03       0.000      47.772       0.000
+    4043        0.00        0.00       29.10       0.000     -25.854       0.000
+    4044        0.00        0.00      -32.34       0.000      20.382       0.000
+
+Fx, Fy, Fz have been multiplied by 1.0E-03
+Mx, My, Mz have been multiplied by 1.0E-06
+
+
+Combines load cases:
+====================
+
+Cards LOAD
+
+  Case     Denomination       Fx          Fy          Fz          Mx          My          Mz
+--------  --------------  ----------  ----------  ----------  ----------  ----------  ----------
+       2  B0310702 (WR2)        0.00        0.00      -62.47       0.000      38.148       0.000
+       3  A0110706 (WR6)        0.00        0.00        8.08       0.000      -5.159       0.000
+       7  B0110713 (WR13        0.00        0.00      -18.90       0.000      -0.612       0.000
+       9  B0310717 (WR17        0.00        0.00      -60.55       0.000      37.707       0.000
+      13  A0132605 (FTJ5        0.00        0.00      -22.01       0.000      14.088       0.000
+      14  A0232606 (FTJ6        0.00        0.00      -60.84       0.000      43.034       0.000
+      15  B0532608 (FTJ8        0.00        0.00       34.58       0.000     -25.932       0.000
+      19  B0144109 (RTJ9        0.00        0.00       48.81       0.000     -34.805       0.000
+      20  B0144110 (RTJ1        0.00        0.00      -80.02       0.000      57.086       0.000
+      22  B0242912 (RTJ1        0.00        0.00       35.19       0.000     -28.075       0.000
+      24  A0152111 (FIN1        0.00        0.00       -0.65       0.000       0.464       0.000
+      25  A1222705 (IT5)        0.00        0.00      -36.08       0.000      30.157       0.000
+      28  C01N6B (N6B)          0.00        0.00       -4.54       0.000       1.933       0.000
+      29  C01N8D (N8D)          0.00        0.00       -1.19       0.000       1.575       0.000
+      30  C01M01 (M01)          0.00        0.00      -38.75       0.000      25.933       0.000
+      31  C01M02 (M02)          0.00        0.00      -16.82       0.000      13.326       0.000
+      32  C01M06B (M06B)        0.00        0.00      -27.55       0.000      18.259       0.000
+      33  C01028N7/AH1 (        0.00        0.00       -5.98       0.000       3.972       0.000
+      41  C0510909 (W230        0.00        0.00      -25.62       0.000      22.167       0.000
+      42  B2110721 (WR21        0.00        0.00      -43.60       0.000      34.123       0.000
+      43  C0210722 (WR22        0.00        0.00       20.78       0.000     -18.467       0.000
+      44  FUNCTIONAL RUD        0.00        0.00      -23.10       0.000      14.559       0.000
+
+Fx, Fy, Fz have been multiplied by 1.0E-03
+Mx, My, Mz have been multiplied by 1.0E-06

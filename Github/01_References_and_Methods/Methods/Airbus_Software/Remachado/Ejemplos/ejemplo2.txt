@@ -1,0 +1,401 @@
+
+ Program REMACHADO. Example 2.                                          PAGE  1
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ***********************************
+ *                                 *
+ *   <<< I N P U T   D A T A >>>   *
+ *                                 *
+ ***********************************
+
+ EXECUTION DATA:
+ ===============
+ Date: 12-Jan-2021
+ Remachado 3.2. (c) Airbus Defence and Space. Jan-2021
+
+ SKIN DATA:
+ ==========
+ Young's modulus..............:        72400.00
+ Poisson's ratio..............:            0.33
+ Thickness....................:            2.00
+ Fracture toughness Kc........:         5000.00
+ Transversal supports spacing..:          500.00
+
+ APPLIED STRESSES:
+ =================
+ Average axial stress.........:          200.00
+ Lateral-axial stress ratio...:            0.50
+
+ STIFFENERS DATA:                  STIFFENER  1    STIFFENER  2    STIFFENER  3
+ ================                  ------------    ------------    ------------
+ X-coordinate.................:            0.00          100.00          200.00
+ Uniform fastener system:
+    Number of fasteners.......:              15              15              15
+    Fastener pitch............:           20.00           20.00           20.00
+    Fastener Young's modulus..:        71000.00        71000.00        71000.00
+    Fastener stiffness........:            0.00            0.00            0.00
+    Fastener diameter.........:            4.80            4.80            4.80
+    Thickness at attach point.:            3.00            3.00            3.00
+ Gross area...................:          237.00          237.00          237.00
+ Net area.....................:          222.60          222.60          222.60
+ Gross moment of inertia......:        44610.00        44610.00        44610.00
+ Net moment of inertia........:        40674.00        40674.00        40674.00
+ Distance from CG to outer cap:           17.50           17.50           17.50
+ Distance from CG to inner cap:           17.50           17.50           17.50
+ Young's modulus..............:        71700.00        71700.00        71700.00
+ Ftu of stiffener.............:          469.00          469.00          469.00
+ Fty of stiffener.............:          400.00          400.00          400.00
+ Initial state of stiffener...:          Failed          Intact      No failure
+
+ Program REMACHADO. Example 2.                                          PAGE  2
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ***********************************************
+ *                                             *
+ *   <<< R E S U L T S   F O R   S K I N >>>   *
+ *                                             *
+ ***********************************************
+
+ APPLIED STRESSES:
+ =================
+ Average axial stress (YD).......:      200.00
+ Ratio of stresses (XD/YD).......:        0.50
+ Unit axial skin stress..........:      218.87
+ Unit lateral skin stress........:      100.00
+
+  HALF CRACK    STRESS IN THE     BETA           STRESS         STIFFENERS
+    LENGTH        FAR FIELD      FACTOR     INTENSITY FACTOR      STATUS
+ ------------   -------------   --------   ------------------   ----------
+         0.00          218.87    2.32487                 0.00   XII
+        10.00          218.87    1.86966              2293.65   XII
+        20.00          218.87    1.59272              2763.24   XII
+        30.00          218.87    1.45849              3099.05   XII
+        40.00          218.87    1.37206              3366.40   XII
+        50.00          218.87    1.30694              3585.15   XII
+        60.00          218.87    1.25185              3761.79   XII
+        70.00          218.87    1.19995              3894.73   XII
+        80.00          218.87    1.14491              3972.67   XII
+        90.00          218.87    1.07596              3959.86   XII
+       100.00          218.87    0.93342              3621.11   XII
+       110.00          218.87    0.78556              3196.23   XII
+       120.00          218.87    0.74288              3156.99   XII
+       130.00          218.87    1.57790              6979.36   XXI
+       140.00          218.87    1.51656              6961.27   XXI
+       150.00          218.87    1.46231              6947.83   XXI
+       160.00          218.87    1.41043              6921.10   XXI
+       170.00          218.87    1.35693              6863.52   XXI
+       180.00          218.87    1.29654              6748.20   XXI
+       190.00          218.87    1.21795              6512.85   XXI
+       200.00          218.87    1.05337              5779.12   XXI
+
+ Beta factors refered to the unit axial skin stress.
+
+ Key for stiffeners status: I=Intact
+                            X=Failed
+
+ Program REMACHADO. Example 2.                                          PAGE  3
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ****************************************************************************
+ *                                                                          *
+ *   <<< R E S U L T S   F O R   S T I F F E N E R   A T   X =   0.00 >>>   *
+ *                                                                          *
+ ****************************************************************************
+
+ Unit stiffener stress:      184.07
+
+                                        GROSS STRESS            NET STRESS
+ HALF CRACK     AXIAL     BENDING   --------------------   --------------------
+   LENGTH       FORCE     MOMENT    OUTER CAP  INNER CAP   OUTER CAP  INNER CAP
+ ----------    -------   --------   ---------  ---------   ---------  ---------
+       0.00        0.0        0.0        0.00       0.00        0.00       0.00
+      10.00        0.0        0.0        0.00       0.00        0.00       0.00
+      20.00        0.0        0.0        0.00       0.00        0.00       0.00
+      30.00        0.0        0.0        0.00       0.00        0.00       0.00
+      40.00        0.0        0.0        0.00       0.00        0.00       0.00
+      50.00        0.0        0.0        0.00       0.00        0.00       0.00
+      60.00        0.0        0.0        0.00       0.00        0.00       0.00
+      70.00        0.0        0.0        0.00       0.00        0.00       0.00
+      80.00        0.0        0.0        0.00       0.00        0.00       0.00
+      90.00        0.0        0.0        0.00       0.00        0.00       0.00
+     100.00        0.0        0.0        0.00       0.00        0.00       0.00
+     110.00        0.0        0.0        0.00       0.00        0.00       0.00
+     120.00        0.0        0.0        0.00       0.00        0.00       0.00
+     130.00        0.0        0.0        0.00       0.00        0.00       0.00
+     140.00        0.0        0.0        0.00       0.00        0.00       0.00
+     150.00        0.0        0.0        0.00       0.00        0.00       0.00
+     160.00        0.0        0.0        0.00       0.00        0.00       0.00
+     170.00        0.0        0.0        0.00       0.00        0.00       0.00
+     180.00        0.0        0.0        0.00       0.00        0.00       0.00
+     190.00        0.0        0.0        0.00       0.00        0.00       0.00
+     200.00        0.0        0.0        0.00       0.00        0.00       0.00
+
+ Loads and stresses for stiffener at Y = 0.
+
+ Program REMACHADO. Example 2.                                          PAGE  4
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ****************************************************************************
+ *                                                                          *
+ *   <<< R E S U L T S   F O R   S T I F F E N E R   A T   X = 100.00 >>>   *
+ *                                                                          *
+ ****************************************************************************
+
+ Unit stiffener stress:      184.07
+
+                                        GROSS STRESS            NET STRESS
+ HALF CRACK     AXIAL     BENDING   --------------------   --------------------
+   LENGTH       FORCE     MOMENT    OUTER CAP  INNER CAP   OUTER CAP  INNER CAP
+ ----------    -------   --------   ---------  ---------   ---------  ---------
+       0.00    46206.2     5881.5      197.27     192.66      210.11     205.04
+      10.00    46477.9     6944.4      198.83     193.39      211.78     205.81
+      20.00    47067.4     9395.3      202.28     194.91      215.49     207.40
+      30.00    47895.9    13125.3      207.24     196.94      220.81     209.52
+      40.00    48969.1    18453.7      213.86     199.38      227.93     212.05
+      50.00    50312.6    25944.7      222.47     202.11      237.19     214.86
+      60.00    51971.1    36489.7      233.60     204.97      249.17     217.77
+      70.00    54017.9    51517.1      248.13     207.71      264.83     220.50
+      80.00    56576.8    73461.9      267.54     209.90      285.77     222.56
+      90.00    59913.5   107536.9      294.98     210.61      315.42     222.89
+     100.00    64801.1   169107.7      339.76     207.08      363.87     218.35
+     110.00    70113.6   242892.0      391.12     200.55      419.48     210.47
+     120.00    74265.5   298560.4      430.48     196.23      462.08     205.17
+     130.00        0.0        0.0        0.00       0.00        0.00       0.00
+     140.00        0.0        0.0        0.00       0.00        0.00       0.00
+     150.00        0.0        0.0        0.00       0.00        0.00       0.00
+     160.00        0.0        0.0        0.00       0.00        0.00       0.00
+     170.00        0.0        0.0        0.00       0.00        0.00       0.00
+     180.00        0.0        0.0        0.00       0.00        0.00       0.00
+     190.00        0.0        0.0        0.00       0.00        0.00       0.00
+     200.00        0.0        0.0        0.00       0.00        0.00       0.00
+
+ Loads and stresses for stiffener at Y = 0.
+
+ Program REMACHADO. Example 2.                                          PAGE  5
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ****************************************************************************
+ *                                                                          *
+ *   <<< R E S U L T S   F O R   S T I F F E N E R   A T   X = 200.00 >>>   *
+ *                                                                          *
+ ****************************************************************************
+
+ Unit stiffener stress:      184.07
+
+                                        GROSS STRESS            NET STRESS
+ HALF CRACK     AXIAL     BENDING   --------------------   --------------------
+   LENGTH       FORCE     MOMENT    OUTER CAP  INNER CAP   OUTER CAP  INNER CAP
+ ----------    -------   --------   ---------  ---------   ---------  ---------
+       0.00    44505.1      303.4      187.90     187.67      200.06     199.80
+      10.00    44584.8      289.9      188.24     188.01      200.42     200.17
+      20.00    44756.3      269.8      188.95     188.74      201.18     200.95
+      30.00    44992.8      255.0      189.94     189.74      202.23     202.01
+      40.00    45290.1      261.0      191.20     191.00      203.57     203.35
+      50.00    45646.7      314.7      192.73     192.48      205.20     204.93
+      60.00    46061.9      455.8      194.53     194.18      207.12     206.73
+      70.00    46535.0      737.7      196.64     196.06      209.37     208.73
+      80.00    47063.2     1228.3      199.06     198.10      211.95     210.90
+      90.00    47637.2     2004.7      201.79     200.21      214.87     213.14
+     100.00    48215.4     3098.3      204.66     202.23      217.93     215.27
+     110.00    48703.4     4363.2      207.21     203.79      220.67     216.92
+     120.00    49196.0     6033.0      209.94     205.21      223.60     218.41
+     130.00    61388.7    31891.6      271.53     246.51      289.50     262.06
+     140.00    63894.4    41743.1      285.97     253.22      305.00     269.08
+     150.00    66696.2    55051.6      303.01     259.82      323.31     275.94
+     160.00    69887.6    73287.6      323.63     266.13      345.49     282.43
+     170.00    73597.0    98709.2      349.26     271.81      373.09     288.15
+     180.00    78025.8   135100.1      382.22     276.22      408.65     292.39
+     190.00    83592.3   190558.2      427.46     277.96      457.51     293.54
+     200.00    91498.3   288964.2      499.43     272.71      535.37     286.72
+
+ Loads and stresses for stiffener at Y = 0.
+
+ Program REMACHADO. Example 2.                                          PAGE  6
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Uniform fastening. 15 fasteners per stringer.
+
+ ***********************************************
+ *                                             *
+ *   <<< A L L O W E D   S T R E S S E S >>>   *
+ *                                             *
+ ***********************************************
+
+                         STIFFENER  1        STIFFENER  2        STIFFENER  3
+ HALF CRACK           ------------------  ------------------  ------------------
+   LENGTH      SKIN   Smax=Ftu  Smed=Fty  Smax=Ftu  Smed=Fty  Smax=Ftu  Smed=Fty
+ ----------   ------  --------  --------  --------  --------  --------  --------
+       0.00 *****.**      0.00      0.00    446.44    385.40    468.85    400.13
+      10.00   435.99      0.00      0.00    442.91    383.15    468.03    399.42
+      20.00   361.89      0.00      0.00    435.30    378.35    466.25    397.89
+      30.00   322.68      0.00      0.00    424.79    371.81    463.82    395.80
+      40.00   297.05      0.00      0.00    411.54    363.66    460.77    393.20
+      50.00   278.93      0.00      0.00    395.47    353.95    457.12    390.13
+      60.00   265.83      0.00      0.00    376.45    342.65    452.87    386.61
+      70.00   256.76      0.00      0.00    354.19    329.67    448.01    382.68
+      80.00   251.72      0.00      0.00    328.24    314.76    442.55    378.38
+      90.00   252.53      0.00      0.00    297.38    297.23    436.55    373.83
+     100.00   276.16      0.00      0.00    257.79    274.81    430.41    369.34
+     110.00   312.87      0.00      0.00    223.61    253.99    425.07    365.64
+     120.00   316.76      0.00      0.00    202.99    239.79    419.50    361.98
+     130.00   143.28      0.00      0.00      0.00      0.00    324.00    290.09
+     140.00   143.65      0.00      0.00      0.00      0.00    307.54    278.71
+     150.00   143.93      0.00      0.00      0.00      0.00    290.12    267.00
+     160.00   144.49      0.00      0.00      0.00      0.00    271.50    254.81
+     170.00   145.70      0.00      0.00      0.00      0.00    251.41    241.97
+     180.00   148.19      0.00      0.00      0.00      0.00    229.54    228.23
+     190.00   153.54      0.00      0.00      0.00      0.00    205.02    213.03
+     200.00   173.04      0.00      0.00      0.00      0.00    175.21    194.63
+
+ Allowed stresses are based on the reference stress.
+
+ Program REMACHADO. Example 2.                                          PAGE  7
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Variable fastening. 5 fasteners per stringer.
+
+ ***********************************
+ *                                 *
+ *   <<< I N P U T   D A T A >>>   *
+ *                                 *
+ ***********************************
+
+ EXECUTION DATA:
+ ===============
+ Date: 12-Jan-2021
+ Remachado 3.2. (c) Airbus Defence and Space. Jan-2021
+
+ SKIN DATA:
+ ==========
+ Young's modulus..............:        72400.00
+ Poisson's ratio..............:            0.33
+ Thickness....................:            2.00
+ Fracture toughness Kc........:         5000.00
+ Transversal supports spacing..:          500.00
+
+ APPLIED STRESSES:
+ =================
+ Average axial stress.........:          200.00
+ Lateral-axial stress ratio...:            0.50
+
+ STIFFENERS DATA:                  STIFFENER  1    STIFFENER  2    STIFFENER  3
+ ================                  ------------    ------------    ------------
+ X-coordinate.................:            0.00          100.00          200.00
+ No uniform fastener system:
+    Number of fasteners.......:               5               5               5
+    Thickness at attach point.:            3.00            3.00            3.00
+ Gross area...................:          237.00          237.00          237.00
+ Net area.....................:          222.60          222.60          222.60
+ Gross moment of inertia......:        44610.00        44610.00        44610.00
+ Net moment of inertia........:        40674.00        40674.00        40674.00
+ Distance from CG to outer cap:           17.50           17.50           17.50
+ Distance from CG to inner cap:           17.50           17.50           17.50
+ Young's modulus..............:        71700.00        71700.00        71700.00
+ Ftu of stiffener.............:          469.00          469.00          469.00
+ Fty of stiffener.............:          400.00          400.00          400.00
+ Initial state of stiffener...:          Failed          Intact      No failure
+
+ Program REMACHADO. Example 2.                                          PAGE  8
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Variable fastening. 5 fasteners per stringer.
+
+ ***********************************
+ *                                 *
+ *   <<< I N P U T   D A T A >>>   *
+ *                                 *
+ ***********************************
+
+
+ FASTENERS FOR STIFFENER AT X =   0.00:
+ ======================================
+
+ NUMBER   DIAMETER      X         Y       MODULUS    STIFFNESS
+ ------   --------   -------   -------   ---------   ---------
+    1         4.80      0.00     10.00    71000.00    33865.65
+    2         4.80      0.00     30.00    71000.00    33865.65
+    3         4.80      0.00     50.00    71000.00    33865.65
+    4         4.80      0.00     70.00    71000.00    33865.65
+    5         4.80      0.00     90.00    71000.00    33865.65
+
+
+ FASTENERS FOR STIFFENER AT X = 100.00:
+ ======================================
+
+ NUMBER   DIAMETER      X         Y       MODULUS    STIFFNESS
+ ------   --------   -------   -------   ---------   ---------
+    1         4.80    100.00     10.00    71000.00    33865.65
+    2         4.80    100.00     30.00    71000.00    33865.65
+    3         4.80    100.00     50.00    71000.00    33865.65
+    4         4.80    100.00     70.00    71000.00    33865.65
+    5         4.80    100.00     90.00    71000.00    33865.65
+
+
+ FASTENERS FOR STIFFENER AT X = 200.00:
+ ======================================
+
+ NUMBER   DIAMETER      X         Y       MODULUS    STIFFNESS
+ ------   --------   -------   -------   ---------   ---------
+    1         4.80    200.00     10.00    71000.00    33865.65
+    2         4.80    200.00     30.00    71000.00    33865.65
+    3         4.80    200.00     50.00    71000.00    33865.65
+    4         4.80    200.00     70.00    71000.00    33865.65
+    5         4.80    200.00     90.00    71000.00    33865.65
+
+ Program REMACHADO. Example 2.                                          PAGE  9
+ Crack with central stiffener failed. Stiffener 3 never fails.
+ Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+ Variable fastening. 5 fasteners per stringer.
+
+ ***********************************************
+ *                                             *
+ *   <<< R E S U L T S   F O R   S K I N >>>   *
+ *                                             *
+ ***********************************************
+
+ APPLIED STRESSES:
+ =================
+ Average axial stress (YD).......:      200.00
+ Ratio of stresses (XD/YD).......:        0.50
+ Unit axial skin stress..........:      218.87
+ Unit lateral skin stress........:      100.00
+
+  HALF CRACK    STRESS IN THE     BETA           STRESS         STIFFENERS
+    LENGTH        FAR FIELD      FACTOR     INTENSITY FACTOR      STATUS
+ ------------   -------------   --------   ------------------   ----------
+         0.00          218.87    3.05816                 0.00   XII
+        10.00          218.87    2.39205              2934.50   XII
+        20.00          218.87    1.97758              3430.94   XII
+        30.00          218.87    1.77173              3764.64   XII
+        40.00          218.87    1.63686              4016.10   XII
+        50.00          218.87    1.53529              4211.54   XII
+        60.00          218.87    1.45117              4360.73   XII
+        70.00          218.87    1.37483              4462.33   XII
+        80.00          218.87    1.29747              4502.00   XII
+        90.00          218.87    1.20549              4436.59   XII
+       100.00          218.87    1.03106              3999.89   XII
+       110.00          218.87    0.85664              3485.46   XII
+       120.00          218.87    0.80398              3416.64   XII
+       130.00          218.87    1.85375              8199.51   XXI
+       140.00          218.87    1.77278              8137.34   XXI
+       150.00          218.87    1.69933              8073.98   XXI
+       160.00          218.87    1.62860              7991.69   XXI
+       170.00          218.87    1.55589              7869.86   XXI
+       180.00          218.87    1.47457              7674.78   XXI
+       190.00          218.87    1.37103              7331.40   XXI
+       200.00          218.87    1.16859              6411.24   XXI
+
+ Beta factors refered to the unit axial skin stress.
+
+ Key for stiffeners status: I=Intact
+                            X=Failed

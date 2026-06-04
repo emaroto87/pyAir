@@ -1,0 +1,16 @@
+1 Example 2 for the program RESULTANTE.
+  Cut section: From the infinite up to X=12540.
+  Input data units: [L]=mm [F]=N [M]=N.mm
+  Output results units: [F]=kN [M]=kN.m
+2 Origin for calculation of forces and moments: (Xo,Yo,Zo)
+  12540.0  0.0  3000.0
+3 Cut section: Option / 0:(-) 1:(Xmin) 2:(Ymin) 3:(Zmin) 4:(Xa,Ya,m) 5:(Xa,Za,m) 6:(Alfa)
+  1
+  12540.0
+4 Nastran data files: GRID / FORCE-MOMENT / LOAD
+  example_grid.dat
+  example_force.dat
+  example_load.dat
+5 Results: Factor(Forces) Factor(Moments) / Output file
+  1.000E-03  1.000E-06
+  example2.txt

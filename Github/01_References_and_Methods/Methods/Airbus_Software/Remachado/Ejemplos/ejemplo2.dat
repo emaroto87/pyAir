@@ -1,0 +1,56 @@
+1 Program REMACHADO. Example 2.
+  Crack with central stiffener failed. Stiffener 3 never fails.
+  Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+  Uniform fastening. 15 fasteners per stringer.
+2 SKIN DATA: E  µ  t  Kc  L
+  72400.0     0.33     2.0     5000.0     500.0
+3 STRINGERS DATA: nl  X  ts  Ag  An  Ig  In  Zo  Zi  Es  Ftu  Fty  Fail
+  3        0.0       100.0       200.0
+           3.0         3.0         3.0
+         237.0       237.0       237.0
+         222.6       222.6       222.6
+       44610.0     44610.0     44610.0
+       40674.0     40674.0     40674.0
+          17.5        17.5        17.5
+          17.5        17.5        17.5
+       71700.0     71700.0     71700.0
+         469.0       469.0       469.0
+         400.0       400.0       400.0
+           1           0          -1
+4 UNIFORM FASTENING: nr  Pitch  D  Er  Sr
+  15     20.00     4.80     71000.00     0.00
+  15     20.00     4.80     71000.00     0.00
+  15     20.00     4.80     71000.00     0.00
+5 FAR FIELD STRESS: Reference_stress   Sx/Sy
+  200.00      0.50
+6 CRACK LENGTHS
+  21  0.0   10.0   20.0   30.0   40.0   50.0
+            60.0   70.0   80.0   90.0  100.0
+           110.0  120.0  130.0  140.0  150.0
+           160.0  170.0  180.0  190.0  200.0
+7 PRINT CONTROL: Skin  Stringers  Allowables  Forces
+  1   1   1   0
+8 RUN THE PROGRAM
+1 Program REMACHADO. Example 2.
+  Crack with central stiffener failed. Stiffener 3 never fails.
+  Material: Skin: 2024 T3. Stiffeners: 7075 T73511.
+  Variable fastening. 5 fasteners per stringer.
+4 VARIABLE FASTENING: n  X(i)  Y(i)  D(i)  E(i)  K(i)
+  5     0.00     10.00     4.80     71000.00     33865.65
+        0.00     30.00     4.80     71000.00     33865.65
+        0.00     50.00     4.80     71000.00     33865.65
+        0.00     70.00     4.80     71000.00     33865.65
+        0.00     90.00     4.80     71000.00     33865.65
+  5   100.00     10.00     4.80     71000.00     33865.65
+      100.00     30.00     4.80     71000.00     33865.65
+      100.00     50.00     4.80     71000.00     33865.65
+      100.00     70.00     4.80     71000.00     33865.65
+      100.00     90.00     4.80     71000.00     33865.65
+  5   200.00     10.00     4.80     71000.00     33865.65
+      200.00     30.00     4.80     71000.00     33865.65
+      200.00     50.00     4.80     71000.00     33865.65
+      200.00     70.00     4.80     71000.00     33865.65
+      200.00     90.00     4.80     71000.00     33865.65
+7 PRINT CONTROL: Skin  Stringers  Allowables  Forces
+  1  0  0  0
+8 RUN THE PROGRAM

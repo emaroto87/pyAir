@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,landscape]{geometry}
+\parskip=3ex
+\textheight=35cm
+\textwidth=26cm
+\oddsidemargin=-0.8cm
+\topmargin=-1.5cm
+\pagestyle{empty}
+\setlength{\unitlength}{1cm}
+% 
+\begin{document}
+% 
+\newpage
+% 
+\begin{center}
+\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-14}
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{ }\\
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{\bf GEOMETRICAL PROPERTIES}\\
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{ }\\
+\hline
+   & \multicolumn{9}{|c|}{STRINGER} & \multicolumn{3}{|c|}{SKIN PANELS} & 
+          \multicolumn{1}{|c|}{PAD} \\
+\cline{2-14}
+ELEMENT & FEM Id. & Material & Length & \multicolumn{6}{|c|}{Section} &
+     FEM Id. & Material & B$\times$T & B$\times$T \\
+\cline{5-10}
+   &     &      &       & Type & B$\times$T & A & Z$_{\rm e}$ & I &
+    I$_{\rm e}$ & & & & \\
+\hline
+Stringer    13 &  1165114 & 7075;T76511 &        480.0 & 
+{\bf T    } &         50.0$\times$         2.5 &       252.50 &         12.6 &       51210. &       80624. & 
+ 4165113 & 7075;T76 &        160.0$\times$         3.0 &          0.0$\times$         3.0 \\ 
+Ribs    33 -    34 &  &  &  & 
+Extr. &         45.0$\times$         3.0 &  &  &  &   & 
+ 4165114 &  &        160.0$\times$         3.0 &  \\ 
+Upper skin &  &  &  & 
+ &                                  &  &  &  & 
+ &  &  &  &  \\ 
+\hline
+Stringer    17 &  1165214 & 2024;T42 &        480.0 & 
+{\bf Z    } &         30.0$\times$         2.0 &       162.00 &         16.5 &       38290. &       67711. & 
+ 4165213 & 2024;T3 &        160.0$\times$         2.0 &          0.0$\times$         2.0 \\ 
+Ribs    33 -    34 &  &  &  & 
+Sheet &         40.0$\times$         2.0 &  &  &  &   & 
+ 4165214 &  &        160.0$\times$         2.0 &  \\ 
+Lower skin &  &  &  & 
+ &         15.0$\times$         2.0 &  &  &  & 
+ &  &  &  &  \\ 
+\hline
+\end{tabular}
+\end{center}
+%
+Units:   N, mm
+%
+\end{document}

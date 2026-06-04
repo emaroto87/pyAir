@@ -1,0 +1,435 @@
+                                                        25-02-2015 , Aral 4.9, Page   1
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              MATERIAL PROPERTIES
+              ===================
+
+
+              * Skin material
+                -------------
+
+                Material: 7075, T76, Sheet, L, S
+
+                                              Tension    Compres.    Shear
+
+                Elastic modulus            :    71016.    72395.    26889.   N/mm²
+                Yield stress               :    427.47    420.58    248.79   N/mm²
+                Ultimate stress            :    496.42              289.58   N/mm²
+                Elongation                 :       8.0 %
+                Ramberg-Osgood N           :     24.67     22.25     25.32
+
+
+              * Stringer material
+                -----------------
+
+                                              Tension    Compres.    Shear
+
+                Elastic modulus            :    70000.    70000.    26316.   N/mm²
+                Yield stress               :    400.00    400.00    230.94   N/mm²
+                Ultimate stress            :    500.00              300.00   N/mm²
+                Elongation                 :      10.0 %
+                Ramberg-Osgood N           :     17.53     17.53     17.53
+
+                                                        25-02-2015 , Aral 4.9, Page   2
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              GEOMETRICAL PROPERTIES
+              ======================
+
+
+              * Skin geometry
+                -------------                                   Panel 1   Panel 2
+
+                Panels length (stringer direction)            :        500.0       mm
+                Panels width                                  :   150.0     150.0  mm
+                Panels thickness                              :     1.6       2.0  mm
+
+                Maximum thickness to allow diagonal tension   :          2.5       mm
+
+                Pad width                                     :         20.0       mm
+                Pad thickness                                 :          3.0       mm
+
+
+              * Stringer geometry
+                -----------------
+
+                Profile type                                  : I        , Extrusion   
+
+                Length                                        :        500.0       mm
+                Fixity coefficient for column buckl. analysis :         2.00
+                Effective length for column buckling analysis :        353.6       mm
+
+                Transversal section dimensions:
+                     Attaching flange                         :    20.0 x     3.0  mm
+                     Web                                      :    30.0 x     3.0  mm
+                     Outstanding flange                       :    15.0 x     3.0  mm
+
+                Transversal section properties:
+                     Area                                     :       177.00       mm²
+                     Centroid about skin inner fibre          :         13.9       mm
+                     Centroid about stringer inner fibre      :         16.1       mm
+                     Moment of inertia about centroidal axis  :       22439.       mm²mm²
+
+                Transversal section properties (foot excluded):
+                     Area                                     :       117.00       mm²
+                     Centroid about skin inner fibre          :         20.2       mm
+                     Centroid about stringer inner fibre      :          9.8       mm
+                     Moment of inertia about centroidal axis  :        8537.       mm²mm²
+
+                Effective moment of inertia for buckling anal.:        45969.    mm²mm²
+
+                Type of joint of stringer to skin             : Bonded
+
+
+              * Geometrical relations
+                ---------------------
+
+                Panels width / Panels length                  :    0.30      0.30
+                Panels length / Panels thickness              :  312.50    250.00
+                Stringer equiv. thickness / Panels thickness  :    2.75      2.00
+
+                Geometrical relations are in the range of diagonal tension tests.
+
+                                                        25-02-2015 , Aral 4.9, Page   3
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              PURE ALLOWABLES
+              ===============
+
+
+              * Buckling of skin
+                ----------------                                Panel 1   Panel 2
+
+                Compression buckling:        Type             :       Local 
+                                             Compression load :      -36533.         N
+                                             Panels stresses  :  -78.54    -78.54    N/mm²
+                                             Stringer stress  :       -75.94         N/mm²
+
+                Shear buckling:              Type             :       Local 
+                                             Panels flow      :        152.1         N/mm
+                                             Panels stresses  :   95.08     76.06    N/mm²
+
+
+              * Local buckling of stringer
+                --------------------------
+
+                Compression local buckling stress of:
+                     Web                                      :      -469.97         N/mm²
+                     Outstanding flange                       :      -486.99         N/mm²
+
+
+              * Crippling of stringer
+                ---------------------
+
+                Crippling stress                              :      -469.97         N/mm²
+
+
+              * Column buckling of skin + stringer
+                ----------------------------------
+
+                Buckling mode                                 : Pure bending
+                                                                (stable cross-section)
+
+                Compression buckling load                     :     -115695.         N
+
+                Average gross axial stress                    :      -245.64         N/mm²
+                Stringer axial stress                         :      -358.73         N/mm²
+                Effective skin axial stress                   :      -378.55         N/mm²
+                Effective skin width                          :    29.0 +    33.7  mm
+                Effective skin area                           :   60.40 +   77.49  mm²
+                Equivalent effective skin area                :   63.73 +   81.78  mm²
+
+                Column section properties:
+                     Area                                     :       322.51       mm²
+                     Centroid about skin outer fibre          :          9.8       mm
+                     Moment of inertia about centroidal axis  :       42163.       mm²mm²
+                     Radius of gyration                       :         11.4       mm
+                     Slenderness ratio                        :       30.921
+
+                                                        25-02-2015 , Aral 4.9, Page   4
+  -------------
+  | Ejemplo 2 |
+  -------------
+
+  APPLIED LOADS AND RESERVE FACTORS SUMMARY
+  =========================================
+
+
+    Load     Total       Applied         Applied
+            applied   shear stresses    pressures
+    case     axial   --------------- ---------------
+             load    Panel 1 Panel 2    P1      P2    R.F.           Failure mode
+  -------- --------- ------- ------- ------- ------- ----- --------------------------------
+
+  CASO 1    -100000.    0.00    0.00   0.000   0.000  1.16 Post-buckling: Column buckling    
+
+  CASO 2     -90000.   20.00   10.00   0.000   0.000  1.28 Post-buckling: Column buckling    
+
+  CASO 3     -80000.   40.00   30.00   0.000   0.000  1.43 Post-buckling: Column buckling    
+
+  CASO 4     -70000.   60.00   50.00   0.000   0.000  1.61 Post-buckling: Column buckling    
+
+  CASO 5     -60000.   80.00   70.00   0.000   0.000  1.74 Post-buckling: Forced crippling   
+
+  CASO 6     -50000.  100.00   90.00   0.000   0.000  1.71 Post-buckling: Forced crippling   
+
+  CASO 7     -40000.  120.00  110.00   0.000   0.000  1.59 Post-buckling: Rupture panel 1    
+
+  CASO 8     -30000.  140.00  130.00   0.000   0.000  1.38 Post-buckling: Rupture panel 1    
+
+  CASO 9     -20000.  160.00  150.00   0.000   0.000  1.23 Post-buckling: Rupture panel 1    
+
+  CASO 10    -10000.  180.00  170.00   0.000   0.000  1.10 Post-buckling: Rupture panel 1    
+
+  CASO 11         0.  180.00  170.00   0.000   0.000  1.11 Post-buckling: Rupture panel 1    
+
+                -------------------------------------------------------
+                | Critical load case: CASO 10 . Reserve factor:  1.10 |
+                |    Failure mode: Post-buckling: Rupture panel 1     |
+                -------------------------------------------------------
+
+                                                        25-02-2015 , Aral 4.9, Page   5
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              ANALYSIS OF CRITICAL LOAD CASE (CASO 10 ) (1/4)
+              =========================================
+
+              * Applied loads
+                -------------
+
+                Total axial load                              :      -10000.         N
+                     Corresponding average gross axial stress :       -21.23         N/mm²
+
+                Shear stress in panels                        :  180.00    170.00    N/mm²
+
+                Pressure in panels                            :   0.000     0.000    N/mm²
+
+              * In-plane strength analysis
+                --------------------------
+
+                Allowable loads:       Total axial load       :      -15922.         N
+                                       Shear stress in panels :  286.59    270.67    N/mm²
+
+                Stresses in panels:    Axial                  :   -4.68    -13.22    N/mm²
+                                       Shear                  :  286.59    270.67    N/mm²
+                                       Equivalent (Von Mises) :  496.42    469.01    N/mm²
+                                       Allowable              :  496.42    496.42    N/mm²
+                Stresses in stringer:  Axial                  :       -57.38         N/mm²
+                                       Allowable              :       500.00         N/mm²
+
+                Reserve factor                                :         1.59
+
+              * Beam-Column strength analysis
+                -----------------------------                   Panel 1   Panel 2
+
+                Allowable loads:       Total axial load       :      -15884.         N
+                                       Shear stress in panels :  285.92    270.03    N/mm²
+                                       Maximum pressure load  :          0.0         N/mm
+
+                Results for central section of beam-column:
+
+                     Effective skin width                 W   :    72.3 +    75.0  mm
+                     Equivalent area                      A   :       476.64       mm²
+                     Centroid about skin outer fibre      Ze  :          6.9       mm
+                     Centroid about stringer inner fibre  Zi  :         26.1       mm
+                     Moment inertia about centroidal axis I   :       50424.       mm²mm²
+
+                     Bending moment                       BM  :           0.         N·mm
+                     Skin axial stress                    sr  :       -34.47         N/mm²
+                     Stringer axial stress: Outer fibre   se  :       -33.33         N/mm²
+                     Stringer axial stress: Inner fibre   si  :       -33.33         N/mm²
+
+                Results for end sections of beam-column:
+
+                     Effective skin width                 W   :    72.3 +    75.0  mm
+                     Equivalent area                      A   :       476.64       mm²
+                     Centroid about skin outer fibre      Ze  :          6.9       mm
+                     Centroid about stringer inner fibre  Zi  :         26.1       mm
+                     Moment inertia about centroidal axis I   :       50424.       mm²mm²
+
+                     Bending moment                       BM  :           0.         N·mm
+                     Skin axial stress                    sr  :       -34.47         N/mm²
+                     Stringer axial stress: Outer fibre   se  :       -33.33         N/mm²
+                     Stringer axial stress: Inner fibre   si  :       -33.33         N/mm²
+
+                Reserve factor                            RF  :         1.59
+
+                                                        25-02-2015 , Aral 4.9, Page   6
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              ANALYSIS OF CRITICAL LOAD CASE (CASO 10 ) (2/4)
+              =========================================
+
+              * Buckling analysis
+                -----------------
+
+                Buckling analysis assuming stable stringer section
+                ··················································
+                                                             Panel 1   Panel 2
+
+                Buckling type                              :        Local 
+
+                Allowable loads:       Total axial load    :       -4923.         N
+                                       Panels shear flow   :   141.8     167.4    N/mm
+
+                Elements stresses:     Panels axial        :  -10.58    -10.58    N/mm²
+                                       Panels shear        :   88.61     83.68    N/mm²
+                                       Stringer axial      :       -10.23         N/mm²
+
+                Reserve factor                             :         0.49
+
+                Local buckling of stringer
+                ··························
+
+                Reserve factor                             :         --- 
+
+                Column buckling analysis
+                ························
+
+                Reserve factor for pure compression        :         > 2 
+
+                Reserve factor for pure shear:
+                     Buckling type                         :        Local 
+                     Reserve factor                        :         0.53
+
+                Reserve factor for combined loads:
+                     Buckling type                         :       General
+                     Reserve factor                        :         0.52
+
+                Buckling analysis summary
+                ·························
+
+                Buckling type                              : Local,   stable stringer
+
+                Reserve factor                             :         0.49
+
+
+              Local buckling occurs before rupture of panels or general buckling.
+                                 Diagonal tension is developed.
+
+
+                                                        25-02-2015 , Aral 4.9, Page   7
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              ANALYSIS OF CRITICAL LOAD CASE (CASO 10 ) (3/4)
+              =========================================
+
+              * Post-buckling analysis
+                ----------------------
+
+
+                Panels results for applied loads:               Panel 1   Panel 2
+                ································
+
+                Diagonal tension factor                       :   0.165     0.095
+
+                Diagonal tension angle                        :   42.46°    42.24°
+
+              Buckling shear stress:
+                  Pure shear                                  :   89.60    117.67    N/mm²
+                  Shear combined with axial                   :   83.57    109.49    N/mm²
+
+                Applied shear stress                          :  180.00    170.00    N/mm²
+
+                Maximum shear stress                          :  180.02    170.01    N/mm²
+
+                Allowable shear stress for permanent set      : 1482.00   1572.55    N/mm²
+
+                Allowable shear stress for panel rupture      :  197.80    203.69    N/mm²
+
+
+                Stringer+eff.skin results for applied loads:
+                ···········································
+
+                Effective area of stringer                    :        80.63       mm²
+
+                Primary axial load (as applied)               :      -10000.         N
+                     Average gross axial stress               :       -21.23         N/mm²
+                     Stringer axial stress                    :       -20.79         N/mm²
+                     Effective skin axial stress              :       -21.50         N/mm²
+                     Effective skin width                     :    75.0 +    75.0  mm
+                     Effective skin area                      :  134.00 +  160.00  mm²
+                     Equivalent effective skin area           :  138.58 +  165.47  mm²
+
+                Secondary axial load (by diagonal tens.)      :-(  3263.+  2206.)    N
+                     Aver. axial stress along the length      :       -28.71         N/mm²
+                     Aver. axial stress over cross sect.      :       -11.52         N/mm²
+                     Maximum axial stress                     :       -43.41         N/mm²
+                     Effective skin width                     :    29.2 +    31.6  mm
+                     Effective skin area                      :   46.72 +   63.14  mm²
+
+                Forced crippling allowable stress             :       -79.51         N/mm²
+
+                                                        25-02-2015 , Aral 4.9, Page   8
+              -------------
+              | Ejemplo 2 |
+              -------------
+
+              ANALYSIS OF CRITICAL LOAD CASE (CASO 10 ) (4/4)
+              =========================================
+
+              * Post-buckling analysis (cont.)
+                ----------------------
+
+
+                Panels results for failure loads:               Panel 1   Panel 2
+                ································
+
+                Diagonal tension factor                       :   0.185     0.115
+
+                Diagonal tension angle                        :   42.27°    42.03°
+
+              Buckling shear stress:
+                  Pure shear                                  :   89.60    117.67    N/mm²
+                  Shear combined with axial                   :   83.57    109.49    N/mm²
+
+                Applied shear stress                          :  197.77    186.79    N/mm²
+
+                Maximum shear stress                          :  197.81    186.80    N/mm²
+
+                Allowable shear stress for permanent set      : 1482.00   1572.55    N/mm²
+
+                Allowable shear stress for panel rupture      :  197.80    203.69    N/mm²
+
+
+                Stringer+eff.skin results for failure loads:
+                ···········································
+
+                Effective area of stringer                    :        80.63       mm²
+
+                Primary axial load (as applied)               :      -10987.         N
+                     Average gross axial stress               :       -23.33         N/mm²
+                     Stringer axial stress                    :       -22.84         N/mm²
+                     Effective skin axial stress              :       -23.62         N/mm²
+                     Effective skin width                     :    75.0 +    75.0  mm
+                     Effective skin area                      :  134.00 +  160.00  mm²
+                     Equivalent effective skin area           :  138.58 +  165.47  mm²
+
+                Secondary axial load (by diagonal tens.)      :-(  3989.+  2916.)    N
+                     Aver. axial stress along the length      :       -36.74         N/mm²
+                     Aver. axial stress over cross sect.      :       -14.74         N/mm²
+                     Maximum axial stress                     :       -55.12         N/mm²
+                     Effective skin width                     :    28.5 +    30.9  mm
+                     Effective skin area                      :   45.61 +   61.73  mm²
+
+                Forced crippling allowable stress             :       -87.54         N/mm²
+
+
+                Post-buckling analysis summary:
+                ······························
+
+                Post-buckling failure type                    : Panel 1 rupture
+
+                Reserve factor                                :         1.10

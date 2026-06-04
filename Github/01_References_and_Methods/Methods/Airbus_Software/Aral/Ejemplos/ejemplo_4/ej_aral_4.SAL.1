@@ -1,0 +1,441 @@
+                                                        06-09-2005 , Aral 4.8, Page   1
+                 --------------------------------------
+                 | STRINGER: S01; PANELS: P011 & P012 |
+                 --------------------------------------
+
+
+                 APPLIED LOADS AND RESERVE FACTORS
+                 =================================
+
+
+                             Total                Applied stresses
+                   Load     applied   -----------------------------------------
+                             axial     Axial        Shear          Pressures
+                   case      load     average  Panel 1 Panel 2  Panel 1 Panel 2    R.F.               Failure mode
+                                N       N/mm²    N/mm²   N/mm²    N/mm²   N/mm²
+                 --------  ---------  -------  ------- -------  ------- -------   -----   ------------------------------------
+
+                        1   -141675.  -193.41    61.19   46.58    0.150   0.150    0.47   Local buckling                        
+
+                        2    109102.   148.94    19.15   38.12    0.150   0.150    1.47   Beam-Column strength                  
+
+                            -------------------------------------------------------------------------------------
+                            | Critical load case:        1. Reserve factor:  0.47. Failure mode: Local buckling |
+                            -------------------------------------------------------------------------------------
+
+                                                        06-09-2005 , Aral 4.8, Page   2
+            --------------------------------------
+            | STRINGER: S01; PANELS: P011 & P012 |
+            --------------------------------------
+
+ 
+            IN-PLANE STRENGTH ANALYSIS
+            ==========================
+
+
+              Load      Axial    Shear  Panels  Panels  String.   R.F.
+              case      load     stress axial   V.Mises  axial
+                           N      N/mm²   N/mm²   N/mm²   N/mm²
+            --------  --------- ------- ------- ------- -------  -----
+
+                   1   -340215.  146.93 -426.22  496.41 -509.57   > 2 
+                                 111.86 -455.23  494.74
+
+                   2    352067.   61.81  482.32  494.06  510.20   > 2 
+                                 123.00  447.85  495.94
+
+
+
+
+
+            BEAM-COLUMN STRENGTH ANALYSIS
+            =============================
+
+                                                                                                   Column C.G.
+              Load     Axial    Shear  Pressure Section  Bending   Panels String. Effec.  Column  Outer  Inner   Column
+              case     load     stress   load            moment    axial   axial   skin    area   fibre  fibre   inertia  R.F.
+                          N      N/mm²    N/mm              N·mm    N/mm²   N/mm²   mm      mm²     mm     mm    mm²·mm²
+            -------- --------- ------- -------- ------- --------- ------- ------- ------ -------- ------ ------ -------- -----
+
+                   1  -182857.   78.97     31.0 CENTER    370549. -280.68 -510.21  106.9   567.20    7.8   40.2   79344.  1.29
+                                 60.12           ENDS    -652422. -403.97  -21.38   91.9   512.42    8.5   39.5   76910.
+
+                   2   160839.   28.24     35.4 CENTER    286175.  241.76   81.16  160.0   723.53    6.4   41.6   84297.  1.47
+                                 56.19           ENDS    -586726.  175.87  511.67  160.0   723.53    6.4   41.6   84297.
+
+                                                        06-09-2005 , Aral 4.8, Page   3
+  --------------------------------------
+  | STRINGER: S01; PANELS: P011 & P012 |
+  --------------------------------------
+
+
+  BUCKLING ANALYSIS
+  =================
+
+
+             Buckling assuming stable stringer section   String loc bck   Inter-rivet bck        Column buckling         SUMMARY
+    Load    -------------------------------------------  ---------------  ---------------  ---------------------------  ---------
+    case    Typ   Axial    Shear  Panels  String.  R.F.    Axial    R.F.    Axial    R.F.  Typ   Axial    Shear   R.F.  Typ  R.F.
+                  load     stress axial    axial           load             load                 load     stress
+                     N      N/mm²   N/mm²   N/mm²             N                N                    N      N/mm²
+  --------  --- --------- ------- ------- ------- -----  --------- -----  --------- -----  --- --------- ------- -----  --- -----
+
+         1  LOC   -66866.   28.88  -90.69  -92.42  0.47    -96212.  0.68     ---     ---   GEN  -153828.   66.43  1.09  LOC  0.47
+                            21.99  -90.69                                                                  50.58        STA
+
+         2  LOC   351948.   61.79  482.14  510.05  > 2      ---     ---      ---     ---   GEN  1224226.  214.93  > 2   LOC  > 2 
+                           122.95  447.69                                                                 427.69        STA
+
+                                                        06-09-2005 , Aral 4.8, Page   4
+           --------------------------------------
+           | STRINGER: S01; PANELS: P011 & P012 |
+           --------------------------------------
+
+
+           POST-BUCKLING ANALYSIS
+           ======================
+
+           A) SKIN + STRINGER
+              ===============
+
+
+                                                             Results for applied loads
+                     ---------------------------------------------------------------------------------------------------------
+                                      Primary loads                                    Diagonal tension loads
+             Load    ----------------------------------------------  ---------------------------------------------------------
+                       Axial  Average    Ef.skin    String. Ef.skin         Axial       Ef.skin   Stringer stresses    Forced
+             case      load   stress      area      stress  stress          load         area    fst   fst-med fst-max crippl.
+                         N      N/mm²      mm²        N/mm²   N/mm²           N           mm²    N/mm²   N/mm²   N/mm²   N/mm²
+           --------  -------- ------- ------------- ------- -------  ------------------ ------ ------- ------- ------- -------
+
+                  1     ---     ---        ---        ---     ---            ---          ---    ---     ---     ---     ---
+
+                  2     ---     ---        ---        ---     ---            ---          ---    ---     ---     ---     ---
+
+
+            
+                                                             Results for failure loads
+                     ---------------------------------------------------------------------------------------------------------
+                                      Primary loads                                    Diagonal tension loads
+             Load    ----------------------------------------------  ---------------------------------------------------------
+                       Axial  Average    Ef.skin    String. Ef.skin         Axial       Ef.skin   Stringer stresses    Forced
+             case      load   stress      area      stress  stress          load         area    fst   fst-med fst-max crippl.
+                         N      N/mm²      mm²        N/mm²   N/mm²           N           mm²    N/mm²   N/mm²   N/mm²   N/mm²
+           --------  -------- ------- ------------- ------- -------  ------------------ ------ ------- ------- ------- -------
+
+                  1     ---     ---        ---        ---     ---            ---          ---    ---     ---     ---     ---
+
+                  2     ---     ---        ---        ---     ---            ---          ---    ---     ---     ---     ---
+
+                                                        06-09-2005 , Aral 4.8, Page   5
+                              --------------------------------------
+                              | STRINGER: S01; PANELS: P011 & P012 |
+                              --------------------------------------
+
+
+                              POST-BUCKLING ANALYSIS
+                              ======================
+
+                              B) PANEL 1
+                                 =======
+
+
+                                         Results for applied loads    Results for failure loads       Allowable shear
+                                Load    ---------------------------  ---------------------------         stresses
+                                                    Shear stresses               Shear stresses   -----------------------
+                                case      K   ALFA  Average Maximum    K   ALFA  Average Maximum  Buckl'g Pmt.set Rupture
+                                               deg    N/mm²   N/mm²         deg    N/mm²   N/mm²    N/mm²   N/mm²   N/mm²
+                              --------  ----- ----- ------- -------  ----- ----- ------- -------  ------- ------- -------
+
+                                     1   ---   ---    ---     ---    ---   ---    ---     ---      ---     ---     ---
+
+                                     2   ---   ---    ---     ---    ---   ---    ---     ---      ---     ---     ---
+
+
+
+
+
+                              POST-BUCKLING ANALYSIS
+                              ======================
+
+                              C) PANEL 2
+                                 =======
+
+
+                                         Results for applied loads    Results for failure loads       Allowable shear
+                                Load    ---------------------------  ---------------------------         stresses
+                                                    Shear stresses               Shear stresses   -----------------------
+                                case      K   ALFA  Average Maximum    K   ALFA  Average Maximum  Buckl'g Pmt.set Rupture
+                                               deg    N/mm²   N/mm²         deg    N/mm²   N/mm²    N/mm²   N/mm²   N/mm²
+                              --------  ----- ----- ------- -------  ----- ----- ------- -------  ------- ------- -------
+
+                                     1   ---   ---    ---     ---    ---   ---    ---     ---      ---     ---     ---
+
+                                     2   ---   ---    ---     ---    ---   ---    ---     ---      ---     ---     ---
+
+                                                        06-09-2005 , Aral 4.8, Page   6
+                  --------------------------------------
+                  | STRINGER: S01; PANELS: P011 & P012 |
+                  --------------------------------------
+
+
+                  BENDING SHEAR FLOW AT SKIN/STRINGER CONNECTION
+                  ==============================================
+
+
+                                  Critic.      Effective skin         Beam-column section
+                    Load    Load  section           Equiv.  C.G.             C.G.             Bending    Shear      Shear
+                    case    type   locat.   Width   area   out f.    Area   out f.  Inertia    moment    force      flow
+                                    mm       mm      mm²     mm       mm²     mm    mm²·mm²      N·mm      N         N/mm
+                  --------  ----  -------  ------ -------- ------  -------- ------ --------  --------- ---------  ---------
+
+                         1  APPL     31.2   107.6   316.69    1.5    569.19    7.8   79424.   -332446.     4963.     123.9
+                            FAIL     16.8   159.4   469.33    1.5    721.83    6.4   84255.   -177525.     2281.      62.7
+
+                         2  APPL      0.0   160.0   471.03    1.5    723.53    6.4   84297.   -409545.     4800.     132.1
+                            FAIL      0.0   160.0   471.03    1.5    723.53    6.4   84297.   -586726.     7076.     194.7
+
+                                                        06-09-2005 , Aral 4.8, Page   7
+                  --------------------------------------
+                  | STRINGER: S01; PANELS: P011 & P012 |
+                  --------------------------------------
+
+
+                  RESERVE FACTOR SUMMARY
+                  ======================
+
+
+                    Load    In-plane  Beam-column     Buckling       Post-     Critical
+                    case    strength   strength     Type     R.F.   buckling     R.F.                Failure mode
+                  --------  --------  -----------  ------- -------  --------   --------  ------------------------------------
+
+                         1    > 2         1.29     LOC-STA   0.47      ---       0.47    Local buckling                      
+
+                         2    > 2         1.47     LOC-STA   > 2       ---       1.47    Beam-Column strength                
+
+
+                  NOTES
+                  -----
+                  1) Thick panels. Diagonal tension not allowed. Local buckling has been considered as failure.
+
+                                                        06-09-2005 , Aral 4.8, Page   8
+                 --------------------------------------
+                 | STRINGER: S02; PANELS: P021 & P022 |
+                 --------------------------------------
+
+
+                 APPLIED LOADS AND RESERVE FACTORS
+                 =================================
+
+
+                             Total                Applied stresses
+                   Load     applied   -----------------------------------------
+                             axial     Axial        Shear          Pressures
+                   case      load     average  Panel 1 Panel 2  Panel 1 Panel 2    R.F.               Failure mode
+                                N       N/mm²    N/mm²   N/mm²    N/mm²   N/mm²
+                 --------  ---------  -------  ------- -------  ------- -------   -----   ------------------------------------
+
+                        1    136717.   283.65   111.18   90.53    0.000   0.000    1.24   Beam-Column strength                 *
+
+                        2    -99970.  -207.41     5.14   30.71   -0.120  -0.120    0.68   Post-buckling: Column buckling        
+
+                   (*)  No tension load combination for post-buckling analysis (conservative)
+
+                    -----------------------------------------------------------------------------------------------------
+                    | Critical load case:        2. Reserve factor:  0.68. Failure mode: Post-buckling: Column buckling |
+                    -----------------------------------------------------------------------------------------------------
+
+                                                        06-09-2005 , Aral 4.8, Page   9
+            --------------------------------------
+            | STRINGER: S02; PANELS: P021 & P022 |
+            --------------------------------------
+
+ 
+            IN-PLANE STRENGTH ANALYSIS
+            ==========================
+
+
+              Load      Axial    Shear  Panels  Panels  String.   R.F.
+              case      load     stress axial   V.Mises  axial
+                           N      N/mm²   N/mm²   N/mm²   N/mm²
+            --------  --------- ------- ------- ------- -------  -----
+
+                   1    187867.  152.78  361.69  448.16  419.04   1.37
+                                 124.40  388.20  443.99
+
+                   2   -209880.   10.79 -446.14  446.53 -426.27   > 2 
+                                  64.48 -434.02  448.16
+
+
+
+
+
+            BEAM-COLUMN STRENGTH ANALYSIS
+            =============================
+
+                                                                                                   Column C.G.
+              Load     Axial    Shear  Pressure Section  Bending   Panels String. Effec.  Column  Outer  Inner   Column
+              case     load     stress   load            moment    axial   axial   skin    area   fibre  fibre   inertia  R.F.
+                          N      N/mm²    N/mm              N·mm    N/mm²   N/mm²   mm      mm²     mm     mm    mm²·mm²
+            -------- --------- ------- -------- ------- --------- ------- ------- ------ -------- ------ ------ -------- -----
+
+                   1   169485.  137.83      0.0 CENTER         0.  393.88  351.81  160.0   481.76    6.9   35.1   71257.  1.24
+                                112.23           ENDS          0.  393.88  351.81  160.0   481.76    6.9   35.1   71257.
+
+                   2   -77564.    3.99    -14.9 CENTER   -163615. -255.07 -258.72   46.7   222.86   13.7   28.3   51831.  0.78
+                                 23.83           ENDS     292595. -213.00 -427.47   62.2   282.07   11.0   31.0   59404.
+
+                                                        06-09-2005 , Aral 4.8, Page  10
+  --------------------------------------
+  | STRINGER: S02; PANELS: P021 & P022 |
+  --------------------------------------
+
+
+  BUCKLING ANALYSIS
+  =================
+
+
+             Buckling assuming stable stringer section   String loc bck   Inter-rivet bck        Column buckling         SUMMARY
+    Load    -------------------------------------------  ---------------  ---------------  ---------------------------  ---------
+    case    Typ   Axial    Shear  Panels  String.  R.F.    Axial    R.F.    Axial    R.F.  Typ   Axial    Shear   R.F.  Typ  R.F.
+                  load     stress axial    axial           load             load                 load     stress
+                     N      N/mm²   N/mm²   N/mm²             N                N                    N      N/mm²
+  --------  --- --------- ------- ------- ------- -----  --------- -----  --------- -----  --- --------- ------- -----  --- -----
+
+         1  LOC   136541.  111.04  257.26  316.76  1.00     ---     ---      ---     ---   LOC   145757.  118.53  1.07  LOC  1.00
+                            90.42  275.40                                                                  96.52        STA
+
+         2  LOC   -20380.    1.05  -42.28  -42.28  0.20    -64120.  0.64     ---     ---   GEN   -65054.    3.34  0.65  LOC  0.20
+                             6.26  -42.28                                                                  19.99        STA
+
+                                                        06-09-2005 , Aral 4.8, Page  11
+           --------------------------------------
+           | STRINGER: S02; PANELS: P021 & P022 |
+           --------------------------------------
+
+
+           POST-BUCKLING ANALYSIS
+           ======================
+
+           A) SKIN + STRINGER
+              ===============
+
+
+                                                             Results for applied loads
+                     ---------------------------------------------------------------------------------------------------------
+                                      Primary loads                                    Diagonal tension loads
+             Load    ----------------------------------------------  ---------------------------------------------------------
+                       Axial  Average    Ef.skin    String. Ef.skin         Axial       Ef.skin   Stringer stresses    Forced
+             case      load   stress      area      stress  stress          load         area    fst   fst-med fst-max crippl.
+                         N      N/mm²      mm²        N/mm²   N/mm²           N           mm²    N/mm²   N/mm²   N/mm²   N/mm²
+           --------  -------- ------- ------------- ------- -------  ------------------ ------ ------- ------- ------- -------
+
+                  1   136717.  283.65 160.00+160.00    0.00    0.00  -(     0.+     0.) 160.00    0.00    0.00    0.00   ---  
+
+                  2   -99970. -207.41  22.05+ 22.05 -485.06 -255.07  -(     9.+   100.)   6.25   -1.42   -0.62   -1.95  -92.09
+
+
+            
+                                                             Results for failure loads
+                     ---------------------------------------------------------------------------------------------------------
+                                      Primary loads                                    Diagonal tension loads
+             Load    ----------------------------------------------  ---------------------------------------------------------
+                       Axial  Average    Ef.skin    String. Ef.skin         Axial       Ef.skin   Stringer stresses    Forced
+             case      load   stress      area      stress  stress          load         area    fst   fst-med fst-max crippl.
+                         N      N/mm²      mm²        N/mm²   N/mm²           N           mm²    N/mm²   N/mm²   N/mm²   N/mm²
+           --------  -------- ------- ------------- ------- -------  ------------------ ------ ------- ------- ------- -------
+
+                  1        0.    0.00 160.00+160.00    0.00    0.00  -(     0.+     0.) 160.00    0.00    0.00    0.00   ---  
+
+                  2   -67829. -140.72  56.02+ 56.02 -247.52 -236.21  -(    22.+   269.)   6.97   -3.75   -1.64   -5.34  -77.27
+
+                                                        06-09-2005 , Aral 4.8, Page  12
+                              --------------------------------------
+                              | STRINGER: S02; PANELS: P021 & P022 |
+                              --------------------------------------
+
+
+                              POST-BUCKLING ANALYSIS
+                              ======================
+
+                              B) PANEL 1
+                                 =======
+
+
+                                         Results for applied loads    Results for failure loads       Allowable shear
+                                Load    ---------------------------  ---------------------------         stresses
+                                                    Shear stresses               Shear stresses   -----------------------
+                                case      K   ALFA  Average Maximum    K   ALFA  Average Maximum  Buckl'g Pmt.set Rupture
+                                               deg    N/mm²   N/mm²         deg    N/mm²   N/mm²    N/mm²   N/mm²   N/mm²
+                              --------  ----- ----- ------- -------  ----- ----- ------- -------  ------- ------- -------
+
+                                     1  0.000  ---   111.18  111.18  0.000  ---   111.18  111.18    ---     ---     ---  
+
+                                     2  0.331  1.91    5.14   13.03  0.254  8.86    3.49    4.00     1.05   15.11  154.79
+
+
+
+
+
+                              POST-BUCKLING ANALYSIS
+                              ======================
+
+                              C) PANEL 2
+                                 =======
+
+
+                                         Results for applied loads    Results for failure loads       Allowable shear
+                                Load    ---------------------------  ---------------------------         stresses
+                                                    Shear stresses               Shear stresses   -----------------------
+                                case      K   ALFA  Average Maximum    K   ALFA  Average Maximum  Buckl'g Pmt.set Rupture
+                                               deg    N/mm²   N/mm²         deg    N/mm²   N/mm²    N/mm²   N/mm²   N/mm²
+                              --------  ----- ----- ------- -------  ----- ----- ------- -------  ------- ------- -------
+
+                                     1  0.000  ---    90.53   90.53  0.000  ---    90.53   90.53    ---     ---     ---  
+
+                                     2  0.333  3.49   30.71   55.37  0.256 17.48   20.84   21.86     6.23   89.43  156.99
+
+                                                        06-09-2005 , Aral 4.8, Page  13
+                  --------------------------------------
+                  | STRINGER: S02; PANELS: P021 & P022 |
+                  --------------------------------------
+
+
+                  BENDING SHEAR FLOW AT SKIN/STRINGER CONNECTION
+                  ==============================================
+
+
+                                  Critic.      Effective skin         Beam-column section
+                    Load    Load  section           Equiv.  C.G.             C.G.             Bending    Shear      Shear
+                    case    type   locat.   Width   area   out f.    Area   out f.  Inertia    moment    force      flow
+                                    mm       mm      mm²     mm       mm²     mm    mm²·mm²      N·mm      N         N/mm
+                  --------  ----  -------  ------ -------- ------  -------- ------ --------  --------- ---------  ---------
+
+                         1  APPL    ---      ---     ---     ---      ---     ---     ---       ---       ---        ---  
+                            FAIL    ---      ---     ---     ---      ---     ---     ---       ---       ---        ---  
+
+                         2  APPL      0.0    51.6    82.28    1.0    244.28   12.6   54994.    389505.    -3840.      66.6
+                            FAIL      9.6    66.8   131.23    1.0    293.23   10.7   60491.    227860.    -2633.      55.2
+
+                                                        06-09-2005 , Aral 4.8, Page  14
+                  --------------------------------------
+                  | STRINGER: S02; PANELS: P021 & P022 |
+                  --------------------------------------
+
+
+                  RESERVE FACTOR SUMMARY
+                  ======================
+
+
+                    Load    In-plane  Beam-column     Buckling       Post-     Critical
+                    case    strength   strength     Type     R.F.   buckling     R.F.                Failure mode
+                  --------  --------  -----------  ------- -------  --------   --------  ------------------------------------
+
+                         1    1.37        1.24     LOC-STA   1.00      > 2       1.24    Beam-Column strength                
+
+                         2    > 2         0.78     LOC-STA   0.20     0.68       0.68    Post-buckling: Column buckling      
+
+
+                  NOTES
+                  -----
+                  1) Local buckling has been considered as no-failure.

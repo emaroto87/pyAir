@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,landscape]{geometry}
+\parskip=3ex
+\textheight=35cm
+\textwidth=26cm
+\oddsidemargin=-0.8cm
+\topmargin=-1.5cm
+\pagestyle{empty}
+\setlength{\unitlength}{1cm}
+% 
+\begin{document}
+% 
+\newpage
+% 
+\begin{center}
+\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-14}
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{ }\\
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{\bf CRITICAL LOAD CASES SUMMARY} \\
+\multicolumn{1}{c|}{ } & \multicolumn{13}{|c|}{ }\\
+\hline
+   & CRITICAL & \multicolumn{3}{|c|}{APPLIED LOADS} &
+          \multicolumn{5}{|c|}{RESERVE FACTOR SUMMARY} & CRIT. & FAILURE & 
+     \multicolumn{2}{|c|}{SKIN-STRINGER}\\
+\cline{3-10}
+ELEMENT & LOAD     & Axial & Shear & Pressure & 
+   In-plane & Beam- & \multicolumn{2}{|c|}{Buckling} & 
+   Post- & R.F. & MODE & \multicolumn{2}{|c|}{SHEAR FLOW} \\
+\cline{8-9}\cline{13-14}
+   & CASE     & load  & flow  &          &
+   strength & column & Type & R.F. & buckling &  &  &  Applied & Failure \\
+\hline
+Stringer    13 &        1 &     -141675. &        183.6 &         0.15 & 
+$> 2$ &  1.29 & LOC-STA &  0.47 &   --- & 
+ 0.47 & Local buckling  &        123.9 &         62.7 \\
+Ribs    33 -    34 &  &  &        139.7 &         0.15 & 
+ & & & & & 
+ &                 & (X =         31.2) & (X =         16.8) \\
+Upper skin &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+Stringer    17 &        2 &      -99970. &         10.3 &        -0.12 & 
+$> 2$ &  0.78 & LOC-STA &  0.20 &  0.68 & 
+ 0.68 & Post-buckling   &         66.6 &         55.2 \\
+Ribs    33 -    34 &  &  &         61.4 &        -0.12 & 
+ & & & & & 
+ & Column buckling & (X =          0.0) & (X =          9.6) \\
+Lower skin &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+%
+Units:   N, mm
+%
+\end{document}

@@ -1,0 +1,62 @@
+\documentstyle[12pt]{article}
+\parskip=3ex
+\textheight=35cm
+\textwidth=26cm
+\oddsidemargin=-0.8cm
+\topmargin=-1.5cm
+\pagestyle{empty}
+\setlength{\unitlength}{1cm}
+% 
+\begin{document}
+% 
+\newpage
+% 
+\begin{center}
+\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\cline{2-13}
+\multicolumn{1}{c|}{ } & \multicolumn{12}{|c|}{ }\\
+\multicolumn{1}{c|}{ } & \multicolumn{12}{|c|}{\bf PURE ALLOWABLES}\\
+\multicolumn{1}{c|}{ } & \multicolumn{12}{|c|}{ }\\
+\hline
+   & \multicolumn{2}{|c|}{STRINGER} & \multicolumn{7}{|c|}{SKIN PANELS} & 
+          \multicolumn{1}{|c|}{PAD} & \multicolumn{2}{|c|}{SKIN+STRINGER} \\
+\cline{2-13}
+ELEMENT & Local & Crippling & 
+     \multicolumn{4}{|c|}{Compression buckling} &
+     \multicolumn{3}{|c|}{Shear buckling} &
+     Inter-rivet & \multicolumn{2}{|c|}{Column buckling} \\
+\cline{4-10}\cline{12-13}
+   & buckling & stress & 
+     Type & Load & Panel & Stringer &
+     Type & Panel & Panel &
+     buckling & Type & Load \\
+   & stress  &          &  &   & stress & stress & 
+     & flow & stress & stress &  & \\
+\hline
+Stringer    13 &      -462.31 &      -355.44 & 
+LOC &      -69002. &       -93.59 &       -95.37 & LOC &        414.8 &       138.26 & 
+     -407.58 & Bending+crippling &     -177376. \\
+Ribs    33 -    34 &      -132.98 &  & 
+  &   &       -93.59 &   &   &        414.8 &       138.26 & 
+ & interaction       & (C =          2.0) \\
+Upper skin &              &  & 
+ & & &  & & & & 
+ & (unstable sect.)  & \\
+\hline
+Stringer    17 &      -133.03 &      -261.43 & 
+LOC &      -20474. &       -42.48 &       -42.48 & LOC &        125.2 &        62.62 & 
+     -255.07 & Bending+crippling &      -68176. \\
+Ribs    33 -    34 &      -312.52 &  & 
+  &   &       -42.48 &   &   &        125.2 &        62.62 & 
+ & interaction       & (C =          2.0) \\
+Lower skin &      -308.82 &  & 
+ & & &  & & & & 
+ & (unstable sect.)  & \\
+\hline
+\end{tabular}
+\end{center}
+%
+Units:   N, mm
+%
+\end{document}

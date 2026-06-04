@@ -1,0 +1,28 @@
+                        PROGRAMA SECCION (nudos)
+
+========================================================================
+TITULO:  MALE,  PROGRAMA SECCION 2014
+=======*================================================================
+       1        NUMERO DE SECCIONES A PROCESAR
+=======*================================================================
+
+                    DATOS DE LA SECCION  1
+
+       0        NUMERO DE CASOS DE CARGA PARA ESTA SECCION
+-------*-----------------
+       1        NUMERO DE NUDOS DE LA SECCION Y LISTA
+ 1106728
+ 1106727
+ 1106731
+ 1106663
+ 1102655
+ 1101481
+    67.8     OFSET DESDE EL REVESTIMIENTO
+-------*-----------------
+       1        NUMERO DE NUDOS AL OTRO LADO DE LA SECCION 
+ 1103623        Y LISTA
+ -------*-----------------
+ 1106728        ORIGEN     NUDOS PARA SISTEMA DE COORDENADAS
+ 1103623        EJE  X  LOCAL (EN LA DIRECCION DE LA CUADERNA)
+ 1103615        NUDO EN  XY  CUADRANTE X+,Y+
+=======*================================================================

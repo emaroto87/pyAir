@@ -1,0 +1,101 @@
+
+Panco 4.2                  (c) Airbus DS, Ene-2021                  28-Ene-2021
+-------------------------------------------------------------------------------
+
+Análisis de pandeo y de resistencia para columnas con carga axial y/o lateral.
+
+TÍTULO DEL ANÁLISIS:
+====================
+
+  Program PANCO
+  Example 3
+  Uniform column
+  Discrete and distributed loads
+
+
+DATOS DE ENTRADA:
+=================
+
+  Tipo de columna:
+  ----------------
+  Uniforme (sección constante y carga axial puntual aplicada en extremos)
+
+
+  Propiedades del material de la columna:
+  ---------------------------------------
+  Módulo elástico a tracción:                    Et  =    70326.00 N/mm²
+  Módulo elástico a compresión:                  Ec  =    73084.00 N/mm²
+  Módulo elástico a cortadura:                   G   =    26889.00 N/mm²
+  Esfuerzo de rotura a tracción:                 Ftu =      489.50 N/mm²
+  Esfuerzo de fluencia a tracción:               Fty =      427.50 N/mm²
+  Esfuerzo de fluencia a compresión:             Fcy =      427.50 N/mm²
+  Deformación permanente en la rotura:           e   =        9.00 %
+
+
+  Datos geométricos de la columna:
+  --------------------------------
+  Longitud de la columna:                        L   =     1000.00 mm
+  Área de la sección transversal:                A   =      200.00 mm²
+  Momento de inercia respecto al eje Y:          Iyy =    50000.00 mm4
+  Momento de inercia respecto al eje Z:          Izz =    10000.00 mm4
+  Constante de torsión:                          J   =      400.00 mm4
+  Constante de alabeamiento:                     R   =  1300000.00 mm6
+  Coord. Y del centro cortadura resp. al CG:     Yo  =        0.00 mm
+  Coord. Z del centro cortadura resp. al CG:     Zo  =        0.00 mm
+  Esfuerzo de fallo por crippling de la columna: Fcc =      400.00 N/mm²
+  Distancia del eje neutro a la fibra superior:  Ds  =       25.00 mm
+  Distancia del eje neutro a la fibra inferior:  Di  =       25.00 mm
+
+
+  Condiciones de apoyo en los extremos de la columna:
+  ---------------------------------------------------
+
+                                   Xs = 0                     Xs = L
+                         -------------------------  -------------------------
+  Flex. resp. al eje Y:  Apoyado, giro restringido  Apoyado, giro restringido
+  Flex. resp. al eje Z:  Apoyado, giro restringido  Apoyado, giro restringido
+  Torsión:            :  Alabeamiento permitido     Alabeamiento permitido
+
+                         El giro esta siempre impedido en ambos extremos
+
+
+  Cargas aplicadas sobre la columna:
+  ----------------------------------
+
+                               CARGAS  AXIALES                   CARGAS TRANSVERSALES
+                         ---------------------------  ------------------------------------------
+                 XS            Px            px             Pt            pt            Mf
+                (mm)          (N)          (N/mm)          (N)          (N/mm)        (N·mm)
+            -----------  ------------- -------------  ------------- ------------- --------------
+                  0.000       20000.00          0.00           0.00          0.00           0.00
+                250.000           0.00          0.00           0.00          0.00           0.00
+                250.000           0.00          0.00        1000.00         10.00           0.00
+                500.000           0.00          0.00        1000.00         10.00       10000.00
+                750.000           0.00          0.00           0.00         10.00           0.00
+                750.000           0.00          0.00        1000.00          0.00           0.00
+               1000.000      -20000.00          0.00           0.00          0.00           0.00
+            ------------------------------------------------------------------------------------
+
+
+ANÁLISIS DE PANDEO COMO COLUMNA:
+================================
+
+  Esfuerzos, módulos tangentes y factores de reserva correspondientes a las cargas de pandeo:
+  -------------------------------------------------------------------------------------------
+
+       MODO DE PANDEO            S            Et        R.F.
+                               (N/mm²)      (N/mm²)
+  ------------------------- ------------ ------------ --------
+  Flexión respecto al eje Y       -180.3      73084.0     1.80
+  Flexión respecto al eje Z        -36.1      73084.0     0.36
+  Torsión                         -194.9      73084.0     1.94
+  Flexión-Y + Crippling              ---          ---      ---
+  Flexión-Z + Crippling              ---          ---      ---
+  Flexión-Y + Torsión                ---          ---      ---
+
+
+ANÁLISIS DE RESISTENCIA COMO VIGA-COLUMNA:
+==========================================
+
+  La columna pandea bajo la acción de las cargas aplicadas,
+  por tanto, no se hace el análisis como Viga-Columna

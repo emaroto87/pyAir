@@ -1,0 +1,42 @@
+     ! Unidades (separadas por una coma) (N/daN/kgf/lbf/klb , mm/cm/in)
+klb,in
+     ! Datos de los materiales. Dos posibilidades:
+     !  MAT_ID,MAT,FORM,TRAT,AREA,ESPE,BASE,DIRE
+     !  MAT_ID,MAT,FORM,TRAT,AREA,ESPE,BASE,DIRE: E,Ec,G,µ,Fty,Fcy,Ftu,Fsu,e(%)
+MAT1, 24S,      Chapas, T3, 0.,  0.1, A, L: 10600,10600,0,0.3,47,39,62,39,15
+********************************************************************************
+     ! Título de identificación del análisis (Máx. 80 caract.)
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+     ! Datos del alma:
+     !  MAT_ID, T, Hv, Hr, Hp, Dg, Dp, ø
+MAT1,0.1043,12,11.5,9.875,7,7,0
+     ! Datos de los montantes. Tres posibilidades:
+     !  MATE_ID, L, TIPO (= 0 o 20), CD o EX, B1, T1, B2, T2, A, d, I, Fcc
+     !  MATE_ID, L, TIPO (= 1 2 21 o 22), CD o EX, B1, T1, B2, T2
+     !  MATE_ID, L, TIPO (= 3 4 5 23 24 o 25), CD o EX, B1, T1, B2, T2, B3, T3
+MAT1,9.875,0,CD,0.625,0.1283,0.625,0.1283,0.1443,0.251,4.7798E-3,40
+     ! Datos del cordón inferior. Dos posibilidades:
+     !  MATE_ID, TIPO (= 0 o 20), CD o EX, B2, T2, A, d, I, Fcc, Sx o Tx
+     !  MATE_ID, TIPO (= 1 2 o 21), CD o EX, B2, T2, B1, T1, Sx o Tx
+MAT1,20,CD,1,0.3125,1.16,0.21,0.737,40,S0
+     ! Datos del cordón superior. Dos posibilidades:
+     !  MATE_ID, TIPO (= 0 o 20), CD o EX, B2, T2, A, d, I, Fcc, Sx o Tx
+     !  MATE_ID, TIPO (= 1 2 o 21), CD o EX, B2, T2, B1, T1, Sx o Tx
+MAT1,20,CD,1,0.3125,1.16,0.21,0.737,40,S0
+     ! Datos de los paneles del revestimiento inferior:
+     !  MATE_ID, IAP1, B1, T1, IAP2, B2, T2
+MAT1,1,0,0,1,0,0
+     ! Datos de los paneles del revestimiento superior:
+     !  MATE_ID, IAP1, B1, T1, IAP2, B2, T2
+MAT1,1,0,0,1,0,0
+     ! Datos del "pad" inferior:
+     !  B, T
+0,0
+     ! Datos del "pad" superior:
+     !  B, T
+0,0
+     ! Datos de cargas últimas:
+     !  FC, PXI, PXS, SXI1, SXI2, SXS1, SXS2
+34.5,0,0,0,0,0,0
+     ! Código de finalización (0) o de realización de un nuevo análisis (1-9)
+0

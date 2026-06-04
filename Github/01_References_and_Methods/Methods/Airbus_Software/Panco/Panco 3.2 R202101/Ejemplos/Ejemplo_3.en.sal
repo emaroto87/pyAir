@@ -1,0 +1,101 @@
+
+Panco 4.2                  (c) Airbus DS, Jan-2021                  28-Jan-2021
+-------------------------------------------------------------------------------
+
+Buckling and strength analysis for columns under axial and/or lateral load.
+
+ANALYSIS TITLE:
+===============
+
+  Program PANCO
+  Example 3
+  Uniform column
+  Discrete and distributed loads
+
+
+INPUT DATA:
+===========
+
+  Type of column:
+  ---------------
+  Uniform (constant section and discrete axial load applied at both ends)
+
+
+  Material properties of the column:
+  ----------------------------------
+  Tension elastic modulus:                       Et  =    70326.00 N/mm²
+  Compression elastic modulus:                   Ec  =    73084.00 N/mm²
+  Shear elastic modulus:                         G   =    26889.00 N/mm²
+  Ultimate tension stress:                       Ftu =      489.50 N/mm²
+  Tension yield stress:                          Fty =      427.50 N/mm²
+  Compression yield stress:                      Fcy =      427.50 N/mm²
+  Permanent strain at ultimate stress:           e   =        9.00 %
+
+
+  Geometrical data of the column:
+  -------------------------------
+  Column length:                                 L   =     1000.00 mm
+  Cross sectional area:                          A   =      200.00 mm²
+  Moment of inertia about Y-axis:                Iyy =    50000.00 mm4
+  Moment of inertia about Z-axis:                Izz =    10000.00 mm4
+  Torsion constant:                              J   =      400.00 mm4
+  Warping constant:                              R   =  1300000.00 mm6
+  Y coordinate from Shear Center to CG:          Yo  =        0.00 mm
+  Z coordinate from Shear Center to CG:          Zo  =        0.00 mm
+  Crippling failure stress of the column:        Fcc =      400.00 N/mm²
+  Distance from neutral axis to upper fibre:     Ds  =       25.00 mm
+  Distance from neutral axis to lower fibre:     Di  =       25.00 mm
+
+
+  Support conditions at both ends of the column:
+  ----------------------------------------------
+
+                                   Xs = 0                     Xs = L
+                         -------------------------  -------------------------
+  Flex. rel. to Y-axis:  Support, restrained turn   Support, restrained turn
+  Flex. rel. to Z-axis:  Support, restrained turn   Support, restrained turn
+  Torsion:            :  Free warping               Free warping
+
+                         Turn at both ends is not allowed in all cases
+
+
+  Applied loads on the column:
+  ----------------------------
+
+                                 AXIAL LOADS                      TRANSVERSAL  LOADS
+                         ---------------------------  ------------------------------------------
+                 XS            Px            px             Pt            pt            Mf
+                (mm)          (N)          (N/mm)          (N)          (N/mm)        (N·mm)
+            -----------  ------------- -------------  ------------- ------------- --------------
+                  0.000       20000.00          0.00           0.00          0.00           0.00
+                250.000           0.00          0.00           0.00          0.00           0.00
+                250.000           0.00          0.00        1000.00         10.00           0.00
+                500.000           0.00          0.00        1000.00         10.00       10000.00
+                750.000           0.00          0.00           0.00         10.00           0.00
+                750.000           0.00          0.00        1000.00          0.00           0.00
+               1000.000      -20000.00          0.00           0.00          0.00           0.00
+            ------------------------------------------------------------------------------------
+
+
+COLUMN BUCKLING ANALYSIS:
+=========================
+
+  Stresses, tangent moduli and reserve factors for buckling loads:
+  ----------------------------------------------------------------
+
+        BUCKLING MODE            S            Et        R.F.
+                               (N/mm²)      (N/mm²)
+  ------------------------- ------------ ------------ --------
+  Bending about Y - axis          -180.3      73084.0     1.80
+  Bending about Z - axis           -36.1      73084.0     0.36
+  Torsion                         -194.9      73084.0     1.94
+  Bending-Y + Crippling              ---          ---      ---
+  Bending-Z + Crippling              ---          ---      ---
+  Bending-Y + Torsion                ---          ---      ---
+
+
+STRENGTH ANALYSIS AS BEAM-COLUMN:
+=================================
+
+  Column buckles under applied loads,
+  then, beam-column analysis cannot be performed.

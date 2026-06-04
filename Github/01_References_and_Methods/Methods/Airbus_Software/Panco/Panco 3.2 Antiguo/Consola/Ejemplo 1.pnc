@@ -1,0 +1,21 @@
+1 Ejemplo 1
+  Columna Uniforme
+  Airbus Military
+  Mayo 2011
+2 TIPO DE COLUMNA: 1 Uniforme, 2 No Uniforme
+  1
+3 UNIDADES (N/daN/Kgf/lbf/klb,mm/cm/in)
+  N  , mm
+4 DATOS DE MATERIALES
+  71710, 73770, 27580, 476.0, 400.0, 400.0, 7.00
+5 GEOMETRIA
+  500.0, 187.5, 44140, 6951, 390.6, 1689790, -11.698, 0.0, 363.0, 20.0, 20.0
+6 PLANO DE TRABAJO Y CONDICIONES DE APOYO: 1-XZ/2-YZ ; Flex-Y, Flex-Z / Tors-X
+  1
+  1, 1
+  1
+7 CARGAS AXIALES PUNTUALES
+  1,         0.00,     -15000.0
+11 MOMENTOS FLECTORES PUNTUALES
+  2,         0.00,   -100000.00
+           500.00,    200000.00

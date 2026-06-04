@@ -1,0 +1,503 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                           ------------------------------
+                           |                            |
+                           |       PROGRAM  PANAL       |
+                           |                            |
+                           |        VERSION 2.1         |
+                           |                            |
+                           |         JULIO-2003         |
+                           |                            |
+                           |  COMPUTER:  SUN Workshop   |
+                           |                            |
+                           |         SunOS 5.10         |
+                           |                            |
+                           |----------------------------|
+                           |                            |
+                           |      EXECUTION DATE:       |
+                           |                            |
+                           |    23-May-2017 18:38:38    |
+                           |                            |
+                           ------------------------------
+
+                                          23-May-2017, PANAL_V2.1, Página    1
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+
+
+
+
+
+
+         PROPIEDADES DEL MATERIAL: MAT1
+         ==============================
+
+
+         1) Datos del material
+            ------------------
+
+          --------------------------------------------------------------------
+          | Denominación del material            |  24S                      |
+          |                                      |                           |
+          | Forma del semiproducto               |       Chapas              |
+          |                                      |                           |
+          | Estado o tratamiento                 |  T3                       |
+          |                                      |                           |
+          | Rango de espesores del semiproducto  |   0.100 -   0.100 in      |
+          |                                      |                           |
+          | Base de propiedades                  |  A                        |
+          |                                      |                           |
+          | Dirección de propiedades             |  L                        |
+          --------------------------------------------------------------------
+
+
+         2) Valores de las propiedades mecánicas
+            ------------------------------------
+
+          --------------------------------------------------------------------
+          | Esfuerzo último a tracción           | Ftu  =      62.00 klb/in² |
+          |                                      |                           |
+          | Esfuerzo de fluencia a tracción      | Fty  =      47.00 klb/in² |
+          |                                      |                           |
+          | Esfuerzo de fluencia a compresión    | Fcy  =      39.00 klb/in² |
+          |                                      |                           |
+          | Esfuerzo último a cortadura          | Fsu  =      39.00 klb/in² |
+          |                                      |                           |
+          | Esfuerzo de fluencia a cortadura     | Fsy  =      24.83 klb/in² |
+          |                                      |                           |
+          | Alargamiento último                  | e    =         15 %       |
+          |                                      |                           |
+          | Cte. N Ramberg-Osgood a tracción     | Nt   =      15.59         |
+          |                                      |                           |
+          | Cte. N Ramberg-Osgood a compresión   | Nc   =      9.314         |
+          |                                      |                           |
+          | Cte. N Ramberg-Osgood a cortadura    | Ns   =      12.45         |
+          |                                      |                           |
+          | Módulo elástico a tracción           | E    =     10600. klb/in² |
+          |                                      |                           |
+          | Módulo elástico a compresión         | Ec   =     10600. klb/in² |
+          |                                      |                           |
+          | Módulo elástico a cortadura          | G    =      4077. klb/in² |
+          |                                      |                           |
+          | Módulo de Poisson                    | µ    =       0.30         |
+          --------------------------------------------------------------------
+
+
+
+                                          23-May-2017, PANAL_V2.1, Página    2
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+DATOS GEOMETRICOS Y DE MATERIAL DEL ALMA Y LOS MONTANTES
+--------------------------------------------------------
+
+
+Alma
+----
+
+Código de identificación del material            : MAT1
+
+Espesor                                          :   0.1043     in
+
+Altura de la viga                                :    12.00     in
+
+Altura del alma:
+    Entre centros de remachado de los cordones   :    11.50     in
+    A efectos de pandeo                          :    9.875     in
+
+Distancia entre montantes:
+    Entre centros de gravedad de los montantes   :    7.000     in
+    A efectos de pandeo                          :    7.000     in
+
+
+Montantes
+---------
+
+Código de identificación del material            : MAT1
+
+Longitud                                         :    9.875     in
+
+Tipo                                             : Sencillos   
+                                                   Chapa Doblada
+Dimensiones de los tramos (B:long.ext., T:esp.):
+    Tramo unido al alma:                       B :   0.6250     in
+                                               T :   0.1283     in
+    Tramo perpendicular al alma:               B :   0.6250     in
+                                               T :   0.1283     in
+Propiedades de la sección transversal:
+    Area                                         :   0.1443     in²
+    Area efectiva                                :   0.4972E-01 in²
+    Distancia del c.d.g. a línea media del alma  :   0.2510     in
+    Mom. estát. del área a un lado de la l.m.a.  :   0.3622E-01 in·in²
+    M.d.i. propio respecto a un eje || al alma   :   0.4780E-02 in²·in²
+    M.d.i. resp. al eje de contacto con el alma  :   0.1049E-01 in²·in²
+
+                                          23-May-2017, PANAL_V2.1, Página    3
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+DATOS GEOMETRICOS Y DE MATERIAL DE LOS CORDONES Y REVESTIMIENTOS
+----------------------------------------------------------------
+
+
+Cordones
+--------
+                                                     Inferior     Superior
+                                                   ------------ ------------
+Código de identificación del material            : MAT1         MAT1        
+
+Tipo del cordón                                  : Doble        Doble       
+                                                   Chapa dobl.  Chapa dobl. 
+Espesor del tramo unido al alma de la viga       :   0.3125       0.3125     in
+
+Propiedades de la sección transversal:
+    Area                                         :    2.320        2.320     in²
+    Distancia del c.d.g. a línea contacto revest.:   0.2100       0.2100     in
+    M.d.i. propio respecto a un eje || revestim. :    1.474        1.474     in4
+
+Tipo de remachado al revestimiento               : S0           S0          
+
+
+Revestimientos
+--------------
+                                                     Inferior     Superior
+                                                   ------------ ------------
+Código de identificación del material            : MAT1         MAT1        
+
+Tipo de apoyo de los bordes || a los cordones    : 
+    Panel 1                                      :      --           --     
+    Panel 2                                      :      --           --     
+
+Dimensiones de los paneles (B:ancho, T:espesor):
+    Panel 1:                                   B :       0.           0.     in
+                                               T :       0.           0.     in
+    Panel 2:                                   B :       0.           0.     in
+                                               T :       0.           0.     in
+
+Ancho del "pad"                                  :       0.           0.     in
+Espesor de revest. en zona de remachado a cordón :       0.           0.     in
+
+                                          23-May-2017, PANAL_V2.1, Página    4
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+RESULTADOS CORRESPONDIENTES A LAS CARGAS APLICADAS
+--------------------------------------------------
+
+
+Cargas
+------
+
+Fuerza cortante en el alma                       :   34.500     klb
+
+Fuerza axial en el cordón inferior               :       0.     klb
+
+Fuerza axial en el cordón superior               :       0.     klb
+
+Esfuerzos axiales en el revestimiento inferior:
+                                       Panel 1   :       0.     klb/in²
+                                       Panel 2   :       0.     klb/in²
+
+Esfuerzos axiales en el revestimiento superior:
+                                       Panel 1   :       0.     klb/in²
+                                       Panel 2   :       0.     klb/in²
+
+
+Alma
+----
+
+Altura efectiva del alma                         :    11.58       in
+
+Factor de tensión diagonal                       :    0.123    
+Angulo de tensión diagonal                       :    44.04°
+
+Esfuerzos de cortadura admisibles (klb/in²):
+    Pandeo                                       :   16.190    
+    Deformación permanente a carga límite        :   175.93    
+    Rotura                                       :   25.953    
+
+Esfuerzos de cortadura existentes (klb/in²):
+    Medio                                        :   28.564    
+    Máximo                                       :   28.571    
+
+
+Montantes
+---------
+
+Longitud efectiva para pandeo como columna       :    4.938       in
+
+Esfuerzos de compresión admisibles (klb/in²):
+    Pandeo como columna (Johnson-Euler)          :  -39.011    
+    "Crippling" natural                          :  -40.000    
+    "Forced crippling"                           :  -6.9843    
+
+Cargas existentes (klb):
+    Compresión por tensión diagonal              :  -2.4738    
+
+Esfuerzos existentes (klb/in²):
+    Compresión media en la línea media del alma  :  -6.6861    
+    Compresión media en la sección transversal   :  -2.3040    
+    Compresión máxima                            :  -8.6051    
+
+                                          23-May-2017, PANAL_V2.1, Página    5
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+RESULTADOS CORRESPONDIENTES A LAS CARGAS APLICADAS
+--------------------------------------------------
+
+
+Cordones
+--------
+                                                     Inferior     Superior
+                                                   ------------ ------------
+Sección efectiva a cargas primarias:
+    Area                                         :   2.3200       2.3200     in²
+
+Sección efectiva a cargas por tensión diagonal:
+    Area                                         :   2.3200       2.3200     in²
+    M.d.i. resp. al eje neutro || al revestim.   :   1.4740       1.4740     in4
+    Distancia de fibra exterior a eje neutro     :  0.21000      0.21000     in
+    Distancia de fibra interior a eje neutro     :  0.79000      0.79000     in
+
+Esfuerzos admisibles (klb/in²):
+    Tracción cordón                              :   62.000       62.000    
+    Compresión                                   :  -40.000      -40.000    
+
+Cargas existentes (klb,in):
+    Axial primaria                               :       0.           0.    
+    Compresión por tensión diagonal              :  -2.1881      -2.1881    
+    Flexión en extremos por tensión diagonal     :   1.4419       1.4419    
+    Flexión en sec. central por tensión diagonal : -0.72095     -0.72095    
+
+Esfuerzos existentes (klb/in²):
+    Axial primario                               :       0.           0.    
+    Compresión por tensión diagonal              : -0.94313     -0.94313    
+    Flexión en extremos por tensión diagonal:
+        En fibra exterior de cordón              :  0.20543      0.20543    
+        En fibra interior de cordón              : -0.77280     -0.77280    
+    Flexión en sec. central por tensión diagonal:
+        En fibra exterior de cordón              : -0.10271     -0.10271    
+        En fibra interior de cordón              :  0.38640      0.38640    
+
+    TOTAL en extremos                            :
+        En fibra exterior de cordón              : -0.73770     -0.73770    
+        En fibra interior de cordón              :  -1.7159      -1.7159    
+
+    TOTAL en sec. central                        :
+        En fibra exterior de cordón              :  -1.0458      -1.0458    
+        En fibra interior de cordón              : -0.55673     -0.55673    
+
+                                          23-May-2017, PANAL_V2.1, Página    6
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+RESULTADOS CORRESPONDIENTES A LAS CARGAS DE FALLO
+-------------------------------------------------
+
+
+Cargas
+------
+
+Fuerza cortante en el alma                       :   30.919     klb
+
+Fuerza axial en el cordón inferior               :       0.     klb
+
+Fuerza axial en el cordón superior               :       0.     klb
+
+Esfuerzos axiales en el revestimiento inferior:
+                                       Panel 1   :       0.     klb/in²
+                                       Panel 2   :       0.     klb/in²
+
+Esfuerzos axiales en el revestimiento superior:
+                                       Panel 1   :       0.     klb/in²
+                                       Panel 2   :       0.     klb/in²
+
+
+Alma
+----
+
+Altura efectiva del alma                         :    11.58       in
+
+Factor de tensión diagonal                       :    0.992E-01
+Angulo de tensión diagonal                       :    43.72°
+
+Esfuerzos de cortadura admisibles (klb/in²):
+    Pandeo                                       :   16.190    
+    Deformación permanente a carga límite        :   175.93    
+    Rotura                                       :   25.953    
+
+Esfuerzos de cortadura existentes (klb/in²):
+    Medio                                        :   25.600    
+    Máximo                                       :   25.604    
+
+
+Montantes
+---------
+
+Longitud efectiva para pandeo como columna       :    4.938       in
+
+Esfuerzos de compresión admisibles (klb/in²):
+    Pandeo como columna (Johnson-Euler)          :  -39.011    
+    "Crippling" natural                          :  -40.000    
+    "Forced crippling"                           :  -6.0610    
+
+Cargas existentes (klb):
+    Compresión por tensión diagonal              :  -1.7723    
+
+Esfuerzos existentes (klb/in²):
+    Compresión media en la línea media del alma  :  -4.6814    
+    Compresión media en la sección transversal   :  -1.6132    
+    Compresión máxima                            :  -6.0610    
+
+                                          23-May-2017, PANAL_V2.1, Página    7
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+RESULTADOS CORRESPONDIENTES A LAS CARGAS DE FALLO
+-------------------------------------------------
+
+
+Cordones
+--------
+                                                     Inferior     Superior
+                                                   ------------ ------------
+Sección efectiva a cargas primarias:
+    Area                                         :   2.3200       2.3200     in²
+
+Sección efectiva a cargas por tensión diagonal:
+    Area                                         :   2.3200       2.3200     in²
+    M.d.i. resp. al eje neutro || al revestim.   :   1.4740       1.4740     in4
+    Distancia de fibra exterior a eje neutro     :  0.21000      0.21000     in
+    Distancia de fibra interior a eje neutro     :  0.79000      0.79000     in
+
+Esfuerzos admisibles (klb/in²):
+    Tracción cordón                              :   62.000       62.000    
+    Compresión                                   :  -40.000      -40.000    
+
+Cargas existentes (klb,in):
+    Axial primaria                               :       0.           0.    
+    Compresión por tensión diagonal              :  -1.6032      -1.6032    
+    Flexión en extremos por tensión diagonal     :   1.0330       1.0330    
+    Flexión en sec. central por tensión diagonal : -0.51649     -0.51649    
+
+Esfuerzos existentes (klb/in²):
+    Axial primario                               :       0.           0.    
+    Compresión por tensión diagonal              : -0.69103     -0.69103    
+    Flexión en extremos por tensión diagonal:
+        En fibra exterior de cordón              :  0.14717      0.14717    
+        En fibra interior de cordón              : -0.55364     -0.55364    
+    Flexión en sec. central por tensión diagonal:
+        En fibra exterior de cordón              : -0.73585E-01 -0.73585E-01
+        En fibra interior de cordón              :  0.27682      0.27682    
+
+    TOTAL en extremos                            :
+        En fibra exterior de cordón              : -0.54386     -0.54386    
+        En fibra interior de cordón              :  -1.2447      -1.2447    
+
+    TOTAL en sec. central                        :
+        En fibra exterior de cordón              : -0.76462     -0.76462    
+        En fibra interior de cordón              : -0.41421     -0.41421    
+ 
+            --------------------------------------------------------
+            |                                                      |
+            |            FACTOR DE RESERVA =  0.896                |
+            |                                                      |
+            |  TIPO DE FALLO: "FORCED CRIPPLING" DE LOS MONTANTES  |
+            |                                                      |
+            --------------------------------------------------------
+
+                                          23-May-2017, PANAL_V2.1, Página    8
+
+Ejemplo 6: Viga de alma gruesa (NACA TN 2661)
+=============================================
+
+ANALISIS DE RIGIDEZ DE LOS MONTANTES (CARGAS DE FALLO)
+------------------------------------------------------
+
+Rigidez mínima requerida para los montantes:
+    Espesor del tramo unido al alma              :   0.8100E-01   in
+    M.d.i. resp. al eje de contacto con el alma  :   0.4108E-01   in²·in²
+
+    Los  montantes  NO  tienen  suficiente rigidez
+    para subdividir el alma. Ver Manual de Utilización.
+
+
+RELACIONES GEOMETRICAS (CARGAS DE FALLO)
+----------------------------------------
+
+Espesor del tramo de montante en contacto con el alma
+----------------------------------------------------- =   1.23            
+                  Espesor del alma
+
+         Distancia entre c.d.g. de montantes         
+----------------------------------------------------- =   0.60            
+       Altura del alma entre c.d.g. de cordones
+
+       Altura del alma entre c.d.g. de cordones      
+----------------------------------------------------- =  111.0            
+                  Espesor del alma
+
+
+DATOS PARA EL DIMENSIONADO DEL REMACHADO (CARGAS DE FALLO)
+----------------------------------------------------------
+
+Remachado alma-montantes
+------------------------
+
+Flujo de tracción                                :   1.4227     klb/in
+Paso máximo entre remaches (Cir=4)               :   1.7500       in
+
+Remachado alma-cordones
+-----------------------
+
+Flujo de cortadura (en dirección de los cordones):   2.7991     klb/in
+Paso máximo entre remaches (Cir=4)               :   52.548       in
+
+Remachado montantes-cordones
+----------------------------
+
+Carga de cortadura (en dirección del montante)   :  0.23278     klb
+
+Si los remaches son también  de unión al alma, de-
+berá componerse esta  carga con las cortaduras co-
+rrespondientes dadas en los puntos anteriores.
+Existirán al menos dos remaches de unión entre
+cada montante y cada cordón.
+
+Remachado revestimientos-cordones
+---------------------------------
+
+Paso máximo entre remaches (Cir=1)               :       0.       in
+

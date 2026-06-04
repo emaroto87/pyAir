@@ -1,0 +1,38 @@
+1 Program PANCO
+  Example 4
+  Not uniform column
+  Discrete and distributed loads
+2 TYPE OF COLUMN: 1 Uniform, 2 Non Uniform
+  2
+3 UNITS: N/daN/Kgf/lbf/klb   mm/cm/in
+  N  , mm
+4 MATERIAL DATA: Et Ec G Ftu Fty Fcy Delta
+  71710, 73770, 27580, 476.0, 400.0, 400.0, 7.00
+5 GEOMETRY: [ Uniform => Xlong Area Iyy Izz Jtors Cwarp Ycc Zcc Scrip DisNaUF DisNaLF ]   [ Non Uniform => Nx X Area Iyy DisNaUF DisNaLF ]
+  6,         0.00,        250.0,      15000.0,        25.00,        25.00
+           300.00,        250.0,      15000.0,        25.00,        25.00
+           300.00,        400.0,      25000.0,        40.00,        40.00
+           700.00,        400.0,      25000.0,        40.00,        40.00
+           700.00,        250.0,      15000.0,        25.00,        25.00
+          1000.00,        250.0,      15000.0,        25.00,        25.00
+6 WORK PLANE AND SUPPORT CONDITIONS: [ Uniform => Plane (1-XZ/2-XY) / Supports (Bend-Y, Bend-Z / Tors-X) / Stiffeness (Y, Z) ]   [ Non Uniform => Bend-Y / Stiff-Y ]
+  1
+7 DISCRETE AXIAL LOADS
+  2,         0.00,      20000.0
+          1000.00,     -20000.0
+8 DISTRIBUTED AXIAL LOADS
+  4,         0.00,        100.0
+           500.00,        100.0
+           500.00,          0.0
+          1000.00,          0.0
+9 DISCRETE TRANSVERSAL LOADS
+  1,       500.00,        500.0
+10 DISTRIBUTED TRANSVERSAL LOADS
+  6,         0.00,          0.0
+           300.00,          0.0
+           300.00,          1.0
+           700.00,          1.0
+           700.00,          0.0
+          1000.00,          0.0
+11 DISCRETE BENDING MOMENTS
+  1,       200.00,      10000.0

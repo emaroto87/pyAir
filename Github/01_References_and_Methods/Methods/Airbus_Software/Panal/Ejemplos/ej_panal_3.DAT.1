@@ -1,0 +1,53 @@
+     ! Unidades (separadas por una coma) (N/daN/kgf/lbf/klb , mm/cm/in)
+N,MM
+     ! Datos de los materiales. Dos posibilidades:
+     !  MAT_ID,MAT,FORM,TRAT,AREA,ESPE,BASE,DIRE
+     !  MAT_ID,MAT,FORM,TRAT,AREA,ESPE,BASE,DIRE: E,Ec,G,µ,Fty,Fcy,Ftu,Fsu,e(%)
+MAT1, 7075,      Chapas, T73, 0.,  1.2, S, L
+MAT2, Clad 2024, Chapas, T3,  0.,  4.0, A, L
+MAT3, Clad 7075, Chapas, T6,  0.,  4.0, A, L
+MAT4, 2024,      Chapas, T42, 0.,  2.0, S, L
+MAT5: 71000,74000,0,0.33,425,425,500,250,7
+********************************************************************************
+     ! Título de identificación del análisis (Máx. 80 caract.)
+Ejemplo 3: Caso de carga 1
+     ! Datos del alma:
+     !  MAT_ID, T, Hv, Hr, Hp, Dg, Dp, ø
+MAT1,1.0,300,270,270,250,250,100
+     ! Datos de los montantes. Tres posibilidades:
+     !  MATE_ID, L, TIPO (= 0 o 20), CD o EX, B1, T1, B2, T2, A, d, I, Fcc
+     !  MATE_ID, L, TIPO (= 1 2 21 o 22), CD o EX, B1, T1, B2, T2
+     !  MATE_ID, L, TIPO (= 3 4 5 23 24 o 25), CD o EX, B1, T1, B2, T2, B3, T3
+MAT4,250,1,CD,20,2,30,2
+     ! Datos del cordón inferior. Dos posibilidades:
+     !  MATE_ID, TIPO (= 0 o 20), CD o EX, B2, T2, A, d, I, Fcc, Sx o Tx
+     !  MATE_ID, TIPO (= 1 2 o 21), CD o EX, B2, T2, B1, T1, Sx o Tx
+MAT5,2,EX,40,3,50,4,S30
+     ! Datos del cordón superior. Dos posibilidades:
+     !  MATE_ID, TIPO (= 0 o 20), CD o EX, B2, T2, A, d, I, Fcc, Sx o Tx
+     !  MATE_ID, TIPO (= 1 2 o 21), CD o EX, B2, T2, B1, T1, Sx o Tx
+MAT5,2,EX,40,3,50,4,S30
+     ! Datos de los paneles del revestimiento inferior:
+     !  MATE_ID, IAP1, B1, T1, IAP2, B2, T2
+MAT2,1,150,3,1,150,3
+     ! Datos de los paneles del revestimiento superior:
+     !  MATE_ID, IAP1, B1, T1, IAP2, B2, T2
+MAT3,1,150,3,1,150,3
+     ! Datos del "pad" inferior:
+     !  B, T
+60,4
+     ! Datos del "pad" superior:
+     !  B, T
+60,4
+     ! Datos de cargas últimas:
+     !  FC, PXI, PXS, SXI1, SXI2, SXS1, SXS2
+20000,30000,-30000,100,100,-100,-100
+     ! Código de finalización (0) o de realización de un nuevo análisis (1-9)
+9
+     ! Título de identificación del análisis (Máx. 80 caract.)
+Ejemplo 3: Caso de carga 2
+     ! Datos de cargas últimas:
+     !  FC, PXI, PXS, SXI1, SXI2, SXS1, SXS2
+40000,30000,-30000,100,100,-100,-100
+     ! Código de finalización (0) o de realización de un nuevo análisis (1-9)
+0

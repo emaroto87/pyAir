@@ -1,0 +1,22 @@
+1 Programa OREJETAS.Example 2.
+  Método de Lockheed
+  Material: 7050 T7451 Placa
+  Orejeta cónica: 30 º
+2 METODO DE ANALISIS: 1=CASA  2=Lockheed
+  2
+3 UNIDADES: [Fuerza] / [Longitud]
+  N                   
+  mm                  
+4 DATOS DEL MATERIAL: Ftu
+  524.00
+5 GEOMETRIA: a  W  D  t / Ro  Beta
+   53.80  106.80   47.00   30.00
+   51.60  30.00
+6 CARGA APLICADA: Plim  Fult  Fadd  Ang
+  350000.0  1.50  1.15  0.00
+7 OPTIMIZACION: Optim / Iro  Romin  Romax / It  Tmin  Tmax / Ia  Amin  Amax / RFmin
+  1
+    1    1.00  100.00
+    1    1.00  100.00
+    1    1.00  100.00
+  1.05

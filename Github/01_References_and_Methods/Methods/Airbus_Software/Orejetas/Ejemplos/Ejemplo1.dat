@@ -1,0 +1,24 @@
+1 Programa OREJETAS.Ejemplo 1.
+  Método de C.A.S.A.
+  Material: 7050 T7451 Placa
+  Orejeta cónica: 30 º
+2 METODO DE ANALISIS: 1=CASA  2=Lockheed
+  1
+3 UNIDADES: [Fuerza] / [Longitud]
+  N                   
+  mm                  
+4 DATOS DEL MATERIAL: Mat/Trat/Prod/Area/Espesor/DirL/DirT/OpKbr/FtuL FtuT FtyL FtyT
+  7050
+  T7451
+  Placa
+     0.0
+   30.00
+  L 
+  LT
+  -
+  524.00  524.00  461.90  455.10
+5 GEOMETRIA: a  W  D  t / A1  A2  A3  A4
+   53.80  106.80   47.00   30.00
+  1103.5  1103.5   897.0   897.0
+6 CARGA APLICADA: Plim  Fult  Fadd  Ang
+  350000.0  1.50  1.15  0.00

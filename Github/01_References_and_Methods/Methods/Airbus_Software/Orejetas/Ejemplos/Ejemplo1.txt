@@ -1,0 +1,129 @@
+************************
+*                      *
+*   <<< OREJETAS >>>   *
+*                      *
+************************
+
+Strength check of lugs
+
+
+Execution data:
+===============
+
+   Date: 13-Feb-2025
+   Orejetas 6.2. (c) Airbus Defence and Space. Sep-2022
+
+
+Title:
+======
+
+   Programa OREJETAS.Ejemplo 1.
+   Método de C.A.S.A.
+   Material: 7050 T7451 Placa
+   Orejeta cónica: 30 º
+
+
+Units:
+======
+
+   Force  = N
+   Length = mm
+
+
+Geometry of the lug:
+====================
+
+   Diameter .............................. D =  47.00
+   Thickness ............................. t =  30.00
+   Equivalent width ...................... W = 106.80
+   Distance from the centre to the end ... a =  53.80
+
+   Transverse areas:
+   -----------------
+
+      A1 = 1103.5
+      A2 = 1103.5
+      A3 =  897.0
+      A4 =  897.0
+
+
+Material data:
+==============
+
+   Material ........: 7050
+   Treatment .......: T7451
+   Product .........: Plate
+
+   Curves according Design Manual, Vol. 8, Chap. 9:
+   ------------------------------------------------
+
+      Kt curve ................. 4
+      Ktru curve ............... 7
+      Kbr without limitations
+
+
+   Ultimate tensile longitudinal stress ......... 524.00
+   Ultimate tensile transverse stress ........... 524.00
+   Tensile yield longitudinal stress ............ 461.90
+   Tensile yield transverse stress .............. 455.10
+
+
+Applied loads:
+==============
+
+   Limit load ............................... Plim = 350000.0
+
+   Ultimate load factor ..................... Fult =      1.500
+   Additional factor ........................ Fadd =      1.150
+
+   Total ultimate load (with add. factor) ... Pult = 603750.0
+
+   Angle between load and axial dir. ........ Ang. =      0.00
+
+   Efficiency factors of the lug:
+   ------------------------------
+
+   For longitudinal loads:
+
+      Factor for tension .................... Kt   = 0.8736
+      Factor for shear-bearing .............. Kbr  = 1.0157
+      Factor for yielding ................... Kbry = 1.0781
+
+   For transverse loads:
+
+      Factor for transverse load ............ Ktru = 0.3262
+      Factor for transverse yield load ...... Ktry = 0.2844
+
+   Average area for transversal load:
+   ----------------------------------
+
+      Average area .......................... Amed = 1024.9
+
+
+Allowable loads:
+================
+
+   Longitudinal load:
+   ------------------
+
+      Allowable ultimate load for tension ................. Ptu  = 821272.4
+      Allowable ultimate load for shear-bearing ........... Pbru = 750438.4
+      Allowable limit load for yielding ................... Pbry = 691793.8
+
+   Trasverse load:
+   ---------------
+
+      Allowable ultimate load ............................. Ptru = 241030.9
+      Allowable limit load for yielding ................... Ptry = 182518.6
+
+   Oblique load:
+   -------------
+
+      Allowable ultimate load ............................. Pobu = 750438.6
+      Allowable limit load for yielding ................... Poby = 691793.9
+
+   Reserve factors of the lug:
+   ---------------------------
+
+      For ultimate load ................................... RFu  =      1.24
+      For limit load ...................................... RFy  =      1.97

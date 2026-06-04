@@ -1,0 +1,14 @@
+1 Program CRIPPLING.
+  Example of utilization no. 3.
+  Profile LN9498-070.
+  Material 7075 T76511.
+2 Units [Force] / [Length]
+  N
+  mm
+3 Material: Denom / Et  Fty  Ftu  Mu  Ec  Fcy  Delta%
+  7075 T76511
+  71710.0  482.6  537.8  0.33  73770.0  482.6  7.0
+4 Segments: No.  W  t  Sup1  Prop1  Sup2  Prop2
+  3  20.0  2.5  FR  2    EN  2.5
+     40.0  2.5  EN  2.5  EN  2.5
+     20.0  2.5  EN  2.5  FR  2

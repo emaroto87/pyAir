@@ -1,0 +1,81 @@
+ **************************************
+ *                                    *
+ *     <<< C R I P P L I N G  >>>     *
+ *                                    *
+ **************************************
+
+  Allowable crippling stress calculation for metallic profiles.
+
+
+ Execution data:
+ ===============
+
+ Date:  9-Apr-2021
+ Crippling 6.1. (c) Airbus Defence and Space. Apr-2021
+
+
+ Title:
+ ======
+
+ Program CRIPPLING.
+ Example of utilization no. 4.
+ Profile LN9087.
+ Material 2024 T3511.
+
+
+ Material data:
+ ==============
+
+ Material: 2024 T3511
+
+ Tensile Young modulus ..........: Et  = 74460.0 N/mm²
+ Tensile yield stress ...........: Fty =   289.6 N/mm²
+ Tensile ultimate stress ........: Ftu =   393.0 N/mm²
+ Poisson's ratio ................: Mu  =     0.330
+ Compression Young modulus ......: Ec  = 75840.0 N/mm²
+ Compression yield stress .......: Fcy =   234.4 N/mm²
+ Maximum elongation .............: El  =    12.00 %
+
+
+ Stringer geometry and Crippling load:
+ =====================================
+
+                            Supp.    Properties                Allowable values
+                           ------  --------------            --------------------
+  Seg.   Length   Thickn.  E1  E2    E1      E2      Area       Load      Stress    Key
+ -----  --------  -------  --  --  ------  ------  --------  ----------  --------  -----
+   1       25.00    2.000  BU  EA    --     2.000     64.67     12396.4     191.7    CR
+   2       20.00    2.000  EA  FR   2.000    --       38.40      9039.0     235.4    CR
+                                                   --------  ----------  --------
+                                                     103.07     21435.3     208.0
+
+
+ Notes:
+ ======
+
+ Support code at the segment ends:          Key for the allowable load:
+ ---------------------------------          ---------------------------
+   FR: Free                                   CR: Calculated by Crippling
+   BU: Bulb                                   PL: Calculated by local buckling
+   FA: Folded angle
+   FN: Folded no angle
+   EA: Corner angle
+   EN: Corner no angle
+
+ Effectiveness of segments with free edge:
+ -----------------------------------------
+ - The segment 2 provides effective support to the adjacent segment
+
+ Effectiveness and properties for bulbs:
+ ---------------------------------------
+ - The bulb of segment 1 end 1 does not provide effective support
+   Its properties are:
+   = Length ...............:  6.00 mm
+   = Area .................: 28.27 mm²
+   = Moment of inertia ....: 176.7 mm4
+
+
+ Allowable Crippling stress:
+ ===========================
+
+ Allowable stress = 208.0 N/mm²

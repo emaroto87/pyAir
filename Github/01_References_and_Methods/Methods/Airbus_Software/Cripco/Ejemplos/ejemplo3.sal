@@ -1,0 +1,43 @@
+ *******************************************
+ *                                         *
+ *            <<< CRIPCO >>>               *
+ *                                         *
+ *******************************************
+ * Cálculo del admisible de crippling para *
+ * larguerillos de material compuesto      *
+ *******************************************
+
+ Título:
+ =======
+
+ Program CRIPCO Example of utilization 3
+ Stringer in "T" of 480 mm length
+ Section with three segments
+ Vertical segment perpendicular direction minor inertia
+
+ Datos de entrada:
+ =================
+
+ Longitud del larguerillo: 480.0
+
+ Número de tramos del larguerillo: 3
+
+  Tramo   Anchura   Espesor  Orient. Apoyo    Ec        D11       D12       D22       D33       Ecu
+ ------- --------- --------- ------- ----- --------- --------- --------- --------- --------- ---------
+     1       25.00     4.500    1      1     73937.5  546605.6  104087.0  267552.7  118540.7   10000.0
+     2       30.00     4.500    1      1     73937.5  546605.6  104087.0  267552.7  118540.7   10000.0
+     3       24.73     5.040    2      1     79410.4  825340.3  133448.9  344068.0  153754.0   10000.0
+
+ Admisibles de pandeo local y crippling:
+ =======================================
+
+  Tramo     Pandeo local      Crippling
+ -------   --------------   -------------
+     1            -7122.1         -7917.7
+     2            -5031.9         -7096.5
+     3            -7891.3         -7917.7
+
+
+ *****************************************************************
+ * Microdeformaciones de crippling para el larguerillo:  -7627.0 *
+ *****************************************************************

@@ -1,0 +1,10 @@
+1 PROGRAM CRIPCO Example of utilization 1
+  Stringer in "T" of 480 mm length
+  Section with one segment
+  Vertical segment parallel direction minor inertia
+2 Length
+  480.0
+3 Number of segments
+  1
+4 Segment data: Orient.  Apoyo  Anchura  Espesor  Ec  D11  D12  D22  D33  Ecu
+  1  1   44.73   5.040   79410.4   825340.3   133448.9   344068.0   153754.0   10000.0

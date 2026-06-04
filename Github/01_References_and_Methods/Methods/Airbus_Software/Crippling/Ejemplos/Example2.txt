@@ -1,0 +1,76 @@
+ **************************************
+ *                                    *
+ *     <<< C R I P P L I N G  >>>     *
+ *                                    *
+ **************************************
+
+  Allowable crippling stress calculation for metallic profiles.
+
+
+ Execution data:
+ ===============
+
+ Date:  9-Apr-2021
+ Crippling 6.1. (c) Airbus Defence and Space. Apr-2021
+
+
+ Title:
+ ======
+
+ Program CRIPPLING.
+ Example of utilization no. 2.
+ Profile CAN35024.
+ Material 2024 T3.
+
+
+ Material data:
+ ==============
+
+ Material: 2024 T3
+
+ Tensile Young modulus ..........: Et  = 72390.0 N/mm²
+ Tensile yield stress ...........: Fty =   324.1 N/mm²
+ Tensile ultimate stress ........: Ftu =   441.3 N/mm²
+ Poisson's ratio ................: Mu  =     0.330
+ Compression Young modulus ......: Ec  = 72770.0 N/mm²
+ Compression yield stress .......: Fcy =   268.9 N/mm²
+ Maximum elongation .............: El  =    15.00 %
+
+
+ Stringer geometry and Crippling load:
+ =====================================
+
+                            Supp.    Properties                Allowable values
+                           ------  --------------            --------------------
+  Seg.   Length   Thickn.  E1  E2    E1      E2      Area       Load      Stress    Key
+ -----  --------  -------  --  --  ------  ------  --------  ----------  --------  -----
+   1        8.00    1.600  FR  FN    --     6.400      8.96      3484.3     388.9    CR
+   2       16.00    1.600  FN  FN   6.400   6.400     17.92      7230.6     403.5    CR
+   3       30.00    1.600  FN  FN   6.400   3.200     41.60     14023.4     337.1    CR
+   4       22.00    1.600  FN  FR   3.200    --       32.64      7107.4     217.8    CR
+                                                   --------  ----------  --------
+                                                     101.12     31845.8     314.9
+
+
+ Notes:
+ ======
+
+ Support code at the segment ends:          Key for the allowable load:
+ ---------------------------------          ---------------------------
+   FR: Free                                   CR: Calculated by Crippling
+   BU: Bulb                                   PL: Calculated by local buckling
+   FA: Folded angle
+   FN: Folded no angle
+   EA: Corner angle
+   EN: Corner no angle
+
+ Effectiveness of segments with free edge:
+ -----------------------------------------
+ - The segment 1 provides effective support to the adjacent segment
+ - The segment 4 provides effective support to the adjacent segment
+
+
+ Allowable Crippling stress:
+ ===========================
+
+ Allowable stress = 314.9 N/mm²

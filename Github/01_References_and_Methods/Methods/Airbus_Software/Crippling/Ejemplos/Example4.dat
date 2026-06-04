@@ -1,0 +1,13 @@
+1 Program CRIPPLING.
+  Example of utilization no. 4.
+  Profile LN9087.
+  Material 2024 T3511.
+2 Units [Force] / [Length]
+  N
+  mm
+3 Material: Denom / Et  Fty  Ftu  Mu  Ec  Fcy  Delta%
+  2024 T3511
+  74460.0  289.6  393.0  0.33  75840.0  234.4  12.0
+4 Segments: No.  W  t  Sup1  Prop1  Sup2  Prop2
+  2  25.0  2.0  BU  6.0  EA  2.0  0.0  0.0
+     20.0  2.0  EA  2.0  LI  1

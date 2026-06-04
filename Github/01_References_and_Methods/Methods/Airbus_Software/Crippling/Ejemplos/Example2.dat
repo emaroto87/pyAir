@@ -1,0 +1,15 @@
+1 Program CRIPPLING.
+  Example of utilization no. 2.
+  Profile CAN35024.
+  Material 2024 T3.
+2 Units [Force] / [Length]
+  N
+  mm
+3 Material: Denom / Et  Fty  Ftu  Mu  Ec  Fcy  Delta%
+  2024 T3
+  72390.0  324.1  441.3  0.33  72770.0  268.9  15.0
+4 Segments: No.  W  t  Sup1  Prop1  Sup2  Prop2
+  4   8.0  1.6  FR  2    FN  6.4
+     16.0  1.6  FN  6.4  FN  6.4
+     30.0  1.6  FN  6.4  FN  3.2
+     22.0  1.6  FN  3.2  FR  3

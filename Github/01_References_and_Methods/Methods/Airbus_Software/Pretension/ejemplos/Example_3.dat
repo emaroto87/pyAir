@@ -1,0 +1,16 @@
+ ! Unidades de longitud y fuerza: mm o in, N o lbf
+ mm,N  
+ ! Datos del bulón: Db, Dc, Eb, Dt, pr
+ 22.22,36.525,202700,38.89,1.81 
+ ! Número de paredes
+ 2
+ ! Datos de las paredes: ti, Ei 
+ 20,70000,63,70000 
+ ! 1: Pretension, 2: Par de apriete, Ft o Ma 
+ 2,424822
+ ! Fuerzas aplicadas: Fe, Qe 
+ 256407,57562 
+ ! Admisibles: Tbulon, Qbulon, Ttuerca 
+ 529500,334500,429700 
+ ! Fitting Factor
+ 1.15

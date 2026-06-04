@@ -1,0 +1,36 @@
+     JOINT DATA
+     ----------
+     Bolt diameter ..........................:          0.375  in
+     Bolt head diameter .....................:          0.600  in
+     Elastic modulus of the bolt ............:   30700000.0    lbf/in2
+     Nut diameter ...........................:          0.600  in
+     Thread pitch ...........................:          0.042  in
+     Walls number ...........................:          1
+     Wall 1:
+              E= 29100000.00  lbf/in2
+              t=        3.000  in
+ 
+ 
+     APPLIED LOADS
+     -------------
+     Preload ................................:        10000.0  lbf
+     Torque .................................:          667.2  lbf·in
+     Tension load ...........................:          900.0  lbf
+     Shear load .............................:            0.0  lbf
+ 
+ 
+     RESULTS
+     -------
+     Separation load ........................:        10738.6  lbf
+     Load on the bolt .......................:        10061.9  lbf
+     Load on the wall .......................:        -9161.9  lbf
+ 
+ 
+     STRENGTH CHECK
+     --------------
+     Bolt tension allowable .................:            0.0  lbf
+     Bolt shear allowable ...................:            0.0  lbf
+     Nut tension allowable ..................:            0.0  lbf
+ 
+     Bolt reserve factor ....................:            0.00
+     Nut reserve factor .....................:            0.00

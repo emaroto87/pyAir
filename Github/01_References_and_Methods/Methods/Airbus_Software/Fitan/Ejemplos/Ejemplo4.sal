@@ -1,0 +1,63 @@
+
+PROGRAM FITAN, VERSION 3.6
+==========================
+Example 4                                                             
+Pi Fitting                                                            
+Airbus Military                                                       
+March 2011                                                            
+
+ 
+MATERIAL
+========
+Designation:   7075           L-3710         3.4364         
+Product:         Chapa             
+Thickness:       0.2032            
+Temper:          T62               
+Direction:       LT
+Statist. Base:   S 
+Ftu =  510.2
+Fty =  434.4
+Fsu =  296.5
+ 
+ 
+ANALYSIS
+========
+PI SHAPE FITTING
+ 
+ 
+GEOMETRY
+========
+tp    =        6.00
+b     =       22.00
+c1    =       10.00
+c2    =       15.00
+Mrb   =        0.00
+L1    =       20.00
+L2    =       20.00
+L3    =       25.00
+L4    =       25.00
+jmu   =        1.00
+tb1   =        7.00
+tb2   =        8.00
+tb3   =        8.00
+r1b1  =        7.00
+r1b2  =        5.00
+r1b3  =        5.00
+r0b1  =        9.00
+r0b2  =        9.00
+r0b3  =       10.00
+x     =       40.00
+f0/fm =        0.87
+ 
+ 
+RESERVE FACTOR
+==============
+  #       P       RFtw   RFsect      R1         R2         R3      RFs1    RFs2    RFs3 
+====  =========  ======  ======  =========  =========  =========  ======  ======  ======
+   1    30000.0   4.490   1.074     8833.0    18206.5     9448.0  13.287   7.367  15.774
+
+ 
+------------------------------------ 
+Fitan 3.6 (c) Airbus Defence & Space 
+------------------------------------ 
+27-Jan-21

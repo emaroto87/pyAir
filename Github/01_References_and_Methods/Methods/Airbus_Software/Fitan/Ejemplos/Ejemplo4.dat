@@ -1,0 +1,17 @@
+1 Example 4                                                             
+  Pi Fitting                                                            
+  Airbus Military                                                       
+  March 2011                                                            
+2 MATERIAL DATA
+    510.2  434.4  296.5
+  7075           L-3710         3.4364         
+  Chapa               
+  0.2032              
+  T62                 
+  LT
+  S 
+3 TYPE OF ANALISIS: 0-2 Angles,3-5 Extrusions, 10-15 Fittings
+  13     6.00    22.00    10.00    15.00     0.00    20.00    20.00    25.00    25.00     1.00     7.00     8.00     8.00     7.00     5.00     5.00     9.00     9.00    10.00    40.00     0.87
+4 LOADS
+      1   30000.0
+

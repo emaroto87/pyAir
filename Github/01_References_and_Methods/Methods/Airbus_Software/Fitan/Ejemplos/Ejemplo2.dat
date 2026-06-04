@@ -1,0 +1,17 @@
+1 Example 2                                                             
+  L Extruded profile (simple extruded angle)                            
+  Airbus Military                                                       
+  March 2011                                                            
+2 MATERIAL DATA
+    420.6  275.8  255.1
+  2024           L-3140         3.1354         
+  Sheet               
+  0.2540              
+  T4                  
+  L 
+  A 
+3 TYPE OF ANALISIS: 0-2 Angles,3-5 Extrusions, 10-15 Fittings
+   3     5.00     4.00    10.00    12.00     3.00     5.00    40.00     2.00     4.80     6.00     6.00 70000.00   200.00   200.00     1.00
+4 LOADS
+      1   20000.0
+

@@ -1,0 +1,17 @@
+1 Example 3                                                             
+  Bathup fitting                                                        
+  Airbus Military                                                       
+  March 2011                                                            
+2 MATERIAL DATA
+    510.2  448.2  296.5
+  7075           L-3710         3.4364         
+  Plate               
+  6.35  <-->  12.67   
+  T62                 
+  L 
+  A 
+3 TYPE OF ANALISIS: 0-2 Angles,3-5 Extrusions, 10-15 Fittings
+  10    40.00     9.00     6.00    20.00     8.00     0.00     0.00     1.00     5.00     0.87
+4 LOADS
+      1   30000.0
+

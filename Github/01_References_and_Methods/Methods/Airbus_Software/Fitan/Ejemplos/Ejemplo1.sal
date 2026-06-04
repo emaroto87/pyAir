@@ -1,0 +1,50 @@
+
+PROGRAM FITAN, VERSION 3.6
+==========================
+Example 1                                                             
+L Profile (Simple Angle) of folded Sheet (formed clips)               
+Airbus Military                                                       
+March 2011                                                            
+
+ 
+MATERIAL
+========
+Designation:   7075           L-3710         3.4364         
+Product:         Sheet             
+Thickness:       0.3048            
+Temper:          T62               
+Direction:       L 
+Statist. Base:   A 
+Ftu =  524.0
+Fty =  496.4
+Fsu =  317.2
+ 
+ 
+ANALYSIS
+========
+SHEET METAL - L SHAPE
+ 
+ 
+GEOMETRY
+========
+t  =   2.00
+eb =   8.00
+w  =  25.00
+ 
+ 
+ALLOWABLE  LOADS/STRESSES
+=========================
+Tension Load:        Pt =    3068.1
+ 
+ 
+RESERVE FACTOR
+==============
+  #       P       R.F.
+====  =========  ======
+   1     3000.0   1.023
+
+ 
+------------------------------------ 
+Fitan 3.6 (c) Airbus Defence & Space 
+------------------------------------ 
+27-Jan-21

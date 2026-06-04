@@ -1,0 +1,105 @@
+
+Flexa 4.1          (c) Airbus Defence and Space, Jun-2018           19-Jun-2018
+-------------------------------------------------------------------------------
+
+*******************************************
+*                                         *
+*   <<< Section data and properties >>>   *
+*                                         *
+*******************************************
+
+Section defined by contour lines.
+
+Point        X             Y             R
+-----   -----------   -----------   -----------
+   1         0.0000        0.0000        2.2361
+   2         2.0000        0.0000        0.0000
+   3         1.5000        1.0000        0.0000
+   4         0.5000        1.0000        0.0000
+   5         0.5000        3.0000        0.0000
+   6         1.5000        3.0000        0.0000
+   7         1.5000        1.0000        0.0000
+   8         2.0000        0.0000        2.2361
+   9         2.0000        4.0000        2.2361
+  10         0.0000        4.0000        2.2361
+
+Units: mm
+
+
+Area of the section:
+--------------------
+A =  13.708 mm²
+
+Center of gravity position:
+---------------------------
+
+Xcg =  1.0000 mm
+Ycg =  2.0000 mm
+
+Moments of inertia in the center of gravity:
+--------------------------------------------
+
+Ixx =  18.968 mm4
+Iyy =  19.467 mm4
+Pxy =   0.000 mm4
+
+Moments of inertia in principal axes:
+-------------------------------------
+
+I1 =  18.968 mm4
+I2 =  19.467 mm4
+
+Ang =   0.00 °
+
+
+
+*****************************
+*                           *
+*   <<< Material data >>>   *
+*                           *
+*****************************
+
+                          Tension     Compression
+                        -----------   -----------
+Modulus of elasticity =    195121.0      202705.0 N/mm²
+Yield stress          =      1379.0        1455.0 N/mm²
+Ultimate stress       =      1434.0               N/mm²
+Maximum elongation(%) =       10.00 %
+No. of Ramberg-Osgood =      100.03        ******
+ 
+"For these cases (Fcy>Ftu) the material in compression is assumed perfectly-plastic after yield"                        
+"The strength cut-off is set at the point with the same permanent deformation after failure as in tension."             
+
+Allowable stress      =      1430.8        1455.0 N/mm²
+Allowable microstrain =       87115         86915
+
+
+
+********************************
+*                              *
+*   <<< Analysis results >>>   *
+*                              *
+********************************
+
+                   Results for applied loads                            Results for failure loads
+       --------------------------------------------------   --------------------------------------------------
+        Loads     Neutral       Maximum deformation          Loads     Neutral       Maximum deformation
+          Pz       Axis   -------------------------------      Pz       Axis   -------------------------------
+Load      Mx     Angle OX  Location  X,Y   Strain, Stress      Mx     Angle OX  Location  X,Y   Strain, Stress
+case      My     Dist. CG   (User axes)                        My     Dist. CG   (User axes)                     R.F.
+----   --------- -------- --------------- ---------------   --------- -------- --------------- ---------------   ----
+  1      -1000.0   180.0°  1.0942  4.2341    -366   -74.1    -19824.7   180.0°  0.9058  4.2341  -86916 -1455.0   > 10
+            10.0  -151.5   0.9058 -0.2341    -355   -72.0       198.2    -2.4   1.0942 -0.2341   -3137  -635.8
+             0.0                                                  0.0
+
+  2          0.0   180.0°  0.9058  4.2341    -589  -119.3         0.0   180.0°  1.0942  4.2341  -85061 -1455.0   > 10
+          1000.0     0.0   1.0942 -0.2341     599   116.8     19899.0     0.0   0.9058 -0.2341   87115  1430.8
+             0.0                                                  0.0
+----   --------------------------------------------------   --------------------------------------------------   ----
+
+Units: N, mm
+
+All loads are referred to the center of gravity
+
+Load case with minimum reserve factor =     1
+                                RFmin > 10.00

@@ -1,0 +1,64 @@
+
+PROGRAM FITAN, VERSION 3.6
+==========================
+Example 2                                                             
+L Extruded profile (simple extruded angle)                            
+Airbus Military                                                       
+March 2011                                                            
+
+ 
+MATERIAL
+========
+Designation:   2024           L-3140         3.1354         
+Product:         Sheet             
+Thickness:       0.2540            
+Temper:          T4                
+Direction:       L 
+Statist. Base:   A 
+Ftu =  420.6
+Fty =  275.8
+Fsu =  255.1
+ 
+ 
+ANALYSIS
+========
+EXTRUSION - L SHAPE
+ 
+ 
+GEOMETRY
+========
+tb  =        5.00
+tf  =        4.00
+e   =       10.00
+a   =       12.00
+Nr  =        3.00
+D   =        5.00
+w   =       40.00
+Nb  =        2.00
+Dr  =        4.80
+tpf =        6.00
+tpb =        6.00
+Es  =    70000.00
+L   =      200.00
+Ppt =      200.00
+sup =        1.00
+ 
+ 
+ALLOWABLE  LOADS/STRESSES
+=========================
+Tension Load:        Pt =   17227.8
+Bending Load:        Pb =   14609.6
+Shear Load:          Ps =   20772.6
+ 
+ 
+RESERVE FACTOR
+==============
+  #       P        RFt     RFb     RFs 
+====  =========  ======  ======  ======
+   1    20000.0   0.861   0.730   1.039
+
+ 
+------------------------------------ 
+Fitan 3.6 (c) Airbus Defence & Space 
+------------------------------------ 
+27-Jan-21

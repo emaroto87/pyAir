@@ -1,0 +1,21 @@
+2  Sección definida por líneas de contorno: N / X  Y  R
+   10   0.0000   0.0000   2.2361
+        2.0000   0.0000   0.0000
+        1.5000   1.0000   0.0000
+        0.5000   1.0000   0.0000
+        0.5000   3.0000   0.0000
+        1.5000   3.0000   0.0000
+        1.5000   1.0000   0.0000
+        2.0000   0.0000   2.2361
+        2.0000   4.0000   2.2361
+        0.0000   4.0000   2.2361
+3  Propiedades del material: Et, Ec, Fty, Fcy, Ftu, e(%)
+   195121.0  202705.0  1379.0  1455.0  1434.0  10.0
+4  Casos de carga: Fz  Mx  My [Xo Yo]
+   2  -1000.0     10.0      0.0
+          0.0   1000.0      0.0
+5  Microdeformaciones admisibles: Eps-t  Eps-c
+   87115.41   86915.85
+6  Unidades: [Fuerza] / [Longitud]
+   N
+   mm

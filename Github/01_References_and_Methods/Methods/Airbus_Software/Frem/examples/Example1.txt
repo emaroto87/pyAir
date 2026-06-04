@@ -1,0 +1,47 @@
+ ************************************
+ *                                  *
+ *         <<< F R E M >>>          *
+ *                                  *
+ ************************************
+ * Calculation of allowable stress  *
+ * for inter-rivet buckling         *
+ ************************************
+
+ Input data:
+ ===========
+
+    Material:
+    ---------
+
+       Denomination ...............................: 7050 T7451
+       Type of material ...........................: Homogeneous
+
+    Mechanical properties of the material:
+    --------------------------------------
+
+       Young modulus in compression ...............: 73084.0   N/mm²
+       Ultimate tensile stress ....................:   524.0   N/mm²
+       Yield stress in compression ................:   441.3   N/mm²
+       Poisson´s modulus ..........................:     0.33
+       Plastic deformation for ultimate stress ....:    10.00  %
+       Number of Ramberg-Osgood in compression ....:    22.78
+
+    Fastening data:
+    ---------------
+
+       Panel thickness at the fastened zone .......:     1.50  mm
+       Fasteners pitch ............................:    30.00  mm
+       Type of fasteners head .....................: Protruding
+       Clamping coefficient of fasteners ..........:     3.000
+
+
+ Allowable stress for inter-rivet buckling:
+ ==========================================
+
+    Inter-rivet buckling stress (Fir) ............:  -374.0   N/mm²
+
+    Tangent modulus (at Fir) .....................: 60629.8   N/mm²
+
+
+ Frem 3.2. (c) Airbus Defence and Space. Jun-2020
+ ================================================

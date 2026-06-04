@@ -1,0 +1,16 @@
+1 Example 1                                                             
+  L Profile (Simple Angle) of folded Sheet (formed clips)               
+  Airbus Military                                                       
+  March 2011                                                            
+2 MATERIAL DATA
+    524.0  496.4  317.2
+  7075           L-3710         3.4364         
+  Sheet               
+  0.3048              
+  T62                 
+  L 
+  A 
+3 TYPE OF ANALISIS: 0-2 Angles,3-5 Extrusions, 10-15 Fittings
+   0     2.00     8.00    25.00
+4 LOADS
+      1    3000.0

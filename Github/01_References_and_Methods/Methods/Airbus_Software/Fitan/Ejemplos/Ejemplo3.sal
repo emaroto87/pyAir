@@ -1,0 +1,52 @@
+
+PROGRAM FITAN, VERSION 3.6
+==========================
+Example 3                                                             
+Bathup fitting                                                        
+Airbus Military                                                       
+March 2011                                                            
+
+ 
+MATERIAL
+========
+Designation:   7075           L-3710         3.4364         
+Product:         Plate             
+Thickness:       6.35  <-->  12.67 
+Temper:          T62               
+Direction:       L 
+Statist. Base:   A 
+Ftu =  510.2
+Fty =  448.2
+Fsu =  296.5
+ 
+ 
+ANALYSIS
+========
+BATHUP FITTING
+ 
+ 
+GEOMETRY
+========
+a     =       40.00
+r0    =        9.00
+r1    =        6.00
+d     =       20.00
+te    =        8.00
+Mrw   =        0.00
+Mrb   =        0.00
+jmu   =        1.00
+tp    =        5.00
+f0/fm =        0.87
+ 
+ 
+RESERVE FACTOR
+==============
+  #       P        RFw     RFb     RFs 
+====  =========  ======  ======  ======
+   1    30000.0   7.990   1.264   4.471
+
+ 
+------------------------------------ 
+Fitan 3.6 (c) Airbus Defence & Space 
+------------------------------------ 
+27-Jan-21

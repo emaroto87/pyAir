@@ -1,0 +1,91 @@
+ ************************************
+ *                                  *
+ *         <<< U R C O >>>          *
+ *                                  *
+ ************************************
+ * Cálculo de admisibles en uniones *
+ * remachadas en material compuesto *
+ ************************************
+
+ <--+--------------------------------+   +
+ <--|            |<-- p -->|<-- e -->|   |
+ <--|                        P       |   |
+ <--|  O         O         O===>     |   W
+ <--|                                |   |
+ <--|                                |   |
+ <--+--------------------------------+   +
+
+ Título:
+ =======
+
+ Programa URCO                                                                   
+ Cinta del grupo V                                                               
+ Unión a simple cortadura                                                        
+ Remache avellanado                                                              
+
+ Datos del material:
+ ===================
+
+ Material .......................: Cinta Grupo V
+ % de apilado de fibras a  0º ...: 25.00
+ % de apilado de fibras a 45º ...: 50.00
+ % de apilado de fibras a 90º ...: 25.00
+
+ Datos de la unión:
+ ==================
+
+ Tipo de unión ..................: Simple Cortadura
+ Tipo de remache ................: Avellanado
+
+ Geometría de la unión:
+ ======================
+
+ Diámetro del remache ...........: D =   4.00 mm
+ Anchura efectiva ...............: W =  16.00 mm
+ Distancia al extremo ...........: e = 100.00 mm
+ Espesor del laminado ...........: t =   4.00 mm
+ Paso de remaches ...............: p =  16.00 mm
+
+ Valores admisibles:
+ ===================
+
+                 |
+                B|
+                 |\
+    +------------+--\-----C        *************************
+    |            |    \            * A = 5462.9  Microdef. *
+    |            |      \          * B =  586.04 N/mm2     *
+    |            |        \        * C =  340.00 N/mm2     *
+    |            |          \      *************************
+ ---+------------+------------+----
+   -A            0            A
+
+ Factores de reserva:
+ ====================
+
+                   Carga              Factor de reserva
+        ---------------------------   -----------------
+ Caso   Circul. (µe)   Transf. (N )   Sección   Aplast.
+ ----   ------------   ------------   -------   -------
+   1          2000.0         4000.0      1.26      1.36
+   2         -2000.0         4000.0      2.73      1.36
+   3          2000.0            0.0      2.73   > 10.00
+   4         -2000.0            0.0      2.73   > 10.00
+   5             0.0         4000.0      2.34      1.36
+
+ Factores de reserva mínimos:
+ ============================
+
+ Fallo sección transversal ......: RF =  1.26
+ Caso de carga:     1
+ Microdeformaciones circulantes .: e =  2000.0
+ Carga trasferida ...............: P =  4000.0 N
+
+
+ Fallo por aplastamiento ........: RF =  1.36
+ Caso de carga:     1
+ Microdeformaciones circulantes .: e =  2000.0
+ Carga trasferida ...............: P =  4000.0 N
+
+ Programa Urco. Versión 5.3. (c) Airbus Defence & Space, 2017
+ ------------------------------------------------------------

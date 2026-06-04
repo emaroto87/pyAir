@@ -1,0 +1,101 @@
+ ***********************************
+ *                                 *
+ *         <<< U R C O >>>         *
+ *                                 *
+ ***********************************
+ * Calculation of allowable values *
+ * in composite fastened joints    *
+ ***********************************
+
+ <--+--------------------------------+   +
+ <--|            |<-- p -->|<-- e -->|   |
+ <--|                        P       |   |
+ <--|  O         O         O===>     |   W
+ <--|                                |   |
+ <--|                                |   |
+ <--+--------------------------------+   +
+
+
+ Execution data:
+ ===============
+
+ Date: 17-Oct-2018
+ Urco 5.4. (c) Airbus Defence and Space. Mar-2018
+
+
+ Title:
+ ======
+
+ Programa URCO                                                                   
+ Cinta del grupo V                                                               
+ Unión a simple cortadura                                                        
+ Remache avellanado                                                              
+
+
+ Material data:
+ ==============
+
+ Material .......................: Tape Group V
+ % of layers of fibres at  0º ...: 25.0
+ % of layers of fibres at 45º ...: 50.0
+ % of layers of fibres at 90º ...: 25.0
+
+
+ Joint data:
+ ===========
+
+ Type of joint ..................: Single Shear
+ Type of fastener ...............: Countersunk
+
+
+ Geometry of the joint:
+ ======================
+
+ Fastener diameter ..............: D =   4.0 mm
+ Effective width ................: W =  16.0 mm
+ Distance to the end ............: e = 100.0 mm
+ Laminate thickness .............: t =   4.0 mm
+ Fasteners pitch ................: p =  16.0 mm
+
+
+ Allowable values:
+ =================
+
+                 |
+                B|
+                 |\
+    +------------+--\-----C        ************************
+    |            |    \            * A = 5463   Microstr. *
+    |            |      \          * B =  586.0 N/mm2     *
+    |            |        \        * C =  340.0 N/mm2     *
+    |            |          \      ************************
+ ---+------------+------------+----
+   -A            0            A
+
+
+ Reserve factors:
+ ================
+
+                   Load                Reserve factor
+        ---------------------------   -----------------
+ Case   By-pass (µe)   Transf. (N )   Section   Bearing
+ ----   ------------   ------------   -------   -------
+   1            2000           4000      1.26      1.36
+   2           -2000           4000      2.73      1.36
+   3            2000              0      2.73      >1E9
+   4           -2000              0      2.73      >1E9
+   5               0           4000      2.34      1.36
+
+
+ Minimum reserve factors:
+ ========================
+
+ Cross section failure ............: RF =  1.26
+ Load Case:     1
+ By-pass microstrains .............: e =  2000
+ Transferred load .................: P =  4000 N
+
+ Failure due to bearing ...........: RF =  1.36
+ Load case:     1
+ By-pass microstrains .............: e =  2000
+ Transferred load .................: P =  4000 N

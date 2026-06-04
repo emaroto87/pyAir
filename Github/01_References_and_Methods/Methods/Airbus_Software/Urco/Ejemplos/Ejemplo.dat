@@ -1,0 +1,21 @@
+1 Programa URCO
+  Cinta del grupo V
+  Unión a simple cortadura
+  Remache avellanado
+2 UNIDADES: [Longitud] / [fuerza]
+  mm
+  N
+3 DATOS DEL MATERIAL: Tipo (Tejido: 1,3,5 - Cinta: 2,4,6)
+  6
+4 APILADOS (Tejido: % 0/90  -  Cinta: % 0 y % 45)
+  25.0  50.0
+5 TIPO DE UNION (Simple=1  Doble=2) - (Protuberante=1  Avellanado=2)
+  1  2
+6 DATOS GEOMETRICOS (Diámetro - Anchura - distancia extremo - espesor - paso)
+  4.0  16.0  100.0  4.0  16.0
+7 CARGA APLICADA: Ncasos, Eps(i), P(i)
+  5   2000.0  4000.0
+     -2000.0  4000.0
+      2000.0     0.0
+     -2000.0     0.0
+         0.0  4000.0

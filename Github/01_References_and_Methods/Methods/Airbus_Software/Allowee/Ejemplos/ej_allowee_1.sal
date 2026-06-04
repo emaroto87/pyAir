@@ -1,0 +1,169 @@
+ 
+
+                                                                                          19-01-2021, Allowee 4.3
+
+     CASA DENOMINATION      : PROBLEM 1 MIL-HDBK-17-1D Section 8.7
+     MATERIAL DENOMINATION  : Z-19776+Z19785
+     TEST                   : LAP SHEAR/DIN 65148(RT)
+     UNITS                  : MPA
+     TOTAL NUMBER OF VALUES :   53
+     NUMBER OF BATCHES      :    9
+     CV(%) OF POPULATION*   :  2.0
+
+     (*) Coefficient of Variation of population only for small samples formula
+         Find recommended values for several data types in user's manual
+
+
+
+                             ALLOWABLE VALUES
+                             --------- ------
+
+
+                          A-BASIS VALUE =      45.74
+                          B-BASIS VALUE =      55.67
+
+
+    =========================================================================
+
+     REMARKS:
+
+     ANOVA method.                                                                                                                                                                                          
+     Batches with different distributions. The data should not be pooled.                                                                                                                                   
+     Batches with similar variances.                                                                                                                                                                        
+     There are outliers. Outliers are included in all calculations.                                                                                                                                         
+
+
+    =========================================================================
+ 
+ 
+ 
+                              INPUT DATA
+                              ----------
+
+     BATCH   N               SPECIMEN DATA 
+    ---------------------------------------------------------------------------
+
+       1     7      61.0       61.3       61.6       63.4       63.6       65.4  
+                    65.4  
+       2     5      61.2       64.0       64.7       64.8       66.4  
+       3     5      63.6       66.8       68.4       68.8       69.3  
+       4     7      64.1       64.6       65.6       66.8       67.9       68.9  
+                    71.1  
+       5     6      62.7       68.6       73.3       74.0       74.2       74.6  
+ 
+       6     5      65.5       67.4       68.0       74.6       74.9  
+       7     5      65.4       69.4       69.9       71.5       86.4 *
+       8     6      64.7       70.0       70.2       76.8       78.5       79.2  
+ 
+       9     7      68.3       70.7       79.7       80.6       81.1       82.3  
+                    87.0  
+
+ -------------------------------------------------------------------------------
+    TOTAL OF  9 BATCHES,  53 SPECIMEN(S).
+
+ * =  Outlier at the 0.05 level.
+
+ ===============================================================================
+ 
+ 
+
+                          PRELIMINARY DESCRIPTIVE STATISTICS
+                          ----------------------------------
+
+       NUMBER       SAMPLE                    STANDARD
+      OF BATCH       SIZE        AVERAGE      DEVIATION
+    ------------------------------------------------------------------------
+         1             7           63.10         1.86
+         2             5           64.22         1.90
+         3             5           67.38         2.31
+         4             7           67.00         2.50
+         5             6           71.23         4.73
+         6             5           70.08         4.36
+         7             5           72.52         8.08
+         8             6           73.23         5.81
+         9             7           78.53         6.64
+
+    ------------------------------------------------------------------------
+     POOLED SAMPLE    53           69.78         6.48
+
+    =========================================================================
+ 
+ 
+
+                     INVESTIGATION OF BATCH-TO-BATCH VARIABILITY
+                     ------------- -- --------------------------
+
+     THE K-SAMPLE ANDERSON-DARLING TEST STATISTIC    =      2.67
+     THE CRITICAL VALUE                              =      1.44
+     SIGNIFICANT  LEVEL                              =      0.05
+     DIFFERENT POPULATION   
+
+     THE TEST STATISTIC FOR EQUALITY OF VARIANCE     =      1.05
+     THE CRITICAL VALUE WITH  9-1 DEGREES OF FREEDOM =      2.16
+     SIGNIFICANT  LEVEL                              =      0.05
+     VARIANCES ARE NOT SIGNIFICANTLY DIFFERENT
+
+    ============================================================================
+ 
+ 
+ 
+                          COMPUTATION ALLOWABLE VALUES
+                          ----------------------------
+
+
+                        THE TWO-PARAMETER WEIBULL METHOD
+                        --- --- --------- ------- ------
+     SHAPE PARAMETER                  =      10.21
+     SCALE PARAMETER                  =      72.86
+     TOLERANCE LIMIT FACTOR (A Basis) =       8.38
+     TOLERANCE LIMIT FACTOR (B Basis) =       4.65
+     A-D STATISTIC                    =       2.31
+     OBSERVANCE LEVEL                 =       0.00
+
+     THE A VALUE                      =      52.22
+     THE B VALUE                      =      54.91
+
+                              THE NORMAL METHOD
+                              --- ------ ------
+     MEAN                             =      69.78
+     STANDARD DEVIATION               =       6.48
+     TOLERANCE LIMIT FACTOR (A Basis) =       2.84
+     TOLERANCE LIMIT FACTOR (B Basis) =       1.63
+     A-D STATISTIC                    =       1.37
+     OBSERVANCE LEVEL                 =       0.00
+
+     THE A VALUE                      =      51.35
+     THE B VALUE                      =      59.19
+
+                            THE LOGNORMAL METHOD
+                            --- --------- ------
+     AVERAGE OF LOG DATA              =       4.24
+     STD. DEV. OF LOG DATA            =       0.09
+     TOLERANCE LIMIT FACTOR (A Basis) =       2.84
+     TOLERANCE LIMIT FACTOR (B Basis) =       1.63
+     A-D STATISTIC                    =       1.03
+     OBSERVANCE LEVEL                 =       0.01
+
+     THE A VALUE                      =      53.83
+     THE B VALUE                      =      60.01
+
+                          THE NONPARAMETRIC METHOD
+                          --- ------------- ------
+     THE A VALUE                      =      49.63   (Hanson-Koopmans value)
+     THE B VALUE                      =      61.20
+
+     NORMAL ANALYSIS IN THE PRESENCE OF BATCH-TO-BATCH VARIATION (ANOVA)
+     ------ -------- -- --- -------- -- ----- -- ----- --------- -------
+     THE ASSUMPTIONS ARE:
+        1) THE DATA FROM EACH BATCH ARE NORMALLY DISTRIBUTED,
+        2) THE BATCH MEANS ARE NORMALLY DISTRIBUTED, AND
+        3) THE VARIANCES WITHIN EACH BATCH ARE THE SAME.
+
+     BETWEEN BATCH MEAN SQUARE         =     150.97
+     WITHIN BATCH VARIANCE             =      22.18
+     POPULATION STANDARD DEVIATION     =       6.64
+     TOLERANCE LIMIT FACTOR (A Basis)  =       3.62
+     TOLERANCE LIMIT FACTOR (B Basis)  =       2.12
+
+     THE A VALUE                       =      45.74
+     THE B VALUE                       =      55.67

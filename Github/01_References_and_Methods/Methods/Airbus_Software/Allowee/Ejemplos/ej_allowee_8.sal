@@ -1,0 +1,95 @@
+ 
+
+                                                                                          19-01-2021, Allowee 4.3
+
+     CASA DENOMINATION      : EXAMPLE 8
+     MATERIAL DENOMINATION  : Z-19781
+     TEST                   : TEST
+     UNITS                  : MPA
+     TOTAL NUMBER OF VALUES :   15
+     NUMBER OF BATCHES      :    3
+     CV(%) OF POPULATION*   :  2.0
+
+     (*) Coefficient of Variation of population only for small samples formula
+         Find recommended values for several data types in user's manual
+
+
+
+                             ALLOWABLE VALUES
+                             --------- ------
+
+
+                          B-BASIS VALUE =     112.77
+
+
+    =========================================================================
+
+     REMARKS:
+
+     AGATE method has been used.                                                                                                                                                                            
+     Data fit in a Normal distribution.                                                                                                                                                                     
+     Batches with similar variances.                                                                                                                                                                        
+     There are not outliers.                                                                                                                                                                                
+
+
+    =========================================================================
+ 
+ 
+ 
+                              INPUT DATA
+                              ----------
+
+     BATCH   N               SPECIMEN DATA 
+    ---------------------------------------------------------------------------
+
+       1     5     118.6      121.8      134.0      137.5      140.4  
+       2     5     114.6      123.3      130.3      133.4      138.0  
+       3     5     122.7      122.9      135.8      137.1      137.5  
+
+ -------------------------------------------------------------------------------
+    TOTAL OF  3 BATCHES,  15 SPECIMEN(S).
+ 
+ 
+
+                          PRELIMINARY DESCRIPTIVE STATISTICS
+                          ----------------------------------
+
+       NUMBER       SAMPLE                    STANDARD
+      OF BATCH       SIZE        AVERAGE      DEVIATION
+    ------------------------------------------------------------------------
+         1             5          130.46         9.72
+         2             5          127.92         9.19
+         3             5          131.19         7.71
+
+    ------------------------------------------------------------------------
+     POOLED SAMPLE    15          129.86         8.38
+
+    =========================================================================
+ 
+ 
+
+                     INVESTIGATION OF BATCH-TO-BATCH VARIABILITY
+                     ------------- -- --------------------------
+
+     THE K-SAMPLE ANDERSON-DARLING TEST STATISTIC    =      0.60
+     THE CRITICAL VALUE                              =      1.89
+     SIGNIFICANT  LEVEL                              =      0.05
+     SAME POPULATION   
+
+     THE TEST STATISTIC FOR EQUALITY OF VARIANCE     =      0.09
+     THE CRITICAL VALUE WITH  3-1 DEGREES OF FREEDOM =      5.12
+     SIGNIFICANT  LEVEL                              =      0.05
+     VARIANCES ARE NOT SIGNIFICANTLY DIFFERENT
+
+    ============================================================================
+ 
+ 
+ 
+                          SMALL SAMPLE ADDITIONAL DATA
+                          ----------------------------
+
+     Kb (normalized data)  =      0.868
+
+    ============================================================================
+
+

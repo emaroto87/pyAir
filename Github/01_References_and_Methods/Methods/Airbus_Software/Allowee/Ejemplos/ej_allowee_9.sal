@@ -1,0 +1,101 @@
+ 
+
+                                                                                          19-01-2021, Allowee 4.3
+
+     CASA DENOMINATION      : EXAMPLE 9
+     MATERIAL DENOMINATION  : Z-19776
+     TEST                   : TEST
+     UNITS                  : MPA
+     TOTAL NUMBER OF VALUES :    5
+     NUMBER OF BATCHES      :    2
+     CV(%) OF POPULATION*   :  5.8
+
+     (*) Coefficient of Variation of population only for small samples formula
+         Find recommended values for several data types in user's manual
+
+
+
+                             ALLOWABLE VALUES
+                             --------- ------
+
+
+                     ENVIRONMENTAL CONDITION            1
+
+                          B-BASIS VALUE =     209.38
+
+                     ENVIRONMENTAL CONDITION            2
+
+                          B-BASIS VALUE =     216.53
+
+    =========================================================================
+
+     REMARKS:
+
+     The data from different environmental conditions are poolable.                                                                                                                                         
+     Small samples method has been used.                                                                                                                                                                    
+     Environmental conditions with similar variances.                                                                                                                                                       
+     The pooled data are assumed to fit in a normal distribution.                                                                                                                                           
+     There are not outliers.                                                                                                                                                                                
+
+
+    =========================================================================
+ 
+ 
+ 
+                              INPUT DATA
+                              ----------
+
+     BATCH   N               SPECIMEN DATA 
+    ---------------------------------------------------------------------------
+
+       1     2     234.7      237.0  
+       2     3     242.1      244.4      245.2  
+
+ -------------------------------------------------------------------------------
+    TOTAL OF  2 BATCHES,   5 SPECIMEN(S).
+ 
+ 
+
+                          PRELIMINARY DESCRIPTIVE STATISTICS
+                          ----------------------------------
+
+       NUMBER       SAMPLE                    STANDARD
+      OF BATCH       SIZE        AVERAGE      DEVIATION
+    ------------------------------------------------------------------------
+         1             2          235.85         1.63
+         2             3          243.90         1.61
+
+    ------------------------------------------------------------------------
+     POOLED SAMPLE     5          240.68         4.63
+
+    =========================================================================
+ 
+ 
+
+                     INVESTIGATION OF BATCH-TO-BATCH VARIABILITY
+                     ------------- -- --------------------------
+
+     THE K-SAMPLE ANDERSON-DARLING TEST STATISTIC    =      0.00
+     THE CRITICAL VALUE                              =      2.03
+     SIGNIFICANT  LEVEL                              =      0.05
+     SAME POPULATION   
+
+     THE TEST STATISTIC FOR EQUALITY OF VARIANCE     =      0.02
+     THE CRITICAL VALUE WITH  2-1 DEGREES OF FREEDOM =    758.77
+     SIGNIFICANT  LEVEL                              =      0.05
+     VARIANCES ARE NOT SIGNIFICANTLY DIFFERENT
+
+    ============================================================================
+ 
+ 
+ 
+                          SMALL SAMPLE ADDITIONAL DATA
+                          ----------------------------
+
+     Kb (normalized data)              =      0.980
+     Coefficient of variation used (%) =        5.8
+     Kb (small sample formula)         =      0.888
+
+    ============================================================================
+
+

@@ -1,0 +1,63 @@
+ 
+
+                                                                                          19-01-2021, Allowee 4.3
+
+     CASA DENOMINATION      : Reference (fabric + honeycomb)
+     MATERIAL DENOMINATION  : ABS 5346A (Z-19.776) + ABS 5341A1 (Z-17.680)
+     TEST                   : Compression after impact (CAI)
+     UNITS                  : N
+     TOTAL NUMBER OF VALUES :    6
+     NUMBER OF BATCHES      :    1
+     CV(%) OF POPULATION*   :  9.0
+
+     (*) Coefficient of Variation of population only for small samples formula
+         Find recommended values for several data types in user's manual
+
+
+
+                             ALLOWABLE VALUES
+                             --------- ------
+
+
+                          B-BASIS VALUE =   12304.30
+
+
+    =========================================================================
+
+     REMARKS:
+
+     Small samples method has been used.                                                                                                                                                                    
+     Data fit in a Normal distribution.                                                                                                                                                                     
+     There are not outliers.                                                                                                                                                                                
+
+
+    =========================================================================
+ 
+ 
+ 
+                              INPUT DATA
+                              ----------
+
+     BATCH   N               SPECIMEN DATA 
+    ---------------------------------------------------------------------------
+
+       1     6   13435.0    14343.0    14468.0    15025.0    15178.0    16046.0  
+ 
+
+ -------------------------------------------------------------------------------
+    TOTAL OF  1 BATCHES,   6 SPECIMEN(S).
+ 
+ 
+
+                          PRELIMINARY DESCRIPTIVE STATISTICS
+                          ----------------------------------
+
+       NUMBER       SAMPLE                    STANDARD
+      OF BATCH       SIZE        AVERAGE      DEVIATION
+    ------------------------------------------------------------------------
+         1             6        14749.17       884.63
+
+    ------------------------------------------------------------------------
+     POOLED SAMPLE     6        14749.17       884.63
+
+    =========================================================================

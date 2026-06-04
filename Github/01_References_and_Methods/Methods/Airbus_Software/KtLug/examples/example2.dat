@@ -1,0 +1,8 @@
+1 Example of KtLug program
+  Symmetrical lug solved as HSB 34112
+  D = 20 mm, a = 15 mm, r = 15 mm, Beta = 45º
+  Transverse load: Phi=30º
+2 Type of analysis (ESDU or HSB)
+  HSB
+3 Geometry:      D      a      r   Beta    Phi
+              20.0   15.0   15.0   45.0   30.0

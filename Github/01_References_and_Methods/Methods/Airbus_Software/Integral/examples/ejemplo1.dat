@@ -1,0 +1,55 @@
+1 Program INTEGRAL. Example 1.
+  Crack in an integrally stiffened panel.
+  Material: 2024 T351.
+  Uniform attachment. 1 row with 20 attach points per stringer.
+2 SKIN DATA: E  µ  t  Kc  L
+  73800.0     0.33     2.0     3800.0     500.0
+3 STRINGERS DATA: nl  X  ts  h  A  I  Zo  Zi
+  2       50.0       150.0
+           3.0         3.0
+          50.0        50.0
+         150.0       150.0
+       32250.0     32250.0
+          25.0        25.0
+          25.0        25.0
+4 UNIFORM ATTACHMENT SYSTEM: nx  ny  Pitch  W
+  1  20  3.0  3.0
+  1  20  3.0  3.0
+5 FAR FIELD STRESS: Reference_stress   Sx/Sy
+  200.00      0.50
+6 CRACK LENGTHS
+  21  0.0   10.0   20.0   30.0   40.0   50.0
+            60.0   70.0   80.0   90.0  100.0
+           110.0  120.0  130.0  140.0  150.0
+           160.0  170.0  180.0  190.0  200.0
+7 PRINT CONTROL: Skin  Stringers  Forces
+  1   1   1
+8 RUN THE PROGRAM
+1 Program INTEGRAL. Example 1.
+  Crack in an integrally stiffened panel.
+  Material: 2024 T351.
+  Variable attachment. 1 row with 10 attach points per stringer.
+4 VARIABLE ATTACHMENT: nu  X(i)  Y(i)  W(i)
+  10     50.0      1.5     3.0
+         50.0      4.5     3.0
+         50.0      7.5     3.0
+         50.0     10.5     3.0
+         50.0     13.5     3.0
+         50.0     16.5     3.0
+         50.0     19.5     3.0
+         50.0     22.5     3.0
+         50.0     25.5     3.0
+         50.0     28.5     3.0
+  10    150.0      1.5     3.0
+        150.0      4.5     3.0
+        150.0      7.5     3.0
+        150.0     10.5     3.0
+        150.0     13.5     3.0
+        150.0     16.5     3.0
+        150.0     19.5     3.0
+        150.0     22.5     3.0
+        150.0     25.5     3.0
+        150.0     28.5     3.0
+7 PRINT CONTROL: Skin  Stringers  Allowables  Forces
+  1  0  0
+8 RUN THE PROGRAM

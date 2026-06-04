@@ -1,0 +1,75 @@
+1 Program INTEGRAL. Example 2.
+  Crack in an integrally stiffened panel.
+  Material: 2024 T351.
+  Uniform attachment. 2 rows with 40 attach points per stringer.
+2 SKIN DATA: E  µ  t  Kc  L
+  73800.0     0.33     2.0     3800.0     500.0
+3 STRINGERS DATA: nl  X  ts  h  A  I  Zo  Zi
+  2       50.0       150.0
+           3.0         3.0
+          50.0        50.0
+         150.0       150.0
+       32250.0     32250.0
+          25.0        25.0
+          25.0        25.0
+4 UNIFORM ATTACHMENT SYSTEM: nx  ny  Pitch  W
+  2  20  3.0  1.5
+  2  20  3.0  1.5
+5 FAR FIELD STRESS: Reference_stress   Sx/Sy
+  200.00      0.50
+6 CRACK LENGTHS
+  21  0.0   10.0   20.0   30.0   40.0   50.0
+            60.0   70.0   80.0   90.0  100.0
+           110.0  120.0  130.0  140.0  150.0
+           160.0  170.0  180.0  190.0  200.0
+7 PRINT CONTROL: Skin  Stringers  Forces
+  1   1   1
+8 RUN THE PROGRAM
+1 Program INTEGRAL. Example 2.
+  Crack in an integrally stiffened panel.
+  Material: 2024 T351.
+  Variable attachment. 2 rows with 20 attach points per stringer.
+4 VARIABLE ATTACHMENT: nu  X(i)  Y(i)  W(i)
+  20     49.25     1.5     1.5
+         50.75     1.5     1.5
+         49.25     4.5     1.5
+         50.75     4.5     1.5
+         49.25     7.5     1.5
+         50.75     7.5     1.5
+         49.25    10.5     1.5
+         50.75    10.5     1.5
+         49.25    13.5     1.5
+         50.75    13.5     1.5
+         49.25    16.5     1.5
+         50.75    16.5     1.5
+         49.25    19.5     1.5
+         50.75    19.5     1.5
+         49.25    22.5     1.5
+         50.75    22.5     1.5
+         49.25    25.5     1.5
+         50.75    25.5     1.5
+         49.25    28.5     1.5
+         50.75    28.5     1.5
+  20    149.25     1.5     1.5
+        150.75     1.5     1.5
+        149.25     4.5     1.5
+        150.75     4.5     1.5
+        149.25     7.5     1.5
+        150.75     7.5     1.5
+        149.25    10.5     1.5
+        150.75    10.5     1.5
+        149.25    13.5     1.5
+        150.75    13.5     1.5
+        149.25    16.5     1.5
+        150.75    16.5     1.5
+        149.25    19.5     1.5
+        150.75    19.5     1.5
+        149.25    22.5     1.5
+        150.75    22.5     1.5
+        149.25    25.5     1.5
+        150.75    25.5     1.5
+        149.25    28.5     1.5
+        150.75    28.5     1.5
+7 PRINT CONTROL: Skin  Stringers  Allowables  Forces
+  1  0  0
+8 RUN THE PROGRAM

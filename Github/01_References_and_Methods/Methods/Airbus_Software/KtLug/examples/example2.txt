@@ -1,0 +1,35 @@
+
+KtLug 2.0             (c) Airbus Defence and Space. Oct-2021         7-Oct-2021
+_______________________________________________________________________________
+
+
+Title:
+======
+
+Example of KtLug program
+Symmetrical lug solved as HSB 34112
+D = 20 mm, a = 15 mm, r = 15 mm, Beta = 45º
+Transverse load: Phi=30º
+
+
+Calculation method:
+===================
+
+Acording to HSB 34112-02, Issue B, April 1990.
+
+
+Lug geometry:
+=============
+
+Hole diameter .........................:     20.00 mm
+Distance from hole centre to lug end ..:     15.00 mm
+Lug end radius ........................:     15.00 mm
+Tapered lug angle .....................:     45.00 º
+
+Load angle (from axis of symmetry) ....:     30.00 º
+
+
+Stress concentration factor:
+============================
+
+Kt referred to bearing stress .........:      4.18

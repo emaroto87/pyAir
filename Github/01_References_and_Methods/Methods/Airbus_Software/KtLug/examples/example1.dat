@@ -1,0 +1,8 @@
+1 Example of KtLug program
+  Tapered lug solved as ESDU 81006 plus FELUG program results
+  D = 20 mm, a = 15 mm, r = 15 mm, t = 10 mm, e = 0.2 %, Beta = 45º
+  Pin: Steel, Lug: Aluminium (Ep/El = 3.0). Transverse load Phi = 30º
+2 Type of analysis (ESDU or HSB)
+  ESDU
+3 Geometry:      D      a      r      t Ep/El     e   Beta    Phi
+              20.0   15.0   15.0   10.0   3.0   0.2   45.0   30.0

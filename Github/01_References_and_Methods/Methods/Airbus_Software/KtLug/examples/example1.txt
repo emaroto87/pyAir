@@ -1,0 +1,41 @@
+
+KtLug 2.0             (c) Airbus Defence and Space. Oct-2021         7-Oct-2021
+_______________________________________________________________________________
+
+
+Title:
+======
+
+Example of KtLug program
+Tapered lug solved as ESDU 81006 plus FELUG program results
+D = 20 mm, a = 15 mm, r = 15 mm, t = 10 mm, e = 0.2 %, Beta = 45º
+Pin: Steel, Lug: Aluminium (Ep/El = 3.0). Transverse load Phi = 30º
+
+
+Calculation method:
+===================
+
+Acording to ESDU 81006 for round ended lugs axially loaded, April 1981.
+Correction for taper lug and load angle: From FELUG program, June 2021.
+
+
+Lug geometry:
+=============
+
+Hole diameter .........................:     20.00 mm
+Distance from hole centre to lug end ..:     15.00 mm
+Lug end radius ........................:     15.00 mm
+Equivalent lug width ..................:     30.00 mm
+Thickness .............................:     10.00 mm
+
+Stiffness ratio Epin/Elug..............:      3.00
+Pin to hole clearance .................:      0.20 %
+
+Tapered lug angle .....................:     45.00 º
+Load angle (from axis of symmetry) ....:     30.00 º
+
+
+Stress concentration factor:
+============================
+
+Kt referred to bearing stress .........:      5.69

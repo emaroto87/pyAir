@@ -1,0 +1,13 @@
+1 Example 2: Program EH                                                 
+  Stresses/Strains Around a Hole in an infinite orthotropic plate       
+  Input 2:  Stiffnes matrix                                             
+  4 Load Cases                                                          
+2 MATERIAL DATA
+  2 Stiffness Matrix
+    370662.7   48071.1  220935.5   48221.3     4.000
+4 LOADS
+    4     100.0     -50.0    -100.0
+          100.0       0.0       0.0
+            0.0     -50.0       0.0
+            0.0       0.0    -100.0
+

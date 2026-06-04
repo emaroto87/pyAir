@@ -1,0 +1,14 @@
+1 Example 4: Program EH                                                 
+  Stresses/Strains Around a Hole in an infinite orthotropic plate       
+  Input 1:  2 Materials (quasi-isotropic fabric), 3 Layers                                      
+  2 Load Cases                                                          
+2 MATERIAL DATA
+  1 Ply Properties
+    2   1.  46000.0    46000.0    2500.0  0.040  0.237   45.0  0.008000 -0.006450
+        2.  46000.0    46000.0    2500.0  0.040  0.237   00.0  0.008000 -0.006450
+3 LAMINATE
+    3  1.  2.  1.
+4 LOADS
+    2     -50.1     -26.3      40.2
+          -38.5      -3.7      40.2
+

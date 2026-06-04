@@ -1,0 +1,178 @@
+! Fichero de entrada del programa FEA. Ejemplo2: Panel finito.
+!
+! Numero de laminas distintas definidas.
+5
+!
+! Propiedades de cada tipo de lamina.
+1,160000,5760, 3020.0, 0.3, 0.125,  0., 5500E-6,-4200E-6
+2,160000,5760, 3020.0, 0.3, 0.125, 90., 5500E-6,-4200E-6
+3,160000,5760, 3020.0, 0.3, 0.125, 45., 5500E-6,-4200E-6
+4,160000,5760, 3020.0, 0.3, 0.125,-45., 5500E-6,-4200E-6
+5,70000,70000,26923.1, 0.3, 1.0  ,  0., 1000E6, -1000E6
+!
+! Numero de analisis.
+3
+!
+!---> PRIMER ANALISIS: 0 < THETA < 60.
+!
+! Numero de capas del laminado.
+4
+!
+! Tipo de secuencia de apilamiento.
+!     =0: apilamiento real.
+!     =1: porcentaje/espesor de capas.
+1
+!
+! Secuencia de apilamiento.
+1,2,3,4
+!
+! Espesor total del laminado.
+1.0
+!
+! Porcentaje de cada capa.
+30., 30., 30., 10.
+!
+! Semiejes mayor y menor del agujero.
+10., 10.
+!
+! Tipo de panel:
+!
+FINIT   50, 360, 18
+!
+! Coordenadas de las esquinas del panel.
+-50., -30.
+ 50., -30.
+ 50.,  30.
+-50.,  30.
+!
+! Esfuerzos normal y tangente en cada lado.
+  50. , -100. 
+ 200. ,  100. 
+  50. , -100. 
+ 200. ,  100. 
+!
+! Fuerzas de aplastamiento en el remache y angulo.
+0., 0.
+!
+!
+! Numero de estaciones radiales e incremento de longitud entre ellas.
+80, 0.50
+!
+! Angulos menor y mayor y numero de puntos para los que se calculan.
+0., 60., 60
+!
+! Salida deseada:
+!     1: Global del laminado
+!     2: Lámina a lámina
+!     3: Global y lámina
+!     4: Búsqueda de fallo
+4, 1.3
+!
+!---> SEGUNDO ANALISIS: 50 < THETA < 130.
+!
+! Numero de capas del laminado.
+4
+!
+! Tipo de secuencia de apilamiento.
+!     =0: apilamiento real.
+!     =1: porcentaje/espesor de capas.
+1
+!
+! Secuencia de apilamiento.
+1,2,3,4
+!
+! Espesor total del laminado.
+1.0
+!
+! Porcentaje de cada capa.
+30., 30., 30., 10.
+!
+! Semiejes mayor y menor del agujero.
+10., 10.
+!
+! Tipo de panel:
+!
+FINIT   50, 360, 18
+!
+! Coordenadas de las esquinas del panel.
+-50., -30.
+ 50., -30.
+ 50.,  30.
+-50.,  30.
+!
+! Esfuerzos normal y tangente en cada lado.
+  50. , -100. 
+ 200. ,  100. 
+  50. , -100. 
+ 200. ,  100. 
+!
+! Fuerzas de aplastamiento en el remache y angulo.
+0., 0.
+!
+!
+! Numero de estaciones radiales e incremento de longitud entre ellas.
+40, 0.50
+!
+! Angulos menor y mayor y numero de puntos para los que se calculan.
+50., 130., 80
+!
+! Salida deseada:
+!     1: Global del laminado
+!     2: Lámina a lámina
+!     3: Global y lámina
+!     4: Búsqueda de fallo
+4, 1.3
+!!---> TERCER ANALISIS: 120 < THETA < 180.
+!
+! Numero de capas del laminado.
+4
+!
+! Tipo de secuencia de apilamiento.
+!     =0: apilamiento real.
+!     =1: porcentaje/espesor de capas.
+1
+!
+! Secuencia de apilamiento.
+1,2,3,4
+!
+! Espesor total del laminado.
+1.0
+!
+! Porcentaje de cada capa.
+30., 30., 30., 10.
+!
+! Semiejes mayor y menor del agujero.
+10., 10.
+!
+! Tipo de panel:
+!
+FINIT   50, 360, 18
+!
+! Coordenadas de las esquinas del panel.
+-50., -30.
+ 50., -30.
+ 50.,  30.
+-50.,  30.
+!
+! Esfuerzos normal y tangente en cada lado.
+  50. , -100. 
+ 200. ,  100. 
+  50. , -100. 
+ 200. ,  100. 
+!
+! Fuerzas de aplastamiento en el remache y angulo.
+0., 0.
+!
+!
+! Numero de estaciones radiales e incremento de longitud entre ellas.
+80, 0.50
+!
+! Angulos menor y mayor y numero de puntos para los que se calculan.
+120., 180., 60
+!
+! Salida deseada:
+!     1: Global del laminado
+!     2: Lámina a lámina
+!     3: Global y lámina
+!     4: Búsqueda de fallo
+4, 1.3

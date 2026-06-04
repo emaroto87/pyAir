@@ -1,0 +1,13 @@
+1 Example 3: Program EH                                                 
+  Stresses/Strains Around a Hole in an infinite orthotropic plate       
+  Input 3: Mean properties of the plate
+  4 Load Cases                                                                            
+2 DATOS DE MATERIALES
+  3 Propiedades Medias de apilado
+    90050.90  53675.30  12055.30      0.22
+4 CARGAS
+    4     100.0     -50.0    -100.0
+          100.0       0.0       0.0
+            0.0     -50.0       0.0
+            0.0       0.0    -100.0
+

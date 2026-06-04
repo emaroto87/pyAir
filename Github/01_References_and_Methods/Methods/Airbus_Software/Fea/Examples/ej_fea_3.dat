@@ -1,0 +1,79 @@
+! Fichero de entrada del programa FEA. Ejemplo2.
+!
+! Número de láminas distintas definidas.
+9
+!
+! Propiedades de cada tipo de láminas.
+1,162000,9200,5000,.3,.125,0,.0167,-.0114
+2,162000,9200,5000,.3,.125,45,.0167,-.0114
+3,162000,9200,5000,.3,.125,-45,.0167,-.0114
+4,162000,9200,5000,.3,.125,90,.0167,-.0114
+5,70000,70000,26316,0.33,10,0,5500E6,-4200E6
+6,110000,110000,42750,.31,.18,0,55,55
+7,200600,200600,76530,.31,.18,0,55,55
+8,500000,500000,187970,.33,.18,0,55,55
+9,10,10,10,.3,.18,0,55,55
+!
+! Número de análisis.
+1
+!
+! Número de capas del laminado.
+4
+!
+! Tipo de secuencia de apilamiento (0: real, 1: porcentaje).
+1
+!
+! Secuencia de apilamiento.
+1,2,3,4
+!
+! Espesor total del laminado.
+3.0
+!
+! Porcentaje de cada capa.
+0, 50, 50, 0
+!
+! Semiejes mayor y menor del agujero.
+3.,3.
+!
+! Tipo de panel.
+WBAND
+!
+! Fuerzas de membrana sobre la placa (x,y,xy; en N/mm2).
+-162.08, 0., 0.
+!
+! Momento según X e Y y momentos de inercia asociados.
+0., 0., 0., 0.
+!
+! Angulo de las fuerzas aplicadas con el eje X.
+0.
+!
+! Fuerzas de aplastamiento en el remache y angulo.
+1., 0.
+!
+! Anchura equivalente.
+20.
+!
+! Numero de capas en el laminado del relleno (0: no hay relleno).
+0
+!
+! Tipo de apilamiento en el relleno.
+!
+! Secuencia de apilamiento en el relleno.
+!
+! Espesor total del laminado del relleno
+!
+! Tanto por ciento o espesor de las capas del relleno
+!
+! Numero de estaciones en las que se evalúan las tensiones y deformaciones.
+! e incremento de longitud entre ellas.
+11, .1
+!
+! Angulos menor y mayor y númeor de puntos para los que se calculan.
+0., 90., 18
+!
+! Salida deseada:
+!     1: Global del laminado
+!     2: Lámina a lámina
+!     3: Global y lámina
+!     4: Búsqueda de fallo
+3

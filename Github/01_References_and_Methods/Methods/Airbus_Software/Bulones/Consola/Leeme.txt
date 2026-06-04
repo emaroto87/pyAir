@@ -1,0 +1,10 @@
+
+En la version consola PC los archivos de entrada y salida se buscan en la ruta completa, si no se indica, donde se encuentre el ejecutable.
+
+Recomendaciones de uso:
+
+a) Copiar el ejecutable bulones.exe a la carpeta de trabajo (localizacion de archivos entrada), ó...
+
+b) Copiar temporalmente los archivos de entrada a una ruta corta (ej. C:\), y no olvidarse de escribir la ruta completa al archivo cuando el programa reclame archivo de entrada y de salida.
+
+La primera es mas ágil.

@@ -1,0 +1,299 @@
+
+     PANEL : panel_5
+
+                                                     SANDWICH PANEL PROPERTIES
+                                                     -------------------------
+
+
+
+             INPLANE STIFFNESS MATRIX (Mean Values)                               INPLANE STIFFNESS MATRIX (B Values)
+           ------------------------------------------                          ------------------------------------------
+           UPPER FACE                      LOWER FACE                          UPPER FACE                      LOWER FACE
+  ----------------------------    ----------------------------        --------------
+--------------    ----------------------------
+   36188.7   15561.1       0.0     36188.7   15561.1       0.0         32723.9   14071.3       0.0     32723.9   14071.3       0.0
+   15561.1   36188.7       0.0     15561.1   36188.7       0.0         14071.3   32723.9       0.0     14071.3   32723.9       0.0
+       0.0       0.0   17042.0         0.0       0.0   17042.0             0.0       0.0   15305.4         0.0       0.0   15305.4
+
+
+                          INPLANE ELASTIC MODULUS (Mean Values)                    INPLANE ELASTIC MODULUS  (B Values)
+                          -------------------------------------                    -----------------------------------
+                       Ex            Ey          Exy        Nux     Nuy               Ex           Ey           Exy
+                   -----------  -----------  -----------   -----   -----          -----------  -----------  -----------
+   UP&LOW FACES:      39329.90     39329.90     22722.70    0.43    0.43             35564.30     35564.30     20407.20
+
+                                                          Ecc            Gxz            Gyz
+                                                       ----------     ----------     ----------
+                                  CORE PROPERTIES:         193.00          48.20          24.10
+
+
+
+                                                  SANDWICH STIFFNESS MATRIX  (Mean Values)
+                                                  -------------------------
+
+
+         INPLANE STIFFNESS MATRIX                      COUPLING MATRIX                       BENDING STIFFNESS MATRIX
+  -------------------------------------     -------------------------------------     -------------------------------------
+      72377.4      31122.3          0.0             0.0          0.0          0.0       2094422.0     900601.6          0.0
+      31122.3      72377.4          0.0             0.0          0.0          0.0        900601.6    2094422.0          0.0
+          0.0          0.0      34084.0             0.0          0.0          0.0             0.0          0.0     986307.1
+
+                       Ex            Ey          Exy        Nux     Nuy               Dx           Dy           Dxy
+                   -----------  -----------  -----------   -----   -----          -----------  -----------  -----------
+                        5130.0       5130.0       2963.8    0.43    0.43            1707163.2    1707163.2     986307.1
+
+
+
+
+                                                  SANDWICH STIFFNESS MATRIX  (B Values)
+                                                  -------------------------
+
+
+         INPLANE STIFFNESS MATRIX                      COUPLING MATRIX                       BENDING STIFFNESS MATRIX
+  -------------------------------------     -------------------------------------     -------------------------------------
+      65447.7      28142.5          0.0             0.0          0.0          0.0       1893894.0     814374.5          0.0
+      28142.5      65447.7          0.0             0.0          0.0          0.0        814374.5    1893894.0          0.0
+          0.0          0.0      30610.8             0.0          0.0          0.0             0.0          0.0     885800.0
+
+                        Ex           Ey          Exy                         Dx           Dy          Dxy
+                   -----------  -----------  -----------                -----------  -----------  -----------
+                        4638.8       4638.8       2661.8                  1543712.9    1543712.9     885800.0
+
+
+                                                 SANDWICH PANEL GEOMETRY
+                                                -------------------------
+                                             DIMENSION X ............:   753.000
+                                             DIMENSION Y ............:   368.000
+                                             UPPER FACE THICKNESS ...:     0.750
+                                             CORE THICKNESS .........:    10.000
+                                             LOWER FACE THICKNESS ...:     0.750
+                                             TOTAL  THICKNESS .......:    11.500
+                                             CELL SIZE ..............:     4.800
+
+                                             BOUNDARY CONDITIONS ....: SIMPLY SUPPORTED
+
+                                             GENERALLY ORTOTROPIC PANEL
+
+
+
+   PANEL : panel_5            LOAD CASE :   1
+
+
+   INPLANE APPLIED FLOWS :  FX =   -1.0     FY =    0.0     FXY =    0.0
+
+
+   APPLIED PRESSURE LOAD :  P (x=   0.0, y=   0.0) =-0.0069     P (x= 753.0, y=   0.0) =-0.0034
+                            P (x= 753.0, y= 368.0) =-0.0034     P (x=   0.0, y= 368.0) =-0.0069
+
+
+
+
+                                        POINT :  1  WITH COORDINATES  x= 376.5,  y= 184.0
+
+
+  INTERNAL LOADS : Nx =  -1.0  Ny =   0.0  Nxy =   0.0    Mx =  -37.4   My =  -64.3   Mxy =    0.0     Qx = 6.56E-02   Qy =-4.45E-08
+
+  OUT-OF-PLANE DISPLACEMENT =  -0.674
+
+  MIDDLE-PLANE DEFORMATIONS : (-1.695E-05 , 7.289E-06 , 0.000E+00)
+
+
+                               MEAN MICROSTRAINS                                  MEAN STRESSES
+                 ---------------------------------------------      -----------------------------------------
+                 FACE    NORMAL-X      NORMAL-Y      SHEAR-XY           NORMAL-X      NORMAL-Y      SHEAR-XY
+                 -----  ----------    ----------    ----------         ----------    ----------    ----------
+                 UPPER     -47.460      -144.700         0.000       -5.29228E+00  -7.96671E+00  -3.64054E-08
+                 CORE      126.557         0.000         0.000        6.10003E-03  -4.14374E-09   0.00000E+00
+                 LOWER      13.559       159.277         0.000        3.95895E+00   7.96671E+00   3.64054E-08
+
+
+
+
+                      MAXIMUM STRESSES AND STRAINS DUE TO CONCENTRATION (NORMAL AND INPLANE LOADS)
+                      ----------------------------------------------------------------------------
+
+
+                    FIBER                                   POINT                                WRINKLING
+ -----------------------------------------  -------------------------------------  -------------------------------------
+ Ang Ori Strain   SigX     SigY    SigXY    Ang Strain   SigX     SigY    SigXY    Ang Strain   SigX     SigY    SigXY
+ --- --- ------ -------- -------- --------  --- ------ -------- -------- --------  --- ------ -------- -------- --------
+   0  90   -411  0.00E+0 -1.62E+1  0.00E+0    0   -411  0.00E+0 -1.62E+1  0.00E+0    0   -411  0.00E+0 -1.62E+1  0.00E+0
+
+
+
+
+                    RESERVE FACTORS AND ALLOWABLES SUMMARY (LOCAL RESULTS WITH NORMAL AND INPLANE LOADS)
+                    ------------------------------------------------------------------------------------
+
+
+                         WRINKLING                DIMPLING          SHEAR CRIMPLING     CONCENTRATION
+                 ------------------------ ------------------------ ----------------- --------------------
+                                                                                       RF     RF     RF
+                    Fcw      Fsw     RF      Fcd      Fsd     RF       Fsc      RF   fiber  point   Wrin
+                 -------- -------- ------ -------- -------- ------ ---------- ------ ------ ------ ------
+
+          (UP)     -416.8    577.6  52.32  -2356.0   1457.5 177.69     -160.7  20.17  23.10  23.10  28.08
+          (LO)     -454.1    577.6 999.99  -2356.0   1457.5 999.99     -160.7 999.99
+
+
+
+                      NOTE: 999.99 VALUE MEANS THAT VARIABLE HAS A VALUE HIGHER THAN THE VALUE SHOWN
+
+
+
+   PANEL : panel_5            LOAD CASE :   2
+
+
+   INPLANE APPLIED FLOWS :  FX =    0.0     FY =    0.0     FXY =    1.0
+
+
+   APPLIED CONCENTRATED LOAD :  F (x= 188.0, y= 184.0) =  100.000
+                                F (x= 565.0, y= 184.0) =  100.000
+
+
+
+
+                                        POINT :  1  WITH COORDINATES  x= 376.5,  y= 184.0
+
+
+  INTERNAL LOADS : Nx =   0.0  Ny =   0.0  Nxy =   1.0    Mx =    2.6   My =   13.7   Mxy =    0.0     Qx = 4.33E-08   Qy = 1.07E-08
+
+  OUT-OF-PLANE DISPLACEMENT =   0.137
+
+  MIDDLE-PLANE DEFORMATIONS : ( 0.000E+00 , 0.000E+00 , 2.934E-05)
+
+
+                               MEAN MICROSTRAINS                                  MEAN STRESSES
+                 ---------------------------------------------      -----------------------------------------
+                 FACE    NORMAL-X      NORMAL-Y      SHEAR-XY           NORMAL-X      NORMAL-Y      SHEAR-XY
+                 -----  ----------    ----------    ----------         ----------    ----------    ----------
+                 UPPER     -10.396        39.615        29.359        3.20315E-01   1.69579E+00   6.67121E-01
+                 CORE        0.000         0.000         0.000        4.02870E-09   9.93003E-10   0.00000E+00
+                 LOWER      10.396       -39.615        29.319       -3.20315E-01  -1.69579E+00   6.66213E-01
+
+
+
+
+                      MAXIMUM STRESSES AND STRAINS DUE TO CONCENTRATION (NORMAL AND INPLANE LOADS)
+                      ----------------------------------------------------------------------------
+
+
+                    FIBER                                   POINT                                WRINKLING
+ -----------------------------------------  -------------------------------------  -------------------------------------
+ Ang Ori Strain   SigX     SigY    SigXY    Ang Strain   SigX     SigY    SigXY    Ang Strain   SigX     SigY    SigXY
+ --- --- ------ -------- -------- --------  --- ------ -------- -------- --------  --- ------ -------- -------- --------
+ 165  90    122  3.57E-1  4.97E+0  1.33E+0  160    127  6.62E-1  4.99E+0  1.82E+0   70    -40 -1.58E+0 -2.09E-1  5.75E-1
+
+
+
+
+                    RESERVE FACTORS AND ALLOWABLES SUMMARY (LOCAL RESULTS WITH NORMAL AND INPLANE LOADS)
+                    ------------------------------------------------------------------------------------
+
+
+                         WRINKLING                DIMPLING          SHEAR CRIMPLING     CONCENTRATION
+                 ------------------------ ------------------------ ----------------- --------------------
+                                                                                       RF     RF     RF
+                    Fcw      Fsw     RF      Fcd      Fsd     RF       Fsc      RF   fiber  point   Wrin
+                 -------- -------- ------ -------- -------- ------ ---------- ------ ------ ------ ------
+
+          (UP)     -454.1    577.6 865.84  -2356.0   1457.5 999.99     -160.7 999.99 102.04  98.39 324.21
+          (LO)     -453.1    577.6 245.74  -2356.0   1457.5 948.80     -160.7  94.74
+
+
+
+                      NOTE: 999.99 VALUE MEANS THAT VARIABLE HAS A VALUE HIGHER THAN THE VALUE SHOWN
+
+
+                                             GENERAL BUCKLING ALLOWABLE LOADS
+                                             --------------------------------
+
+
+                                      APPLIED FLOW                BUCKLING FLOW
+                                -------------------------   --------------------------
+                          CASE     FX       FY      FXY         FX       FY      FXY     NOX NOY     RF
+
+                           1     -1.0      0.0      0.0     -336.4      0.0      0.0      3   1   336.45
+                           2      0.0      0.0      1.0        0.0      0.0    325.1      2   2   325.07
+
+                                   MINIMUM GENERAL BUCKLING RF =  325.07  FOR LOAD CASE    2
+
+
+
+
+                                   MAXIMUM STRESSES AND STRAINS DUE TO CONCENTRATION (ONLY WITH INPLANE LOADS)
+                                   ---------------------------------------------------------------------------
+
+
+  CASE                   FIBER                                   POINT                               WRINKLING
+  ---- ----------------------------------------- ------------------------------------- -------------------------------------
+   No  Ang Ori Strain   SigX     SigY    SigXY   Ang Strain   SigX     SigY    SigXY   Ang Strain   SigX     SigY    SigXY  
+   --  --- --- ------ -------- -------- -------- --- ------ -------- -------- -------- --- ------ -------- -------- --------
+    1   90   0    -45 -1.80E+0  0.00E+0  0.00E+0  90    -45 -1.80E+0  0.00E+0  0.00E+0  90    -45 -1.80E+0  0.00E+0  0.00E+0
+    2   45 -45    -53 -1.45E+0 -1.45E+0  1.45E+0  45    -53 -1.45E+0 -1.45E+0  1.45E+0  45    -53 -1.45E+0 -1.45E+0  1.45E+0
+
+
+
+
+                              RESERVE FACTORS AND ALLOWABLES SUMMARY (WHOLE PANEL ONLY WITH INPLANE LOADS)
+                              ----------------------------------------------------------------------------
+
+
+           GENERAL
+    CASE   BUCKLING              WRINKLING                 DIMPLING          SHEAR CRIMPLING     CONCENTRATION
+    ----  ---------       ------------------------ ------------------------ ----------------- --------------------
+                                                                                                RF     RF     RF
+     No       RF             Fcw      Fsw     RF      Fcd      Fsd     RF       Fsc      RF   fiber  point   Wrin
+     --   ---------       -------- -------- ------ -------- -------- ------ ---------- ------ ------ ------ ------
+      1      336.45  (UP)   -572.2    577.6 858.27  -2356.0   1457.5 999.99     -321.3 482.00 208.01 208.01 318.54
+                     (LO)   -572.2    577.6 858.27  -2356.0   1457.5 999.99     -321.3 482.00
+
+      2      325.07  (UP)   -454.1    577.6 866.43  -2356.0   1457.5 999.99     -160.7 999.99 179.07 179.07 218.21
+                     (LO)   -454.1    577.6 866.43  -2356.0   1457.5 999.99     -160.7 999.99
+
+
+
+
+                         NOTE: 999.99 VALUE MEANS THAT VARIABLE HAS A VALUE HIGHER THAN THE VALUE SHOWN
+
+
+
+
+
+                                                SUMMARY OF RESERVE FACTORS FOR PANEL: panel_5
+                                                -------------------------------------
+
+
+
+ LOAD CASE No  1:
+
+                    RF BUCKLING: 336.45
+
+                                  INPLANE                    INPLANE+NORMAL LOADS
+                                FACE    RF                FACE     X      Y     RF
+                                ----- ------              ----- ------ ------ ------
+                    WRINKLING:  UP&LO 858.27              UPPER 376.50 184.00  52.32
+                    DIMPLING :  UP&LO 999.99              UPPER 376.50 184.00 177.69
+                    CRIMPLING:  UP&LO 482.00              UPPER 376.50 184.00  20.17
+                    CONC. Fib:  UPPER 208.01              UPPER 376.50 184.00  23.10
+                    CONC. Pnt:  UPPER 208.01              UPPER 376.50 184.00  23.10
+                    CONC. Wrk:  UPPER 318.54              UPPER 376.50 184.00  28.08
+
+           C.A.S.A. Criterium:      YES               NO: UPPER 376.50 184.00
+
+
+ LOAD CASE No  2:
+
+                    RF BUCKLING: 325.07
+
+                                  INPLANE                    INPLANE+NORMAL LOADS
+                                FACE    RF                FACE     X      Y     RF
+                                ----- ------              ----- ------ ------ ------
+                    WRINKLING:  UP&LO 866.43              LOWER 376.50 184.00 245.74
+                    DIMPLING :  UP&LO 999.99              LOWER 376.50 184.00 948.80
+                    CRIMPLING:  UP&LO 999.99              LOWER 376.50 184.00  94.74
+                    CONC. Fib:  UPPER 179.07              UPPER 376.50 184.00 102.04
+                    CONC. Pnt:  UPPER 179.07              UPPER 376.50 184.00  98.39
+                    CONC. Wrk:  UPPER 218.21              UPPER 376.50 184.00 324.21
+
+           C.A.S.A. Criterium:      YES               NO: LOWER 376.50 184.00

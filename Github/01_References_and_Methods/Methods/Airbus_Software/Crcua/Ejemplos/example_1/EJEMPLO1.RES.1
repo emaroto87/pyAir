@@ -1,0 +1,424 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                           ------------------------------
+                           |                            |
+                           |       PROGRAM  CRCUA       |
+                           |                            |
+                           |        VERSION 4.4         |
+                           |                            |
+                           |          Ago-2024          |
+                           |                            |
+                           |  COMPUTER:  SUN Workshop   |
+                           |                            |
+                           |      Linux 3.10.0-116      |
+                           |                            |
+                           |----------------------------|
+                           |                            |
+                           |      EXECUTION DATE:       |
+                           |                            |
+                           |    30-08-2024  16:37:21    |
+                           |                            |
+                           ------------------------------
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    1
+
+FRAME ELEMENT    72046
+======================
+
+  Frame F65, bt'n stringers S2-S3, left  side. BAR type, Property no.    70011
+
+                GRID      X         Y         Z
+               65002  31013.40   -254.40   1932.90  mm
+               65003  31013.40   -422.10   1903.50  mm
+ 
+* GEOMETRICAL PROPERTIES
+  ----------------------
+ 
+          l-1   t-1   l-2   t-2   l-3   t-3   l-4   t-4   l-5   t-5     r     d
+          ---   ---   ---   ---   ---   ---   ---   ---   ---   ---    ---   ---
+  Shape   8.0   1.2  20.0   1.2  60.0   1.2  20.0   1.2   0.0   0.0    3.0  32.0
+ 
+  Length                                                          170.3  mm
+  Area                                                            121.0  mm²
+  Center of gravity about LOFT (end A, mid, end B)   63.0,  63.0,  63.0  mm
+  Extreme fibres about LOFT (Inner, Outer)                  92.0,  32.0  mm
+  Inertia about parallel-to-skin centroidal axis                61900.0  mm²·mm²
+  Torsion constant                                                  0.0  mm²·mm²
+ 
+ 
+* MATERIAL PROPERTIES    3.1364N   T42   CHAPAS
+  -------------------
+                                      Tension    Compres.    Shear
+  Elastic modulus                      72395.     73774.     27475.  N/mm²
+  Yield stress                         241.32     241.32             N/mm²
+  Ultimate stress                      406.79                241.32  N/mm²
+  Elongation                           15.0 %
+  Ramberg-Osgood N                       8.27       8.27       8.27
+ 
+ 
+* CAPS CRIPPLING ALLOWABLES
+  -------------------------
+ 
+                  Inner cap                              Outer cap              
+    -------------------------------------  -------------------------------------
+    El. Length Thick. CG-LOFT   r   End    El. Length Thick. CG-LOFT   r   End  
+    No.  (mm)   (mm)    (mm)   (mm) cond.  No.  (mm)   (mm)    (mm)   (mm) cond.
+    --- ------ ------ ------- ----- -----  --- ------ ------ ------- ----- -----
+     1   20.00   1.20   91.40  3.00   3     1   20.00   1.20   32.60  3.00   2
+     2   20.72   1.20   81.64  3.00   4     2   20.72   1.20   42.36  3.00   4
+     3    8.00   1.20   88.00  3.00   2                                       
+    -------------------------------------  -------------------------------------
+ 
+  Crippling loads:      -12873.6 N                            -7666.0 N
+ 
+  Centroid about LOFT:     87.51 mm                             38.10 mm
+ 
+  End conditions codes: 1  Angle: One end supported
+                        2  Flange element: One end supported
+                        3  Flange element: Both ends supported
+                        4  Web element: Load = Half of web crippling load
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    2
+
+FRAME ELEMENT    72046: ADJACENT PANELS
+=======================================
+
+
+                               Left Panel    76003     Right Panel    76045
+                               -------------------     --------------------
+
+         Type                          QUAD4                    QUAD4       
+
+         Property number                70210                    70210      
+
+         GRIDS                    64002      64003         65002      65003
+                                  65003      65002         66003      66002
+ 
+* GEOMETRICAL PROPERTIES
+  ----------------------
+ 
+  Longitudinal dimension               584.3                    563.6      mm
+  Transversal dimension                171.7                    168.6      mm
+  Thickness                             1.60                     1.60      mm
+  Center of gravity about LOFT         -0.80                    -0.80      mm
+ 
+ 
+* MATERIAL PROPERTIES
+  -------------------
+ 
+  Type                              3.1364 T3                3.1364 T3     
+  Form                                Sheet                    Sheet       
+ 
+  Tension properties
+       Elastic modulus                72395.                   72395.      N/mm²
+       Yield stress                   324.05                   324.05      N/mm²
+       Ultimate stress                434.37                   434.37      N/mm²
+       Elongation                     15.0 %                   15.0 %      
+       Ramberg-Osgood N                14.74                    14.74      
+ 
+  Compression properties
+       Elastic modulus                73774.                   73774.      N/mm²
+       Yield stress                   268.89                   268.89      N/mm²
+       Ramberg-Osgood N                 9.00                     9.00      
+ 
+  Shear properties
+       Elastic modulus                27475.                   27475.      N/mm²
+       Ultimate stress                268.89                   268.89      N/mm²
+ 
+ 
+* PAD-UP DIMENSIONS
+  -----------------
+
+  Width                                             ---  
+  Thickness                                         ---  
+ 
+ 
+* SKIN-CLIP RIVETING (ONE ROW)
+  ----------------------------
+ 
+  Rivet type                                  Countersunk (K =  1.5)
+  Rivet pitch                                        30.0  mm
+ 
+  Inter-rivet buckling stress         -192.7                   -192.7      N/mm²
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    3
+
+FRAME ELEMENT    72046: ANALYSIS OF CRITICAL LOAD CASE
+======================================================
+
+ 
+--------------------------------------------------------------------------------
+| CRITICAL LOAD CASE :                        ZCT         (    1)              |
+|                                                                              |
+| CRITICAL SECTION   :                            End A                        |
+|                                                                              |
+| FAILURE MODE       :           Tension at outer fibre (ultimate loads) (*)   |
+|                                                                              |
+| RESERVE FACTOR     :                        R.F. =  3.35                     |
+--------------------------------------------------------------------------------
+ 
+ 
+* APPLIED ULTIMATE LOADS
+  ----------------------
+ 
+  Frame centroid loads                  End A         Mid        End B
+      Axial force                       11673.0      11673.0      11673.0  N
+      Bending moment                     16404.       15404.       14404.  N·mm
+      Shear force                          17.0         17.0         17.0  N
+      Torque moment                          0.           0.           0.  N·mm
+ 
+  Panels loads                              Left panel   Right panel
+      Transversal stresses                      132.54       127.64        N/mm²
+      Transversal loads                        61955.1      57554.7        N
+ 
+  Frame + panels total loads (LOFT)     End A         Mid        End B
+      Axial force                      131182.8     131182.8     131182.8  N
+      Bending moment                   -623392.     -624392.     -625392.  N·mm
+ 
+  Clip shear load                                        3.4               N
+ 
+ 
+* RESULTS FOR APPLIED ULTIMATE LOADS AT CRITICAL SECTION
+  ------------------------------------------------------
+ 
+  Effective skin                              Left Panel     Right Panel
+      Stresses                                    129.90         129.90  N/mm²
+      Effective widths                            292.15         281.82  mm
+      Equivalent resistant area                         924.19           mm²
+      Center of gravity about LOFT                      -0.800           mm
+      Effective skin load                             119296.3           N
+ 
+  Equivalent resistant transversal section
+      Area                                             1045.19           mm²
+      Center of gravity about LOFT                       6.586           mm
+      Inertia about parallel-skin centroidal axis      497607.           mm²·mm²
+ 
+  Differential bending analysis
+      Inner cap load                                    5382.7           N
+      Outer cap load                                    6503.8           N
+ 
+  Beam bending analysis
+      Inner fibre stress                                 84.17           N/mm²
+      Outer fibre stress                                113.27           N/mm²
+ 
+  Frame web shear stress                                  0.35           N/mm²
+ 
+
+  (*) Plastic effects in bending not considered
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    4
+
+FRAME ELEMENT    72046: ANALYSIS OF CRITICAL LOAD CASE  (cont'd)
+======================================================
+ 
+ 
+* APPLIED LIMIT LOADS
+  -------------------
+                                   ULTIMATE LOADS
+                     LIMIT LOADS = --------------
+                                         1.5
+ 
+ 
+* RESULTS FOR APPLIED LIMIT LOADS AT CRITICAL SECTION
+  ---------------------------------------------------
+ 
+  Effective skin                              Left Panel     Right Panel
+      Stresses                                     86.59          86.59  N/mm²
+      Effective widths                            292.15         281.82  mm
+      Equivalent resistant area                         918.67           mm²
+      Center of gravity about LOFT                      -0.800           mm
+      Effective skin load                              79523.9           N
+ 
+  Equivalent resistant transversal section
+      Area                                             1039.67           mm²
+      Center of gravity about LOFT                       6.625           mm
+      Inertia about parallel-skin centroidal axis      497304.           mm²·mm²
+ 
+  Beam bending analysis
+      Inner fibre stress                                 55.99           N/mm²
+      Outer fibre stress                                 75.76           N/mm²
+ 
+  Frame web shear stress                                  0.24           N/mm²
+ 
+ 
+* FAILURE LOADS
+  -------------
+                     FAILURE LOADS = (R.F.) * ULTIMATE LOADS
+ 
+ 
+* RESULTS FOR FAILURE LOADS AT CRITICAL SECTION
+  ---------------------------------------------
+ 
+  Effective skin                              Left Panel     Right Panel
+      Stresses                                    434.29         434.29  N/mm²
+      Effective widths                            292.15         281.82  mm
+      Equivalent resistant area                         980.45           mm²
+      Center of gravity about LOFT                      -0.800           mm
+      Effective skin load                             398836.5           N
+ 
+  Equivalent resistant transversal section
+      Area                                             1101.45           mm²
+      Center of gravity about LOFT                       6.209           mm
+      Inertia about parallel-skin centroidal axis      500532.           mm²·mm²
+ 
+  Differential bending analysis
+      Inner cap load                                   17489.1           N
+      Outer cap load                                   23000.8           N
+ 
+  Beam bending analysis
+      Inner fibre stress                                267.12           N/mm²
+      Outer fibre stress                                406.79           N/mm²
+ 
+  Frame web shear stress                                        1.19           N/mm²
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    5
+
+FRAME ELEMENT    72046: RESERVE FACTORS SUMMARY
+===============================================
+
+                                                                        APPLIED
+                      END A               MID             END B          CLIP
+                 ----------------  ----------------  ----------------    SHEAR
+  LOAD  CASE      R.F. FAIL. MODE   R.F. FAIL. MODE   R.F. FAIL. MODE    LOAD
+---------------  ----- ----------  ----- ----------  ----- ----------  ---------
+
+    1: ZCT        3.35  T-O-U *     3.35  T-O-U *     3.35  T-O-U *          3.4
+
+    2: XLF321     3.59  C-I-U       3.75  C-I-U       3.92  C-I-U            1.6
+
+    3: XLF3C6     5.04  C-I-U       5.01  C-I-U       4.99  C-I-U            1.2
+
+    4: XLF322     3.95  C-I-U       4.09  C-I-U       4.24  C-I-U            1.4
+
+    5: XLF3C7     6.48  C-I-U       6.23  C-I-U       6.00  C-I-U            1.0
+
+    6: XLF326     4.48  C-I-U       4.54  C-I-U       4.61  C-I-U            1.3
+
+    7: GMV3C8     4.33  T-O-U *     4.33  T-O-U *     4.33  T-O-U *          1.5
+
+    8: GVT321Z    4.31  T-O-U *     4.32  T-O-U *     4.33  T-O-U *          1.5
+
+    9: GV321Z     4.30  T-O-U *     4.32  T-O-U *     4.34  T-O-U *          1.1
+
+   10: GV322Z     4.33  T-O-U *     4.34  T-O-U *     4.36  T-O-U *          1.4
+
+   11: GV323      9.14  T-I-L       9.88  T-I-L      10.76  T-I-L            0.9
+
+   12: GV324Z     3.80  T-I-L       3.90  T-I-L       4.01  T-I-L            3.2
+
+   13: GV325Z     4.31  T-O-U *     4.33  T-O-U *     4.35  T-O-U *          1.4
+
+   14: MV321Z     4.33  T-O-U *     4.34  T-O-U *     4.34  T-O-U *          1.6
+
+   15: MV322     23.68  C-I-U      25.21  C-I-U      26.95  C-I-U            0.2
+
+   16: GL323     26.53  C-I-U      26.28  C-I-U      26.03  C-I-U            0.2
+
+   17: GL324     15.21  C-O-U      15.36  C-O-U      15.49  C-O-U            0.4
+
+   18: GL323Z     4.33  T-O-U *     4.33  T-O-U *     4.33  T-O-U *          2.4
+
+   19: GL324Z     4.52  T-O-U *     4.52  T-O-U *     4.52  T-O-U *          2.2
+
+   20: GLT321    22.31  C-I-U      26.94  C-I-U      33.99  C-I-U            0.2
+
+   21: GLT322    10.16  C-I-U       9.94  C-I-U       9.73  C-I-U            0.6
+
+   22: GLT321Z    4.33  T-O-U *     4.34  T-O-U *     4.35  T-O-U *          2.3
+
+   23: GLT322Z    4.48  T-O-U *     4.48  T-O-U *     4.48  T-O-U *          2.0
+
+   24: GLT3C9    50.75  C-I-U      63.64   S-W       63.64   S-W             0.1
+
+   25: -GLT3C9    8.40  C-I-U       7.71  C-I-U       7.13  C-I-U            0.8
+
+   26: GLT3C9Z    4.34  T-O-U *     4.35  T-O-U *     4.36  T-O-U *          2.5
+
+   27: -GLT3C9Z   4.47  T-O-U *     4.47  T-O-U *     4.46  T-O-U *          1.8
+[14m[0z[4;70r[10;96s
+
+                                             30-08-2024 , CRCUA 4.4, Page    6
+
+FRAME ELEMENT    72046: RESERVE FACTORS SUMMARY
+===============================================
+
+                                                                        APPLIED
+                      END A               MID             END B          CLIP
+                 ----------------  ----------------  ----------------    SHEAR
+  LOAD  CASE      R.F. FAIL. MODE   R.F. FAIL. MODE   R.F. FAIL. MODE    LOAD
+---------------  ----- ----------  ----- ----------  ----- ----------  ---------
+
+   28: GLD321     9.88  C-I-U       9.60  C-I-U       9.34  C-I-U            0.6
+
+   29: GLD322    21.59  C-I-U      26.40  C-I-U      33.96  C-I-U            0.2
+
+   30: GLD321Z    4.49  T-O-U *     4.48  T-O-U *     4.48  T-O-U *          2.0
+
+   31: GLD322Z    4.33  T-O-U *     4.34  T-O-U *     4.34  T-O-U *          2.3
+
+   32: ML321     43.33  C-I-U      57.21  C-I-U      85.99  C-I-U            0.1
+
+   33: ML322     12.00  C-O-U      12.18  C-O-U      12.34  C-O-U            0.4
+
+   34: ML321Z     4.32  T-O-U *     4.33  T-O-U *     4.33  T-O-U *          2.5
+
+   35: ML322Z     4.55  T-O-U *     4.55  T-O-U *     4.56  T-O-U *          2.2
+
+   36: MR321      4.78  C-I-U       4.80  C-I-U       4.81  C-I-U            1.2
+
+   37: -MR321    11.42  C-I-U      15.09  C-I-U      22.21  C-I-U            0.4
+
+   38: GLD321TN  10.99  C-I-U      10.48  C-I-U      10.02  C-I-U            0.6
+
+   39: GLD322TN  27.75  C-I-U      33.97  C-I-U      43.80  C-I-U            0.2
+
+   40: ML321TN   80.90  C-I-U      > 100  C-I-U @    > 100  T-O-U *          0.0
+
+   41: ML322TN   12.68  C-O-U      12.80  C-O-U      12.93  C-O-U            0.3
+ 
+ 
+               FAILURE MODE CODES
+               ------------------
+                
+               T: Tension;        C: Compression;    S: Shear
+                
+               O: Outer flange;   I: Inner flange;   W: Web
+                
+               L: Limit loads;    U: Ultimate loads
+ 
+               NOTES
+               -----
+
+               (*) Plastic effects in bending not considered
+
+               (@) This R.F. could be increased using crippling option 1
+                   (see User's Manual)
+c

@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[a4paper,landscape]{geometry}
+\parskip=3ex
+\textheight=35cm
+\textwidth=35cm
+\oddsidemargin=-0.8cm
+\topmargin=-1.5cm
+\pagestyle{empty}
+\setlength{\unitlength}{1cm}
+ 
+\begin{document}
+\newpage
+ 
+\small
+\hspace*{-1cm}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{11}{|c|}{ }\\
+\multicolumn{11}{|c|}{\large\bf RESERVE FACTORS SUMMARY}\\
+\multicolumn{11}{|c|}{ }\\
+\hline
+\multicolumn{6}{|c|}{\vspace*{-1mm}} &
+\multicolumn{5}{|c|}{\vspace*{-1mm}} \\
+\multicolumn{6}{|l|}{STRUCTURAL COMPONENT:} &
+\multicolumn{5}{|l|}{REFERENCE DOCUMENT:}\\
+\multicolumn{6}{|c|}{\vspace*{-1mm}} &
+\multicolumn{5}{|c|}{\vspace*{-1mm}} \\
+\hline
+     & \hspace*{3.0cm} & \hspace*{2.5cm} & MATERIAL  &   LOAD    & \hspace*{12mm} & M & \hspace*{20mm} & \hspace*{20mm} &      & REFERENCE    \\
+ZONE & ELEMENT         &      DRAWING    &   \&      &   CASE    & LOAD           & A &   APPLIED      &  ALLOWABLE     & R.F. & PAGE         \\
+\cline{5-5}\cline{11-11}
+     &                 &                 &  TEMPER   & TEMPERAT. & TYPE           & G &     VALUE      &    VALUE       &      & \hspace*{8.5mm}REMARKS\hspace*{8.5mm}  \\
+\hline
+Fusel. & Frame: F65   & &  3.1364N & ZCT        & T & F & $      131183$ & $      439326$ & $> 2$ & Ultimate loads. End A. \\
+Left  & bt'n str's S2    -- S3    & &  T42 & ($    1$) & BD & M & $        -623$ & $       -2088$ &  & Outer fibre tension     \\
+\hline
+\end{tabular}
+\vspace*{-5mm}
+ 
+\hspace*{-1cm}
+\begin{tabular}{|llllll|llll|ccccc|}
+\multicolumn{6}{|l|}{\hspace*{9.0cm}} &
+\multicolumn{4}{|l|}{\hspace*{6.8cm}} &
+\multicolumn{5}{|l|}{\hspace*{7.35cm}} \\
+\multicolumn{6}{|l|}{LOAD TYPES:} &
+\multicolumn{4}{|l|}{MAGNITUDES:} &
+\multicolumn{5}{|l|}{RESERVE FACTOR:} \\
+&&&&&&&&&&&&&&\\
+\hspace*{5mm}&T:  & TENSION  && C:  & COMPRESSION     &\hspace*{5mm}& FORCE  & (F): & $N$         &\hspace*{5mm}&    &   & FAILURE LOADS  &\\
+             &S:  & SHEAR    && TO: & TORSION         &             & MOMENT   & (M): & $N\cdot m$  &             & RF & = & \rule[.5mm]{3.5cm}{0.1mm}&\\
+             &BD: & BENDING  && BR: & BEARING         &             & STRESS   & (S): & $N/mm^2$    &             &    &   & APPLIED LOADS &\\
+             &P:  & PRESSURE &&     &                 &             & STRAIN   & (E): & $\mu mm/mm$ &             &    &   &               &\\
+             &    &          &&     &                 &             & FLOW     & (Q): & $N/mm$ &             &    &   &               &\\
+&&&&&&&&&&&&&&\\
+\hline
+\end{tabular}
+\end{document}

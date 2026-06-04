@@ -1,0 +1,5 @@
+Tipos de vuelo = 2
+Factor sobre esfuerzos positivos = 1
+Factor sobre esfuerzos negativos = 1
+Factor sobre las frecuencias = 10
+Nivel de omisión = 15

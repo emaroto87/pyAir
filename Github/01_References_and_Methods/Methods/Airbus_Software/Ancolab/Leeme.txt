@@ -1,0 +1,14 @@
+
+Gustavo 01/07/2021
+------------------
+
+Mensaje solo para desarrolladores/metodos
+
+El boton de "Delete one ply" de ANCOLAB 4.2 tiene un comportamiento erratico 
+(archivo ancolab_4_2.exe)
+
+Como solucion de contingencia se desabilita ese boton en la GUI (archivo 
+ancolab.exe). Cambio en Datos.vb, lineas 1185 - 1189, dejando solo sin 
+comentar BotonLam(2).Enabled = False
+
+Este cambio no esta subido al repo de savesets como version oficial
